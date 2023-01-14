@@ -1,0 +1,60 @@
+@import './normalize.scss';
+@import './fonts.scss';
+@import './variables';
+
+// Blocks
+@import './ad-block.scss';
+@import './header.scss';
+@import './logo.scss';
+@import './logo-link.scss';
+@import './btn.scss';
+@import './main-menu.scss';
+@import './main.scss';
+@import './primary-title.scss';
+@import './hero.scss';
+@import './block-title.scss';
+@import './filter-panel.scss';
+@import './block-subtitle.scss';
+@import './filter.scss';
+@import './see-all-btn.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Onest', 'Roboto', sans-serif;
+  color: var(--font-dark);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.container {  
+  min-width: 320px;  
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+

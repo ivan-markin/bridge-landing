@@ -1,0 +1,22 @@
+.filter-panel {	
+	padding-top: 40px;
+
+	&__cnt {
+		border-bottom: 1px solid #E0E7F2;
+		padding-bottom: 40px;
+	}
+
+	&__header {
+		display: flex;
+		align-items: baseline;
+		gap: 8px;
+		margin-bottom: 12px;
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin-bottom: 27px;
+	}
+}

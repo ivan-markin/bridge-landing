@@ -1,0 +1,35 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 88px;
+	border-bottom: 1px solid #E0E7F2;
+	position: relative;
+	padding: 0 90px;
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+	}
+
+	&__socials {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		height: 40px;
+		border-right: 1px solid #E0E7F2;
+		padding-right: 24px;
+	}
+
+	&__cta {
+		display: flex;
+		align-items: center;
+		gap: 32px;
+	}
+
+	&__cta-link {
+		color: var(--font-dark);
+		text-decoration: none;
+	}
+}
