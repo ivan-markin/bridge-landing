@@ -14,6 +14,10 @@ export function isWebp() {
   });  
 }
 
+export function selectHandler(evt) {
+  evt.target.parentElement.classList.toggle('active');
+}
+
 // export const mobileMenuHandler = () => {
 // 	const mobileMenuPopup = document.querySelector('.mobile-menu');
 

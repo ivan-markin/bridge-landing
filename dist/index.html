@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230115014658">
+  <link rel="stylesheet" href="./css/style.min.css">
   <title>Chainspot</title>
 </head>
 
@@ -46,7 +46,7 @@
 </nav>
 
 	<a class="logo-link" href="/">
-		<picture><source srcset="img/chainspot-logo.webp" type="image/webp"><img class="logo" src="img/chainspot-logo.png" alt=""></picture>
+		<img class="logo" src="img/chainspot-logo.png" alt="">
 	</a>
 
 	<div class="header__actions">
@@ -102,7 +102,7 @@
               <label class="filter">
                 <input class="filter__input" type="checkbox">
                 <span class="filter__btn">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" alt=""></picture>
+                  <img src="img/avalanche-icon.png" alt="">
                   Avalanche
                 </span>
               </label>
@@ -123,7 +123,7 @@
               <label class="filter">
                 <input class="filter__input" type="checkbox">
                 <span class="filter__btn">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" alt=""></picture>
+                  <img src="img/avalanche-icon.png" alt="">
                   Avalanche
                 </span>
               </label>
@@ -144,7 +144,7 @@
               <label class="filter">
                 <input class="filter__input" type="checkbox">
                 <span class="filter__btn">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" alt=""></picture>
+                  <img src="img/avalanche-icon.png" alt="">
                   Avalanche
                 </span>
               </label>
@@ -165,7 +165,7 @@
               <label class="filter">
                 <input class="filter__input" type="checkbox">
                 <span class="filter__btn">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" alt=""></picture>
+                  <img src="img/avalanche-icon.png" alt="">
                   Avalanche
                 </span>
               </label>
@@ -186,7 +186,7 @@
               <label class="filter">
                 <input class="filter__input" type="checkbox">
                 <span class="filter__btn">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" alt=""></picture>
+                  <img src="img/avalanche-icon.png" alt="">
                   Avalanche
                 </span>
               </label>
@@ -211,10 +211,38 @@
         </div>        
       </section>
 
+      <section class="sort-panel">
+        <div class="wrap">
+          <div class="sort-panel__cnt">
+            <div class="search-input">
+              <input type="text" placeholder="Search by bridge">
+              <button class="search-input__btn"></button>
+            </div>            
+            <div class="select" id="sortSelectBtn">
+              <span class="select__title">Sort by:</span>
+              <button class="select__btn">By TVL</button>
+              <ul class="select__dropdown">
+                <li class="select__item active">By TVL</li>
+                <li class="select__item">By the rate</li>
+              </ul>
+            </div>
+            <div class="sort-panel__pagination pagination">
+              <span>Page</span>
+              <input type="text" value="1">
+              <span>of 20</span>
+              <div class="pagination__controls">
+                <button class="pagination__btn pagination__btn_prev" disabled></button>
+                <button class="pagination__btn pagination__btn_next"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   </div>  
 
-  <script src="./js/app.min.js?_v=20230115014658"></script>
+  <script src="./js/app.min.js"></script>
 </body>
 
 </html>
