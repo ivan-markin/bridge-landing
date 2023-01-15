@@ -6,6 +6,15 @@
 		gap: 40px;
 		padding: 0;
 		margin: 0;
+
+		@media (max-width: 768px) {
+			flex-direction: column;			
+		}		
+	}
+
+	&.mobile &__items {
+		align-items: flex-start;
+		gap: 0;
 	}
 
 	&__item {		
@@ -40,6 +49,27 @@
 		&.new::after {
 			content: 'New';
 			background-color: #193EFF;
+		}
+	}
+
+	&.mobile &__item {
+		display: flex;
+		align-items: center;
+		height: 66px;
+		width: 100%;		
+		border-bottom: 1px solid #E0E7F2;;
+		padding: 0 20px;
+
+		&::after {
+			position: static;
+			transform: none;
+			margin-left: 5px;
+		}
+	}
+
+	&.header {
+		@media (max-width: 1024px) {
+			display: none;
 		}
 	}
 

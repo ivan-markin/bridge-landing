@@ -1,6 +1,8 @@
 <header class="header">
 	
-	@@include('main-menu.html', {})
+	@@include('main-menu.html', {
+		'className': 'header'
+	})
 
 	<a class="logo-link" href="/">
 		<img class="logo" src="@img/chainspot-logo.png" alt="">
@@ -20,4 +22,6 @@
 			<a class="btn" href="">Launch App</a>
 		</div>
 	</div>
+
+	<button class="mobile-menu-btn"></button>
 </header>

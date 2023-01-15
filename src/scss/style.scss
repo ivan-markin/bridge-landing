@@ -28,6 +28,8 @@
 @import './news.scss';
 @import './footer.scss';
 @import './white-link.scss';
+@import './mobile-menu-btn.scss';
+@import './mobile-menu.scss';
 
 *,
 *::before,
@@ -66,6 +68,10 @@ fieldset {
   max-width: 1200px;
   padding: 0 40px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
 }
 
 

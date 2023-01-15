@@ -7,10 +7,23 @@
 	position: relative;
 	padding: 0 90px;
 
+	@media (max-width: 1200px) {
+		padding: 0 40px;
+	}
+
+	@media (max-width: 1024px) {		
+		height: 73px;
+		padding: 0 20px;
+	}
+
 	&__actions {
 		display: flex;
 		align-items: center;
 		gap: 24px;
+
+		@media (max-width: 1024px) {
+			display: none;
+		}
 	}
 
 	&__socials {

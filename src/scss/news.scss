@@ -5,6 +5,14 @@
 	padding: 50px 0;
 	margin: 23px 0;
 
+	@media (max-width: 1024px) {
+		grid-column: span 2;	
+	}
+	
+	@media (max-width: 768px) {
+		grid-column: span 1;	
+	}
+
 	.wrap {		
 		position: relative;
 		z-index: 2;
@@ -21,13 +29,21 @@
 		height: 100%;
 		background: linear-gradient(90.15deg, rgba(25, 117, 255, 0.35) 25.47%, rgba(7, 133, 249, 0.35) 60.21%, rgba(38, 235, 248, 0.35) 94.2%);
 		transform: translateX(-50%);
-		z-index: 1;
+		z-index: 1;		
+
+		@media (max-width: 768px) {
+			left: calc(var(--newsLeftPosition) + 20px);
+		}
 	}
 	
 	&__cnt {
 		display: flex;
 		align-items: center;
 		gap: 25px;		
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
 	}
 
 	&__card {
