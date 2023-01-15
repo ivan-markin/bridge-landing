@@ -7,3 +7,4 @@ flsFunctions.isWebp();
 smoothscroll.polyfill();
 
 sortSelectBtn.addEventListener('click', flsFunctions.selectHandler);
+window.addEventListener('resize', flsFunctions.newsBlockWidth);

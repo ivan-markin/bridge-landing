@@ -11,6 +11,7 @@
 	&__item {		
 		list-style: none;		
 		position: relative;
+		font-size: 16px;		
 
 		&.soon,
 		&.new {
@@ -42,6 +43,15 @@
 		}
 	}
 
+	&.footer &__item {
+		font-size: 14px;
+
+		&.soon::after,
+		&.new::after {
+			display: none;
+		}
+	}
+
 	&__link {
 		display: flex;
 		align-items: center;
@@ -57,5 +67,9 @@
 		svg {
 			fill: #BECCDF;
 		}
+	}
+
+	&.footer &__link {
+		color: white;
 	}
 }

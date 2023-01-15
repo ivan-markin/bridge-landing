@@ -8,4 +8,18 @@
 	color: white;
 	text-decoration: none;
 	padding: 0 22px;
+
+	&_primary {
+		height: 54px;
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	&_white {
+		background: #FFFFFF;
+		border-radius: 6px;
+		color: var(--font-dark);
+		font-size: 16px;
+		padding: 0 25px;
+	}
 }

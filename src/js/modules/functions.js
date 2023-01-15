@@ -18,6 +18,13 @@ export function selectHandler(evt) {
   evt.target.parentElement.classList.toggle('active');
 }
 
+export function newsBlockWidth() {
+  const root = document.documentElement;
+  const wrapper = document.querySelector('.bridge-cards__wrap');  
+
+  root.style.setProperty('--newsLeftPosition', wrapper.offsetWidth / 2 - 40 + "px");    
+}
+
 // export const mobileMenuHandler = () => {
 // 	const mobileMenuPopup = document.querySelector('.mobile-menu');
 
