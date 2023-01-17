@@ -16,6 +16,8 @@
 		display: flex;
 		align-items: center;
 		gap: 40px;
+		border: none;
+		padding: 0;
 		margin-bottom: 40px;
 
 		@media (max-width: 768px) {
@@ -70,5 +72,13 @@
 		gap: 13px;
 		color: white;
 		font-size: 16px;
+
+		a {
+			
+			
+			&:not(:last-child) {
+				margin: 0;
+			}
+		}
 	}
 }

@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230115182421">
+  <!-- <link rel="stylesheet" href="./css/styles-old.css"> -->
+  <link rel="stylesheet" href="./css/style.min.css">
   <title>Chainspot</title>
 </head>
 
@@ -15,7 +16,7 @@
   <div class="mobile-menu">
 	<div class="mobile-menu__header">
 		<a class="logo-link" href="/">
-			<picture><source srcset="img/chainspot-logo.webp" type="image/webp"><img class="logo" src="img/chainspot-logo.png" alt=""></picture>
+			<img class="logo" src="img/chainspot-logo.png" alt="">
 		</a>
 		<button class="mobile-menu__close"></button>
 	</div>
@@ -67,7 +68,7 @@
 
     <header class="header">
 	
-	<nav class="main-menu header">
+	<nav class="main-menu main-menu_header">
 	<ul class="main-menu__items">
 		<li class="main-menu__item">
 			<a class="main-menu__link" href="">Router</a>
@@ -89,7 +90,7 @@
 </nav>
 
 	<a class="logo-link" href="/">
-		<picture><source srcset="img/chainspot-logo.webp" type="image/webp"><img class="logo" src="img/chainspot-logo.png" alt=""></picture>
+		<img class="logo" src="img/chainspot-logo.png" alt="">
 	</a>
 
 	<div class="header__actions">
@@ -112,143 +113,87 @@
 
     <main class="main">
 
-      <section class="hero">
+      <section class="hero-section">
         <h1 class="primary-title">
           Find your bridge with the<br>
           <span>largest blockchain bridges aggregator</span>
         </h1>
-        <p class="hero__subtitle">
+        <p class="hero-section__subtitle">
           Truthful reviews from the community and on-chain analytics
         </p>
-        <div class="hero__params">
-          <div class="hero__params-item">
-            <span class="hero__params-item-title">113</span>
-            <span class="hero__params-item-caption">Bridges</span>
+        <div class="hero-section__params">
+          <div class="hero-section__params-item">
+            <span class="hero-section__params-item-title">113</span>
+            <span class="hero-section__params-item-caption">Bridges</span>
           </div>
-          <div class="hero__params-item">
-            <span class="hero__params-item-title">130</span>
-            <span class="hero__params-item-caption">Networks</span>
+          <div class="hero-section__params-item">
+            <span class="hero-section__params-item-title">130</span>
+            <span class="hero-section__params-item-caption">Networks</span>
           </div>
-          <div class="hero__params-item">
-            <span class="hero__params-item-title">$1.5</span>
-            <span class="hero__params-item-caption">Bridges TVL in ETH</span>
+          <div class="hero-section__params-item">
+            <span class="hero-section__params-item-title">$1.5</span>
+            <span class="hero-section__params-item-caption">Bridges TVL in ETH</span>
           </div>
         </div>
       </section>
 
-      <section class="filter-panel">
+      <section class="rankings">
         <div class="wrap">
-          <div class="filter-panel__cnt">
-            <div class="filter-panel__header">
+          <div class="rankings__cnt">
+            <div class="rankings__header">
               <h2 class="block-title">Filter bridges</h2>
               <span class="block-subtitle">by networks they support</span>
             </div>
-            <div class="filter-panel__content">
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" alt=""></picture>
-                  Avalanche
-                </span>
+            <div class="rankings__content">
+              <label class="rankings__tag">
+                <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
+                <div class="rankings__tag-container">
+                  <img src="img/avalanche-icon.png" class="icon_net__" alt="">
+                  <span>Avalanche</span>
+                </div>
               </label>
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <img src="img/harmony-icon.svg" alt="">
-                  Harmony
-                </span>
+              <label class="rankings__tag">
+                <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
+                <div class="rankings__tag-container">
+                  <img src="img/avalanche-icon.png" class="icon_net__" alt="">
+                  <span>Avalanche</span>
+                </div>
               </label>
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <img src="img/thundercore-icon.svg" alt="">
-                  Thunder Core
-                </span>
+              <label class="rankings__tag">
+                <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
+                <div class="rankings__tag-container">
+                  <img src="img/avalanche-icon.png" class="icon_net__" alt="">
+                  <span>Avalanche</span>
+                </div>
               </label>
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" alt=""></picture>
-                  Avalanche
-                </span>
+              <label class="rankings__tag">
+                <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
+                <div class="rankings__tag-container">
+                  <img src="img/avalanche-icon.png" class="icon_net__" alt="">
+                  <span>Avalanche</span>
+                </div>
               </label>
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <img src="img/harmony-icon.svg" alt="">
-                  Harmony
-                </span>
+              <label class="rankings__tag">
+                <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
+                <div class="rankings__tag-container">
+                  <img src="img/avalanche-icon.png" class="icon_net__" alt="">
+                  <span>Avalanche</span>
+                </div>
               </label>
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <img src="img/thundercore-icon.svg" alt="">
-                  Thunder Core
-                </span>
+              <label class="rankings__tag">
+                <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
+                <div class="rankings__tag-container">
+                  <img src="img/avalanche-icon.png" class="icon_net__" alt="">
+                  <span>Avalanche</span>
+                </div>
               </label>
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" alt=""></picture>
-                  Avalanche
-                </span>
-              </label>
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <img src="img/harmony-icon.svg" alt="">
-                  Harmony
-                </span>
-              </label>
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <img src="img/thundercore-icon.svg" alt="">
-                  Thunder Core
-                </span>
-              </label>
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" alt=""></picture>
-                  Avalanche
-                </span>
-              </label>
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <img src="img/harmony-icon.svg" alt="">
-                  Harmony
-                </span>
-              </label>
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <img src="img/thundercore-icon.svg" alt="">
-                  Thunder Core
-                </span>
-              </label>
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" alt=""></picture>
-                  Avalanche
-                </span>
-              </label>
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <img src="img/harmony-icon.svg" alt="">
-                  Harmony
-                </span>
-              </label>
-              <label class="filter">
-                <input class="filter__input" type="checkbox">
-                <span class="filter__btn">
-                  <img src="img/thundercore-icon.svg" alt="">
-                  Thunder Core
-                </span>
-              </label>              
+              <label class="rankings__tag">
+                <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
+                <div class="rankings__tag-container">
+                  <img src="img/avalanche-icon.png" class="icon_net__" alt="">
+                  <span>Avalanche</span>
+                </div>
+              </label>     
             </div>
 
             <button class="see-all-btn">Click to see all<br><span>Networks</span></button>
@@ -290,7 +235,7 @@
             <div class="bridge-card gold">
               <div class="bridge-card__content">
                 <div class="bridge-card__top">
-                  <picture><source srcset="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" type="image/webp"><img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt=""></picture>
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
                   <div class="bridge-card__reviews-block">
                       <span class="bridge-card__reviews">3 reviews</span>
                       <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
@@ -352,7 +297,7 @@
             <div class="bridge-card silver">
               <div class="bridge-card__content">
                 <div class="bridge-card__top">
-                  <picture><source srcset="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" type="image/webp"><img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt=""></picture>
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
                   <div class="bridge-card__reviews-block">
                       <span class="bridge-card__reviews">3 reviews</span>
                       <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
@@ -414,7 +359,7 @@
             <div class="bridge-card bronze">
               <div class="bridge-card__content">
                 <div class="bridge-card__top">
-                  <picture><source srcset="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" type="image/webp"><img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt=""></picture>
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
                   <div class="bridge-card__reviews-block">
                       <span class="bridge-card__reviews">3 reviews</span>
                       <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
@@ -511,10 +456,10 @@
               </div>          
             </div>
 
-            <div class="bridge-card gold">
+            <div class="bridge-card">
               <div class="bridge-card__content">
                 <div class="bridge-card__top">
-                  <picture><source srcset="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" type="image/webp"><img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt=""></picture>
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
                   <div class="bridge-card__reviews-block">
                       <span class="bridge-card__reviews">3 reviews</span>
                       <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
@@ -573,10 +518,10 @@
               <a class="btn btn_primary" href="/bridge/polygon-bridge" onclick="ym(85443877,'reachGoal','click_overview_btn')">Overview</a>
             </div>
 
-            <div class="bridge-card gold">
+            <div class="bridge-card">
               <div class="bridge-card__content">
                 <div class="bridge-card__top">
-                  <picture><source srcset="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" type="image/webp"><img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt=""></picture>
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
                   <div class="bridge-card__reviews-block">
                       <span class="bridge-card__reviews">3 reviews</span>
                       <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
@@ -635,10 +580,10 @@
               <a class="btn btn_primary" href="/bridge/polygon-bridge" onclick="ym(85443877,'reachGoal','click_overview_btn')">Overview</a>
             </div>
 
-            <div class="bridge-card gold">
+            <div class="bridge-card">
               <div class="bridge-card__content">
                 <div class="bridge-card__top">
-                  <picture><source srcset="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" type="image/webp"><img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt=""></picture>
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
                   <div class="bridge-card__reviews-block">
                       <span class="bridge-card__reviews">3 reviews</span>
                       <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
@@ -772,7 +717,7 @@
 </footer>
   </div>  
 
-  <script src="./js/app.min.js?_v=20230115182421"></script>
+  <script src="./js/app.min.js"></script>
 </body>
 
 </html>

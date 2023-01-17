@@ -1,6 +1,6 @@
 .filter {
 
-	&__input {
+	input {
 		visibility: hidden;
 		opacity: 0;
 		z-index: -1;
@@ -27,7 +27,7 @@
 		}
 	}
 
-	&__input:checked + &__btn {
+	input:checked + &__btn {
 		background: rgba(25, 103, 255, 0.08);
 		border: 1px solid #193EFF;
 		color: #0E00FF;

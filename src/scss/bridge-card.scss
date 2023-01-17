@@ -22,8 +22,8 @@
 			font-weight: 600;
 			border-radius: 50%;
 			position: absolute;
-			top: -21px;
-			left: 34px;
+			top: -30px;
+			left: 24px;
 		}			
 	}
 
@@ -59,6 +59,10 @@
 		align-items: center;
 		justify-content: space-between;
 		margin-bottom: 15px;
+	}
+
+	&__logo {
+		max-height: 38px;
 	}
 
 	&__reviews-block {
@@ -124,14 +128,15 @@
 		border-radius: 3px;
 		height: 47px;
 		padding: 0 12px;
+		margin-bottom: 15px;
 		
 		&:not(:last-of-type) {
 			margin-bottom: 10px;
 		}		
 		
-		&:last-of-type {
-			margin-bottom: 15px;
-		}
+		// &:last-of-type {
+		// 	margin-bottom: 15px;
+		// }
 
 		&-title {
 			font-weight: 500;
@@ -155,10 +160,12 @@
 			align-items: center;
 			gap: 4px;
 			font-size: 14px;
+			margin: 0;
 		}
 
 		&-name {
 			color: #949CB2;
+			opacity: 1;
 		}
 
 		&-value {
@@ -170,11 +177,17 @@
 		display: flex;
 		flex-direction: column;
 		gap: 8px;
+		margin-bottom: 48px;
 
 		&-title {
 			font-size: 14px;			
 			color: #949CB2;
+			opacity: 1;
 			margin: 0;
 		}
+	}
+
+	.card-tags {
+		margin: 0;
 	}
 }
