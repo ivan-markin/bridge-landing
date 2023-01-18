@@ -20,7 +20,7 @@ export function selectHandler(evt) {
 
 export function newsBlockWidth() {
   const root = document.documentElement;
-  const wrapper = document.querySelector('.bridges__cards');  
+  const wrapper = document.querySelector('.bridges').querySelector('.wrap');  
 
   root.style.setProperty('--newsLeftPosition', wrapper.offsetWidth / 2 - 40 + "px");    
 }
