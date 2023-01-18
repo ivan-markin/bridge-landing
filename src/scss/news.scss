@@ -1,7 +1,6 @@
 .news {	
 	position: relative;	
-	grid-column: span 3;	
-	// height: 320px;
+	grid-column: span 3;		
 	padding: 50px 0;
 	margin: 23px 0;
 
@@ -47,12 +46,18 @@
 	}
 
 	&__card {
+		flex: 1;
 		background: #FFFFFF;
 		border: 1px solid #E0E7F2;
 		border-radius: 12px;
 		padding: 24px 32px;
 
 		&-title {
+			display: -webkit-box;			
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			text-overflow: ellipsis;
+			overflow: hidden;
 			font-weight: 400;
 			font-size: 20px;
 			line-height: 1.2;
@@ -60,6 +65,11 @@
 		}
 
 		&-description {
+			display: -webkit-box;			
+			-webkit-line-clamp: 4;
+			-webkit-box-orient: vertical;
+			text-overflow: ellipsis;
+			overflow: hidden;
 			font-size: 14px;
 			line-height: 1.3;			
 			color: #949CB2;
