@@ -9,7 +9,7 @@ flsFunctions.isWebp();
 smoothscroll.polyfill();
 flsFunctions.newsBlockWidth();
 
-sortSelectBtn.addEventListener('click', flsFunctions.selectHandler);
+// sortSelectBtn.addEventListener('click', flsFunctions.selectHandler);
 window.addEventListener('resize', flsFunctions.newsBlockWidth);
 burgerBtn.addEventListener('click', flsFunctions.mobileMenuHandler().open);
 mobileMenuClose.addEventListener('click', flsFunctions.mobileMenuHandler().close);

@@ -1,0 +1,140 @@
+.asterizm {
+	display: flex;
+	align-items: flex-start;
+	gap: 64px;
+
+	&__form-section {
+		width: 457px;
+		flex: none;
+	}
+
+	&__form-header {
+		display: flex;
+		align-items: center;
+		height: 187px;		
+		background: url('../../img/asterizm-form-header-bg.jpg') no-repeat center;
+		background-size: cover;
+		border-radius: 16px 16px 0 0;
+		border: 1px solid #2C2D54;
+		padding: 0 36px;
+	}
+
+	&__form {
+		position: relative;
+		top: -1px;
+		background: #010216;
+		border: 1px solid #2C2D54;
+		border-radius: 0 0 16px 16px;
+		padding: 30px 32px 56px;
+	}
+
+	&__input-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: white;
+		font-size: 15px;
+		margin-bottom: 12px;
+	}
+
+	&__input-block {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		border: 1px solid #2C2D54;		
+		border-radius: 8px;
+		height: 70px;
+		padding: 0 17px;
+		margin-bottom: 24px;
+
+		input {
+			flex: auto;
+			width: 50%;
+			background: #010216;
+			height: 39px;
+			border-top: none;
+			border-left: none;
+			border-bottom: none;
+			border-right: #2C2D54 1px solid;
+			font-size: 20px;
+			color: white;
+			font-weight: 600;
+			outline: none;
+			padding-right: 15px;
+
+			&::placeholder {
+				color: #565B78;
+			}
+		}
+	}
+
+	&__form-attention {
+		display: flex;
+		align-items: flex-start;
+		gap: 11px;
+		border: 1px solid rgba(37, 55, 109, 0.35);
+		border-radius: 8px;
+		font-size: 14px;
+		line-height: 1.43;
+		color: #565B78;
+		padding: 17px;
+		margin-bottom: 20px;
+		
+		&::before {
+			content: '';
+			width: 24px;
+			height: 24px;
+			background: url('../../img/warning-icon_dark.svg') no-repeat center;
+			background-size: contain;
+			flex: none;
+		}
+	}
+
+	&__form-params {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		margin-bottom: 25px;
+
+		&-line {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 14px;
+		}
+
+		&-name {
+			color: #565B78;
+		}
+
+		&-value {
+			color: white;
+		}
+	}
+
+	&__form-submit {
+		width: 100%;
+		height: 70px;
+		background: #023898;
+		border-radius: 8px;
+		font-size: 16px;
+	}
+
+	&__title {
+		display: flex;
+		align-items: flex-start;
+		gap: 29px;
+
+		span {
+			font-weight: 500;
+			font-size: 54px;
+			line-height: 1.11;			
+			letter-spacing: -0.02em;
+			background: linear-gradient(180deg, #FFFFFF 0%, #A3A5AC 100%), #FFFFFF;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+		}
+	}
+}

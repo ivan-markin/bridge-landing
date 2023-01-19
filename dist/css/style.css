@@ -2033,10 +2033,6 @@ fieldset {
     grid-column: span 1;
   }
 
-  .news__block {
-    left: calc(var(--newsLeftPosition) + 20px);
-  }
-
   .news__cnt {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
