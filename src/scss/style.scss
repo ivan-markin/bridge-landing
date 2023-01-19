@@ -30,6 +30,8 @@
 @import './white-link.scss';
 @import './mobile-menu-btn.scss';
 @import './mobile-menu.scss';
+@import './gas-station-wrapper.scss';
+@import './gas-station.scss';
 
 *,
 *::before,
@@ -61,6 +63,11 @@ fieldset {
 
 .container {  
   min-width: 320px;  
+
+  &_dark {
+    background: #000212 url('../img/cnt-bg-dark.png') no-repeat center top;
+    background-size: contain;
+  }
 }
 
 .wrap {

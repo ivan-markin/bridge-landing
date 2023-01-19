@@ -21,19 +21,17 @@
   <div class="container container_dark">
     
     @@include('html/header.html', {
-      'className': 'header_inner header_dark'
+      'className': 'header_dark'
     })
 
-    <main class="main">       
-      <section class="page-container">
-        <div class="wrapper">
-          <div class="asterizm-wrapper">
-            
-            @@include('html/gas-station.html', {})                         
+    <main class="main" style="background: none;">             
+      <div class="wrap">
+        <div class="gas-station-wrapper">
+          
+          @@include('html/gas-station.html', {})                          
 
-          </div>          
-        </div>        
-      </section>    
+        </div>          
+      </div>              
     </main>    
     
     <!-- @@include('html/alert.html', {})    -->

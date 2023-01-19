@@ -1,7 +1,6 @@
-.asterizm {
+.gas-station {
 	display: flex;
-	align-items: flex-start;
-	gap: 64px;
+	flex-direction: column;	
 
 	&__form-section {
 		width: 457px;
@@ -120,6 +119,11 @@
 		font-size: 16px;
 	}
 
+	&__title-block {
+		width: calc(100% - 521px);
+		margin-left: auto;
+	}
+	
 	&__title {
 		display: flex;
 		align-items: flex-start;
@@ -127,7 +131,7 @@
 
 		span {
 			font-weight: 500;
-			font-size: 54px;
+			font-size: 44px;
 			line-height: 1.11;			
 			letter-spacing: -0.02em;
 			background: linear-gradient(180deg, #FFFFFF 0%, #A3A5AC 100%), #FFFFFF;

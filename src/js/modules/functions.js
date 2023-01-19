@@ -22,7 +22,9 @@ export function newsBlockWidth() {
   const root = document.documentElement;
   const wrapper = document.querySelector('.bridges__cards');  
 
-  root.style.setProperty('--newsLeftPosition', wrapper.offsetWidth / 2 + "px");    
+  if (wrapper) {
+    root.style.setProperty('--newsLeftPosition', wrapper.offsetWidth / 2 + "px");  
+  }  
 }
 
 export const mobileMenuHandler = () => {
