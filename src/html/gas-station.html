@@ -1,56 +1,107 @@
 <div class="gas-station">
 	<section class="gas-station__title-block">
-		<h1 class="gas-station__title">
-			<img src="@img/asterizm-title-icon.svg" width="104" height="103" alt="">
-			<span>Activate your liquidity<br>
-				in many chains with<br>
-				single transaction</span>
-		</h1>
+		<div class="wrap">
+			<h1 class="gas-station__title">
+				<img src="@img/asterizm-title-icon.svg" width="104" height="103" alt="">
+				<span>Activate your liquidity<br>
+					in many chains with<br>
+					single transaction</span>
+			</h1>
+		</div>		
 	</section>
 	
-	<section class="gas-station__form-section">
-		<div class="gas-station__form-header">
-			<img src="@img/asterizm-powered.svg" alt="">
-		</div>
-		<form class="gas-station__form" action="">
-			<div class="gas-station__input-header">
-				<span>Pay</span>
-				<span>Balance: -</span>
-			</div>
-			<div class="gas-station__input-block">
-				<input type="text" placeholder="Enter a sum">
-				<button class="choose-token-button choose-token-button_dark">
-					<div class="choose-token-button__icons">
-						<img class="choose-token-button__icon choose-token-button__icon_token"
-							src="@img/tokens-logos/token.png" alt="">
-						<img class="choose-token-button__icon choose-token-button__icon_network"
-							src="@img/tokens-logos/network.png" alt="">
+	<section class="gas-station__cnt">
+		<div class="wrap">
+			<div class="gas-station__content">
+				
+				<section class="gas-station__form-section ethereum">
+					<div class="gas-station__form-header">
+						<img class="gas-station__main-logo" src="@img/chainspot-asterizm-logo.svg" alt="">
+						<div class="gas-station__form-header-description">
+							<span>Top up your gas token balance in many chains with single transaction from:</span>
+							<span class="gas-station__form-header-label">
+								<img src="@img/currencies/ethereum.png" alt="">
+								Ethereum
+							</span>
+						</div>
 					</div>
-					<div class="choose-token-button__value">
-						<span class="choose-token-button__token">USDT</span>
-						<span class="choose-token-button__network">on Polygon</span>
+					<form class="gas-station__form" action="">
+						<div class="gas-station__input-header">
+							<span>Pay</span>
+							<span>Balance: -</span>
+						</div>
+						<div class="gas-station__input-block">
+							<input type="text" placeholder="Enter amount">
+							<button class="choose-token-button choose-token-button_dark">
+								<div class="choose-token-button__icons">
+									<img class="choose-token-button__icon choose-token-button__icon_token"
+										src="@img/tokens-logos/token.png" alt="">
+									<img class="choose-token-button__icon choose-token-button__icon_network"
+										src="@img/tokens-logos/network.png" alt="">
+								</div>
+								<div class="choose-token-button__value">
+									<span class="choose-token-button__token">USDT</span>
+									<span class="choose-token-button__network">on Polygon</span>
+								</div>
+							</button>
+						</div>
+						<div class="gas-station__form-attention">
+							<span>
+								The liquidity you generate as gas is allocatedevenly throughout the networks.
+							</span>
+						</div>
+						<div class="gas-station__form-params">
+							<div class="gas-station__form-params-line">
+								<span class="gas-station__form-params-name">Min allocations liquidity per network</span>
+								<span class="gas-station__form-params-value">$10</span>
+							</div>
+							<div class="gas-station__form-params-line">
+								<span class="gas-station__form-params-name">Commission for liquidity allocation</span>
+								<span class="gas-station__form-params-value">5%</span>
+							</div>
+						</div>
+						<button class="gas-station__form-submit btn btn_primary btn_dark">Swap in single transaction</button>
+					</form>
+				</section>
+
+				<section class="gas-station__networks">
+					<span class="gas-station__networks-caption">
+						<img src="@img/networks-icon.svg" alt="">
+						<span>
+							Select from
+							<span class="gas-station__networks-caption-value">10 EVM</span>
+							and
+							<span class="gas-station__networks-caption-value">1 Non-EVM</span>
+							networks to receive the gas tokens
+						</span>						
+					</span>
+
+					<div class="gas-station__networks-table-header">
+						<button class="gas-station__networks-table-header-btn">Reset<br>all</button>
+						<span class="gas-station__networks-table-header-item i-asset">Asset</span>
+						<span class="gas-station__networks-table-header-item i-type">
+							<img src="@img/filter-icon.svg" alt="">
+							Type of network
+						</span>
+						<span class="gas-station__networks-table-header-item i-amount">Amount in fiat</span>
+						<span class="gas-station__networks-table-header-item i-address">Wallet address</span>
 					</div>
-				</button>
+
+					<div class="gas-station__networks-table">
+						
+						@@for (var i = 0; i < 4; i++) {
+							@@include('network-table-row.html', {})
+						}
+
+						@@include('network-table-row_error.html', {})
+
+						@@for (var i = 0; i < 4; i++) {
+							@@include('network-table-row_disabled.html', {})
+						}
+												
+					</div>
+				</section>
 			</div>
-			<div class="gas-station__form-attention">
-				<span>
-					The liquidity you generate as gas is allocatedevenly throughout the networks.
-				</span>
-			</div>
-			<div class="gas-station__form-params">
-				<div class="gas-station__form-params-line">
-					<span class="gas-station__form-params-name">Min allocations liquidity per network</span>
-					<span class="gas-station__form-params-value">$10</span>
-				</div>
-				<div class="gas-station__form-params-line">
-					<span class="gas-station__form-params-name">Commission for liquidity allocation</span>
-					<span class="gas-station__form-params-value">5%</span>
-				</div>
-			</div>
-			<button class="gas-station__form-submit btn btn_primary">Connect wallet</button>
-		</form>
-	</section>
-	<section>
-		
-	</section>
+		</div>		
+	</section>		
 </div>

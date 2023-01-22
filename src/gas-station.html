@@ -7,16 +7,16 @@
 
 <body>
   
-  <!-- @@include('html/mobile-menu.html', {})
-  @@include('html/filters-panel.html', {})
-  @@include('html/date-picker-popup.html', {})  
-  @@include('html/choose-token-popup.html', {})  
-  @@include('html/choose-wallet-popup.html', {})
-  @@include('html/agreement-popup.html', {})
-  @@include('html/search-popup.html', {})  
-  @@include('html/wallet-actions-popup.html', {})  
-  @@include('html/routes-popup.html', {})  
-  @@include('html/is-submited-popup.html', {})    -->
+  @@include('html/mobile-menu.html', {})    
+  @@include('html/top-up-popup.html', {
+    'className': 'dark'
+  })
+  <!-- @@include('html/choose-wallet-popup.html', {}) -->
+  <!-- @@include('html/agreement-popup.html', {}) -->
+  <!-- @@include('html/search-popup.html', {})   -->
+  <!-- @@include('html/wallet-actions-popup.html', {})   -->
+  <!-- @@include('html/routes-popup.html', {})   -->
+  <!-- @@include('html/is-submited-popup.html', {})    -->
   
   <div class="container container_dark">
     
@@ -24,14 +24,12 @@
       'className': 'header_dark'
     })
 
-    <main class="main" style="background: none;">             
-      <div class="wrap">
+    <main class="main" style="background: none;">                   
         <div class="gas-station-wrapper">
           
           @@include('html/gas-station.html', {})                          
 
-        </div>          
-      </div>              
+        </div>                        
     </main>    
     
     <!-- @@include('html/alert.html', {})    -->

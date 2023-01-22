@@ -45,3 +45,15 @@ export const mobileMenuHandler = () => {
 		close: closeMenu
 	}
 }
+
+export function popupCloseHandler(evt) {
+  if (evt.target.classList.contains('popup')) {
+      evt.target.classList.remove('active');    
+  }
+
+  if (evt.target.classList.contains('popup__close')) {
+      evt.target.closest('.popup').classList.remove('active');
+  }
+  
+  document.body.classList.remove('fixed');
+}

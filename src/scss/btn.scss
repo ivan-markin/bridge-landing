@@ -4,10 +4,17 @@
 	justify-content: center;	
 	background: linear-gradient(271.87deg, #068EFC 6.14%, #193EFF 43.99%, #1510F5 66.69%);
 	border-radius: 6px;
+	border: none;
 	height: 40px;
 	color: white;
+	font-weight: 600;
 	text-decoration: none;
+	cursor: pointer;
 	padding: 0 22px;
+
+	&_dark {
+		background: linear-gradient(90deg, #0573E4 2.16%, #02207E 100.13%);
+	}
 
 	&_primary {
 		height: 54px;

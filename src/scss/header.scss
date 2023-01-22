@@ -8,7 +8,7 @@
 	padding: 0 90px;
 
 	&_dark {
-		background-color: black;
+		background: none;
 		border-color: #2C2D54;
 	}
 
@@ -40,6 +40,10 @@
 		padding-right: 24px;
 	}
 
+	&_dark &__socials {
+		border-color: #2C2D54;
+	}
+
 	&__cta {
 		display: flex;
 		align-items: center;
@@ -50,5 +54,14 @@
 	&__cta-link {
 		color: var(--font-dark);
 		text-decoration: none;
+		transition: all .1s;
+
+		&:hover {
+			color: #0071FF !important;
+		}
+	}
+
+	&_dark &__cta-link {
+		color: white;
 	}
 }

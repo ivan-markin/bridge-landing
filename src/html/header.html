@@ -4,9 +4,17 @@
 		'className': 'main-menu_header'
 	})
 
-	<a class="logo-link" href="/">
-		<img class="logo" src="@img/chainspot-logo.png" alt="">
-	</a>
+	@@if (className === 'header_dark') {
+		@@include('logo.html', {
+			'theme': '_dark'
+		})
+	}	
+	
+	@@if (className === '') {
+		@@include('logo.html', {
+			'theme': ''
+		})
+	}		
 
 	<div class="header__actions">
 		<div class="header__socials">
@@ -18,8 +26,36 @@
 			</a>
 		</div>
 		<div class="header__cta">
-			<a class="header__cta-link" href="">Blog</a>
-			<a class="btn" href="">Launch App</a>
+			<!-- <a class="header__cta-link" href="">Blog</a> -->
+			<!-- <a class="btn" href="">Launch App</a> -->
+			<div class="btn-select">
+				<button class="btn-select__btn btn btn_dark">Connect wallets</button>
+				<div class="btn-select__popup connect-wallets-popup connect-wallets-popup_dark">
+					<div class="connect-wallets-popup__content">
+						<h3 class="connect-wallets-popup__title">Select a wallet</h3>
+						<p class="connect-wallets-popup__description">
+							By connecting your wallet, you agree to our <a class="white-link" href="">Terms of services</a> and <a class="white-link" href="">Privacy Policy</a>
+						</p>
+						<div class="connect-wallets-popup__wallets">
+							<div class="connect-wallets-popup__wallet">
+								<img class="connect-wallets-popup__wallet-icon" src="../img/metamask-wallet-icon.png" alt="">
+								<span class="connect-wallets-popup__wallet-name">MetaMask</span>
+								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>
+							</div>
+							<div class="connect-wallets-popup__wallet">
+								<img class="connect-wallets-popup__wallet-icon" src="../img/ever-wallet-icon.png" alt="">
+								<span class="connect-wallets-popup__wallet-name">EverWallet</span>
+								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>
+							</div>
+							<div class="connect-wallets-popup__wallet">
+								<img class="connect-wallets-popup__wallet-icon" src="../img/tron-wallet-icon.png" alt="">
+								<span class="connect-wallets-popup__wallet-name">TronWallet</span>
+								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>			
 		</div>
 	</div>
 

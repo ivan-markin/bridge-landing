@@ -32,6 +32,16 @@
 @import './mobile-menu.scss';
 @import './gas-station-wrapper.scss';
 @import './gas-station.scss';
+@import './choose-token-button.scss';
+@import './checkbox.scss';
+@import './edit-button.scss';
+@import './btn-select.scss';
+@import './connect-wallets-popup.scss';
+@import './top-up-popup.scss';
+@import './switch-network-popup.scss';
+@import './popup.scss';
+@import './tokens-list-item.scss';
+@import './popup-search-input.scss';
 
 *,
 *::before,
@@ -65,14 +75,14 @@ fieldset {
   min-width: 320px;  
 
   &_dark {
-    background: #000212 url('../img/cnt-bg-dark.png') no-repeat center top;
-    background-size: contain;
+    background: #000212 url('../img/cnt-bg-dark.png') no-repeat center bottom;
+    background-size: 100%;
   }
 }
 
 .wrap {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1260px;
   padding: 0 40px;
   margin: 0 auto;
 

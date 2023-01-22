@@ -1,6 +1,11 @@
 .footer {
 	background: #262B40;
 
+	&_dark {
+		background: none;
+		border-top: #2C2D54 1px solid;
+	}
+
 	&__logo {
 		margin-bottom: 26px;
 	}
@@ -48,7 +53,7 @@
 	&__copyrights-block {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 		height: 80px;
 		width: 100%;
 		border-top: rgba($color: #fff, $alpha: .2) 1px solid;
@@ -73,9 +78,16 @@
 		color: white;
 		font-size: 16px;
 
-		a {
-			
-			
+		&::before {
+			content: '';
+			width: 6px;
+			height: 6px;
+			background: #515566;
+			border-radius: 50%;
+			margin-right: 30px;
+		}
+
+		a {						
 			&:not(:last-child) {
 				margin: 0;
 			}
