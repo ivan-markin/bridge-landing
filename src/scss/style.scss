@@ -2,6 +2,12 @@
 @import './fonts.scss';
 @import './variables';
 
+// Route blocks
+// @import './r_agreement-popup.scss';
+// @import './r_alert.scss';
+// @import './r_allowance-popup.scss';
+// @import './r_back-btn.scss';
+
 // Blocks
 @import './ad-block.scss';
 @import './header.scss';
@@ -42,6 +48,13 @@
 @import './popup.scss';
 @import './tokens-list-item.scss';
 @import './popup-search-input.scss';
+@import './wrong-network-popup.scss';
+@import './connect-to-a-wallet-popup.scss';
+@import './loader-white.scss';
+@import './wallet-info-button.scss';
+@import './loader-huge.scss';
+@import './erase-btn.scss';
+@import './error-message.scss';
 
 *,
 *::before,

@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <!-- <link rel="stylesheet" href="./css/styles-old.css?_v=20230122140605"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230122140605">
+  <!-- <link rel="stylesheet" href="./css/styles-old.css"> -->
+  <link rel="stylesheet" href="./css/style.min.css">
   <title>Chainspot</title>
 </head>
 
@@ -17,7 +17,7 @@
   <div class="mobile-menu">
 	<div class="mobile-menu__header">
 		<a class="logo-link" href="/">
-			<picture><source srcset="img/chainspot-logo.webp" type="image/webp"><img class="logo" src="img/chainspot-logo.png" alt=""></picture>
+			<img class="logo" src="img/chainspot-logo.png" alt="">
 		</a>
 		<button class="mobile-menu__close"></button>
 	</div>
@@ -56,6 +56,7 @@
 		</div>
 	</div>	     
 </div>    
+  
   <div class="top-up-popup popup dark" id="chooseTokenPopup">
 	<div class="popup__container">
 		<a class="popup__close" href="#"></a>
@@ -93,16 +94,25 @@
 			
 			<div class="top-up-popup__tokens-list">						
 			
+				<!-- LOADING -->
+				<!-- <div class="top-up-popup__loading">
+					<span class="loader-huge"></span>
+					Loading balances...
+				</div> -->
+				<!-- LOADING -->
+				
+				<!-- NOT FOUND -->
 				<!-- <div class="top-up-popup__tokens-list-empty">
 					<img src="img/empty-list-icon.svg" alt="">
 					<span>Token not found</span>
-					<span>Try again with a different wording, or change the network</span>
+					<span>There are no supported tokens<br>on this network, try changing networks.</span>
 				</div>   -->
+				<!-- NOT FOUND -->
 	
 				<div class="top-up-popup__all-tokens">					
 					<div class="tokens-list-item">
 						<div class="tokens-list-item__left">
-							<picture><source srcset="img/tokens-list-logos/omg.webp" type="image/webp"><img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt=""></picture>							
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
 							<p class="tokens-list-item__title">
 								<span class="tokens-list-item__name">OMG</span>
 								<span class="tokens-list-item__network">									
@@ -117,7 +127,7 @@
 					</div>
 					<div class="tokens-list-item">
 						<div class="tokens-list-item__left">
-							<picture><source srcset="img/tokens-list-logos/omg.webp" type="image/webp"><img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt=""></picture>							
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
 							<p class="tokens-list-item__title">
 								<span class="tokens-list-item__name">OMG</span>
 								<span class="tokens-list-item__network">									
@@ -132,7 +142,7 @@
 					</div>
 					<div class="tokens-list-item">
 						<div class="tokens-list-item__left">
-							<picture><source srcset="img/tokens-list-logos/omg.webp" type="image/webp"><img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt=""></picture>							
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
 							<p class="tokens-list-item__title">
 								<span class="tokens-list-item__name">OMG</span>
 								<span class="tokens-list-item__network">									
@@ -147,7 +157,7 @@
 					</div>
 					<div class="tokens-list-item">
 						<div class="tokens-list-item__left">
-							<picture><source srcset="img/tokens-list-logos/omg.webp" type="image/webp"><img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt=""></picture>							
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
 							<p class="tokens-list-item__title">
 								<span class="tokens-list-item__name">OMG</span>
 								<span class="tokens-list-item__network">									
@@ -162,7 +172,7 @@
 					</div>
 					<div class="tokens-list-item">
 						<div class="tokens-list-item__left">
-							<picture><source srcset="img/tokens-list-logos/omg.webp" type="image/webp"><img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt=""></picture>							
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
 							<p class="tokens-list-item__title">
 								<span class="tokens-list-item__name">OMG</span>
 								<span class="tokens-list-item__network">									
@@ -177,7 +187,7 @@
 					</div>
 					<div class="tokens-list-item">
 						<div class="tokens-list-item__left">
-							<picture><source srcset="img/tokens-list-logos/omg.webp" type="image/webp"><img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt=""></picture>							
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
 							<p class="tokens-list-item__title">
 								<span class="tokens-list-item__name">OMG</span>
 								<span class="tokens-list-item__network">									
@@ -192,7 +202,7 @@
 					</div>
 					<div class="tokens-list-item">
 						<div class="tokens-list-item__left">
-							<picture><source srcset="img/tokens-list-logos/omg.webp" type="image/webp"><img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt=""></picture>							
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
 							<p class="tokens-list-item__title">
 								<span class="tokens-list-item__name">OMG</span>
 								<span class="tokens-list-item__network">									
@@ -207,7 +217,7 @@
 					</div>
 					<div class="tokens-list-item">
 						<div class="tokens-list-item__left">
-							<picture><source srcset="img/tokens-list-logos/omg.webp" type="image/webp"><img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt=""></picture>							
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
 							<p class="tokens-list-item__title">
 								<span class="tokens-list-item__name">OMG</span>
 								<span class="tokens-list-item__network">									
@@ -222,7 +232,7 @@
 					</div>
 					<div class="tokens-list-item">
 						<div class="tokens-list-item__left">
-							<picture><source srcset="img/tokens-list-logos/omg.webp" type="image/webp"><img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt=""></picture>							
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
 							<p class="tokens-list-item__title">
 								<span class="tokens-list-item__name">OMG</span>
 								<span class="tokens-list-item__network">									
@@ -237,7 +247,7 @@
 					</div>
 					<div class="tokens-list-item">
 						<div class="tokens-list-item__left">
-							<picture><source srcset="img/tokens-list-logos/omg.webp" type="image/webp"><img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt=""></picture>							
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
 							<p class="tokens-list-item__title">
 								<span class="tokens-list-item__name">OMG</span>
 								<span class="tokens-list-item__network">									
@@ -252,7 +262,7 @@
 					</div>
 					<div class="tokens-list-item">
 						<div class="tokens-list-item__left">
-							<picture><source srcset="img/tokens-list-logos/omg.webp" type="image/webp"><img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt=""></picture>							
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
 							<p class="tokens-list-item__title">
 								<span class="tokens-list-item__name">OMG</span>
 								<span class="tokens-list-item__network">									
@@ -267,7 +277,7 @@
 					</div>
 					<div class="tokens-list-item">
 						<div class="tokens-list-item__left">
-							<picture><source srcset="img/tokens-list-logos/omg.webp" type="image/webp"><img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt=""></picture>							
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
 							<p class="tokens-list-item__title">
 								<span class="tokens-list-item__name">OMG</span>
 								<span class="tokens-list-item__network">									
@@ -324,61 +334,111 @@
 		</a>
 		<a class="select__item" href="">
 			<span class="select__item-logo">
-				<picture><source srcset="img/currencies-logos/harmony.webp" type="image/webp"><img src="img/currencies-logos/harmony.png" alt=""></picture>
+				<img src="img/currencies-logos/harmony.png" alt="">
 			</span>
 			<span class="select__item-name">Harmony</span>
 		</a>
 		<a class="select__item" href="">
 			<span class="select__item-logo">
-				<picture><source srcset="img/currencies-logos/arbitrum.webp" type="image/webp"><img src="img/currencies-logos/arbitrum.png" alt=""></picture>
+				<img src="img/currencies-logos/arbitrum.png" alt="">
 			</span>
 			<span class="select__item-name">Arbitrum</span>
 		</a>
 		<a class="select__item" href="">
 			<span class="select__item-logo">
-				<picture><source srcset="img/currencies-logos/optimism.webp" type="image/webp"><img src="img/currencies-logos/optimism.png" alt=""></picture>
+				<img src="img/currencies-logos/optimism.png" alt="">
 			</span>
 			<span class="select__item-name">Optimism</span>
 		</a>
 		<a class="select__item" href="">
 			<span class="select__item-logo">
-				<picture><source srcset="img/currencies-logos/fuse.webp" type="image/webp"><img src="img/currencies-logos/fuse.png" alt=""></picture>
+				<img src="img/currencies-logos/fuse.png" alt="">
 			</span>
 			<span class="select__item-name">Fuse</span>
 		</a>
 		<a class="select__item" href="">
 			<span class="select__item-logo">
-				<picture><source srcset="img/currencies-logos/moon-river.webp" type="image/webp"><img src="img/currencies-logos/moon-river.png" alt=""></picture>
+				<img src="img/currencies-logos/moon-river.png" alt="">
 			</span>
 			<span class="select__item-name">MoonRiver</span>
 		</a>
 		<a class="select__item" href="">
 			<span class="select__item-logo">
-				<picture><source srcset="img/currencies-logos/cronos.webp" type="image/webp"><img src="img/currencies-logos/cronos.png" alt=""></picture>
+				<img src="img/currencies-logos/cronos.png" alt="">
 			</span>
 			<span class="select__item-name">Cronos</span>
 		</a>
 		<a class="select__item" href="">
 			<span class="select__item-logo">
-				<picture><source srcset="img/currencies-logos/gnosis.webp" type="image/webp"><img src="img/currencies-logos/gnosis.png" alt=""></picture>
+				<img src="img/currencies-logos/gnosis.png" alt="">
 			</span>
 			<span class="select__item-name">Gnosis</span>
 		</a>
 		<a class="select__item" href="">
 			<span class="select__item-logo">
-				<picture><source srcset="img/currencies-logos/moon-beam.webp" type="image/webp"><img src="img/currencies-logos/moon-beam.png" alt=""></picture>
+				<img src="img/currencies-logos/moon-beam.png" alt="">
 			</span>
 			<span class="select__item-name">MoonBeam</span>
 		</a>
 		<a class="select__item" href="">
 			<span class="select__item-logo">
-				<picture><source srcset="img/currencies-logos/boba.webp" type="image/webp"><img src="img/currencies-logos/boba.png" alt=""></picture>
+				<img src="img/currencies-logos/boba.png" alt="">
 			</span>
 			<span class="select__item-name">Boba</span>
 		</a>
 	</div>				
 </div>
 </div>
+  
+  <div class="wrong-network-popup popup dark" id="wrongNetworkPopup">
+	<div class="popup__container">
+		<a class="popup__close" href="#"></a>
+		
+		<h1 class="wrong-network-popup__title popup__title">Switch networks</h1>						
+		<p class="wrong-network-popup__description">Wrong network detected, switch or disconnect to continue.</p>
+
+		<button class="wrong-network-popup__switch-network-btn">
+			<img src="img/ethereum-network-icon.svg" width="40" height="40" alt="">
+			Ethereum
+		</button>
+		
+		<button class="wrong-network-popup__disconnect-btn">
+			<img src="img/disconnect-icon.svg" width="24" height="24" alt="">
+			Disconnect
+		</button>
+	</div>	
+</div>
+
+  <div class="connect-to-a-wallet-popup popup dark" id="connectWalletPopup">
+	<div class="popup__container">
+		<a class="popup__close" href="#"></a>
+		
+		<h1 class="connect-to-a-wallet-popup__title popup__title">Connect to a wallet</h1>						
+		<p class="connect-to-a-wallet-popup__description">Go to the provider's website and install the wallet</p>
+
+		<!-- INITIALIZING -->		
+		<!-- <div class="connect-to-a-wallet-popup__wallet-cnt">									
+			<span class="connect-to-a-wallet-popup__initializing">
+				<span class="loader-white"></span>
+				Initializing
+			</span>
+		</div> -->
+		<!-- INITIALIZING -->		
+		
+		<div class="connect-to-a-wallet-popup__wallet-cnt">
+			<img src="img/metamask-wallet-icon.png" width="40" height="40" alt="">
+			Opening MetaMask		
+			
+			<span class="connect-to-a-wallet-popup__waiting">
+				<span class="loader-white"></span>
+				Waiting for connection
+			</span>
+		</div>
+		
+		<button class="connect-to-a-wallet-popup__cta btn btn_dark">Install MetaMask</button>
+	</div>	
+</div>
+
   
   
   
@@ -413,7 +473,7 @@
 
 	
 		<a class="logo-link" href="/">
-	<picture><source srcset="img/chainspot-logo_dark.webp" type="image/webp"><img class="logo" src="img/chainspot-logo_dark.png" alt=""></picture>
+	<img class="logo" src="img/chainspot-logo_dark.png" alt="">
 </a>
 		
 	
@@ -432,7 +492,49 @@
 			<!-- <a class="header__cta-link" href="">Blog</a> -->
 			<!-- <a class="btn" href="">Launch App</a> -->
 			<div class="btn-select">
-				<button class="btn-select__btn btn btn_dark">Connect wallets</button>
+				<!-- NO WALLETS CONNECTED -->
+				<!-- <button class="btn-select__btn btn btn_dark">Connect wallets</button> -->
+				<!-- NO WALLETS CONNECTED -->
+				
+				<!-- ONE WALLET CONNECTED -->
+				
+					<button class="wallet-info-button dark select-button">
+	<div class="wallet-info-button__logo">
+		<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
+		<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+	</div>
+	<div class="wallet-info-button__wallet-num">
+		<div>
+			<span class="wallet-info-button__num">0x07A0...B57F</span>					
+		</div>
+		<svg width="24" height="24" viewBox="0 0 24 24" fill="#003980" xmlns="http://www.w3.org/2000/svg">
+			<path d="M22.0002 10.9692V13.0292C22.0002 13.5792 21.5602 14.0292 21.0002 14.0492H19.0402C17.9602 14.0492 16.9702 13.2592 16.8802 12.1792C16.8202 11.5492 17.0602 10.9592 17.4802 10.5492C17.8502 10.1692 18.3602 9.94922 18.9202 9.94922H21.0002C21.5602 9.96922 22.0002 10.4192 22.0002 10.9692Z" />
+			<path d="M20.47 15.55H19.04C17.14 15.55 15.54 14.12 15.38 12.3C15.29 11.26 15.67 10.22 16.43 9.48C17.07 8.82 17.96 8.45 18.92 8.45H20.47C20.76 8.45 21 8.21 20.97 7.92C20.75 5.49 19.14 3.83 16.75 3.55C16.51 3.51 16.26 3.5 16 3.5H7C6.72 3.5 6.45 3.52 6.19 3.56C3.64 3.88 2 5.78 2 8.5V15.5C2 18.26 4.24 20.5 7 20.5H16C18.8 20.5 20.73 18.75 20.97 16.08C21 15.79 20.76 15.55 20.47 15.55ZM13 9.75H7C6.59 9.75 6.25 9.41 6.25 9C6.25 8.59 6.59 8.25 7 8.25H13C13.41 8.25 13.75 8.59 13.75 9C13.75 9.41 13.41 9.75 13 9.75Z" />
+		</svg>
+	</div>
+</button>
+					
+				
+					
+				<!-- ONE WALLET CONNECTED -->
+				
+				<!-- MULTIPLE WALLETS CONNECTED -->
+				<!-- <button class="wallet-info-button wallet-info-button_multiple dark select-button">
+					<div class="wallet-info-button__logo">
+						<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
+						<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+					</div>
+					<div class="wallet-info-button__logo">
+						<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
+						<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+					</div>
+					<div class="wallet-info-button__logo">
+						<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
+						<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+					</div>
+				</button> -->
+				<!-- MULTIPLE WALLETS CONNECTED -->
+				
 				<div class="btn-select__popup connect-wallets-popup connect-wallets-popup_dark">
 					<div class="connect-wallets-popup__content">
 						<h3 class="connect-wallets-popup__title">Select a wallet</h3>
@@ -441,24 +543,34 @@
 						</p>
 						<div class="connect-wallets-popup__wallets">
 							<div class="connect-wallets-popup__wallet">
-								<picture><source srcset="../img/metamask-wallet-icon.webp" type="image/webp"><img class="connect-wallets-popup__wallet-icon" src="../img/metamask-wallet-icon.png" alt=""></picture>
-								<span class="connect-wallets-popup__wallet-name">MetaMask</span>
-								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>
+								<div class="connect-wallets-popup__wallet-connected">
+									<div class="connect-wallets-popup__wallet-icons">
+										<img class="connect-wallets-popup__wallet-icon" src="img/metamask-wallet-icon.png" alt="">		
+										<img class="connect-wallets-popup__wallet-network-icon" src="img/tokens-logos/network.png" alt="">		
+									</div>
+									<div class="connect-wallets-popup__wallet-title">
+										<span class="connect-wallets-popup__wallet-name">0x07A0...B57F</span>
+										<span class="connect-wallets-popup__wallet-network">0 MATIC</span>
+									</div>
+								</div>
+								<button class="connect-wallets-popup__disconnect-btn">Disconnect</button>
 							</div>
+							
 							<div class="connect-wallets-popup__wallet">
-								<picture><source srcset="../img/ever-wallet-icon.webp" type="image/webp"><img class="connect-wallets-popup__wallet-icon" src="../img/ever-wallet-icon.png" alt=""></picture>
+								<img class="connect-wallets-popup__wallet-icon" src="img/ever-wallet-icon.png" alt="">
 								<span class="connect-wallets-popup__wallet-name">EverWallet</span>
 								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>
 							</div>
+							
 							<div class="connect-wallets-popup__wallet">
-								<picture><source srcset="../img/tron-wallet-icon.webp" type="image/webp"><img class="connect-wallets-popup__wallet-icon" src="../img/tron-wallet-icon.png" alt=""></picture>
+								<img class="connect-wallets-popup__wallet-icon" src="img/tron-wallet-icon.png" alt="">
 								<span class="connect-wallets-popup__wallet-name">TronWallet</span>
-								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>
+								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>								
 							</div>
 						</div>
 					</div>					
 				</div>
-			</div>			
+			</div>						
 		</div>
 	</div>
 
@@ -490,7 +602,7 @@
 						<div class="gas-station__form-header-description">
 							<span>Top up your gas token balance in many chains with single transaction from:</span>
 							<span class="gas-station__form-header-label">
-								<picture><source srcset="img/currencies/ethereum.webp" type="image/webp"><img src="img/currencies/ethereum.png" alt=""></picture>
+								<img src="img/currencies/ethereum.png" alt="">
 								Ethereum
 							</span>
 						</div>
@@ -567,7 +679,7 @@
 	</label>
 	<div class="gas-station__networks-table-row-item i-asset">
 		<span class="gas-station__network-icon">
-			<picture><source srcset="../img/currencies/ethereum.webp" type="image/webp"><img src="../img/currencies/ethereum.png" alt=""></picture>
+			<img src="../img/currencies/ethereum.png" alt="">
 		</span>
 		<div class="gas-station__networks-table-row-item-title">
 			<span>0.00082 ETH</span>
@@ -593,7 +705,7 @@
 	</label>
 	<div class="gas-station__networks-table-row-item i-asset">
 		<span class="gas-station__network-icon">
-			<picture><source srcset="../img/currencies/ethereum.webp" type="image/webp"><img src="../img/currencies/ethereum.png" alt=""></picture>
+			<img src="../img/currencies/ethereum.png" alt="">
 		</span>
 		<div class="gas-station__networks-table-row-item-title">
 			<span>0.00082 ETH</span>
@@ -619,7 +731,7 @@
 	</label>
 	<div class="gas-station__networks-table-row-item i-asset">
 		<span class="gas-station__network-icon">
-			<picture><source srcset="../img/currencies/ethereum.webp" type="image/webp"><img src="../img/currencies/ethereum.png" alt=""></picture>
+			<img src="../img/currencies/ethereum.png" alt="">
 		</span>
 		<div class="gas-station__networks-table-row-item-title">
 			<span>0.00082 ETH</span>
@@ -645,7 +757,7 @@
 	</label>
 	<div class="gas-station__networks-table-row-item i-asset">
 		<span class="gas-station__network-icon">
-			<picture><source srcset="../img/currencies/ethereum.webp" type="image/webp"><img src="../img/currencies/ethereum.png" alt=""></picture>
+			<img src="../img/currencies/ethereum.png" alt="">
 		</span>
 		<div class="gas-station__networks-table-row-item-title">
 			<span>0.00082 ETH</span>
@@ -665,12 +777,12 @@
 </div>
 						
 
-						<div class="gas-station__networks-table-row gas-station__networks-table-row_error">
+						<div class="gas-station__networks-table-row gas-station__networks-table-row_warning">
 	<div class="gas-station__networks-table-row-content">
 		<img class="gas-station__networks-error" src="../img/error-icon.svg" alt="">
 		<div class="gas-station__networks-table-row-item i-asset">
 			<span class="gas-station__network-icon">
-				<picture><source srcset="../img/currencies/ethereum.webp" type="image/webp"><img src="../img/currencies/ethereum.png" alt=""></picture>
+				<img src="../img/currencies/ethereum.png" alt="">
 			</span>
 			<div class="gas-station__networks-table-row-item-title">
 				<span>0.00082 ETH</span>
@@ -688,7 +800,39 @@
 			0x2...RT
 		</span>
 	</div>	
-	<input class="gas-station__error-input" type="text" name="" id="" placeholder="Enter Everscale wallet address (0:...)">
+	<div class="gas-station__input-cnt">
+		<span class="gas-station__input-loader loader-white"></span>
+		<input class="gas-station__input warning" type="text" name="" id="" placeholder="Enter Everscale wallet address (0:...)">
+	</div>	
+</div>
+						<div class="gas-station__networks-table-row gas-station__networks-table-row_error">
+	<div class="gas-station__networks-table-row-content">
+		<img class="gas-station__networks-error" src="../img/error-icon.svg" alt="">
+		<div class="gas-station__networks-table-row-item i-asset">
+			<span class="gas-station__network-icon">
+				<img src="../img/currencies/ethereum.png" alt="">
+			</span>
+			<div class="gas-station__networks-table-row-item-title">
+				<span>0.00082 ETH</span>
+				<span>on Ethereum</span>
+			</div>
+		</div>
+		<span class="gas-station__networks-table-row-item i-type">
+			EVM
+		</span>
+		<span class="gas-station__networks-table-row-item i-amount">
+			$10 (7%)
+		</span>
+		<span class="gas-station__networks-table-row-item i-address">
+			<button class="edit-button"></button>
+			0x2...RT
+		</span>
+	</div>	
+	<div class="gas-station__input-cnt">
+		<button class="gas-station__erase-btn erase-btn"></button>
+		<input class="gas-station__input error" type="text" name="" id="" placeholder="Enter Everscale wallet address (0:...)">
+		<span class="error-message">Incorrect address (should start with 0:...)</span>
+	</div>	
 </div>
 
 						
@@ -699,7 +843,7 @@
 	</label>
 	<div class="gas-station__networks-table-row-item i-asset">
 		<span class="gas-station__network-icon">
-			<picture><source srcset="../img/currencies/ethereum.webp" type="image/webp"><img src="../img/currencies/ethereum.png" alt=""></picture>
+			<img src="../img/currencies/ethereum.png" alt="">
 		</span>
 		<div class="gas-station__networks-table-row-item-title">
 			<span>0.00082 ETH</span>
@@ -725,7 +869,7 @@
 	</label>
 	<div class="gas-station__networks-table-row-item i-asset">
 		<span class="gas-station__network-icon">
-			<picture><source srcset="../img/currencies/ethereum.webp" type="image/webp"><img src="../img/currencies/ethereum.png" alt=""></picture>
+			<img src="../img/currencies/ethereum.png" alt="">
 		</span>
 		<div class="gas-station__networks-table-row-item-title">
 			<span>0.00082 ETH</span>
@@ -751,7 +895,7 @@
 	</label>
 	<div class="gas-station__networks-table-row-item i-asset">
 		<span class="gas-station__network-icon">
-			<picture><source srcset="../img/currencies/ethereum.webp" type="image/webp"><img src="../img/currencies/ethereum.png" alt=""></picture>
+			<img src="../img/currencies/ethereum.png" alt="">
 		</span>
 		<div class="gas-station__networks-table-row-item-title">
 			<span>0.00082 ETH</span>
@@ -777,7 +921,7 @@
 	</label>
 	<div class="gas-station__networks-table-row-item i-asset">
 		<span class="gas-station__network-icon">
-			<picture><source srcset="../img/currencies/ethereum.webp" type="image/webp"><img src="../img/currencies/ethereum.png" alt=""></picture>
+			<img src="../img/currencies/ethereum.png" alt="">
 		</span>
 		<div class="gas-station__networks-table-row-item-title">
 			<span>0.00082 ETH</span>
@@ -862,7 +1006,7 @@
 </footer>   
   </div>  
 
-  <script src="./js/app.min.js?_v=20230122140605"></script>
+  <script src="./js/app.min.js"></script>
 </body>
 
 </html>

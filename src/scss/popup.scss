@@ -28,6 +28,12 @@
 		width: fit-content;
 		margin: 0 auto 30px auto;
 	}
+
+	&.dark &__title {
+		position: relative;
+		z-index: 999999;
+		color: white;
+	}
 	
 	&__container {
 		position: absolute;
@@ -116,6 +122,11 @@
 			width: 100%;
 			background: none;
 		}
+	}
+
+	&.dark &__close {
+		background: url('../img/close-icon_dark.svg') no-repeat center;
+		z-index: 999999;
 	}
 
 	&__text {

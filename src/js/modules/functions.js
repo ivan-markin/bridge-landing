@@ -15,7 +15,7 @@ export function isWebp() {
 }
 
 export function selectHandler(evt) {
-  evt.target.parentElement.classList.toggle('active');
+  evt.target.closest('.btn-select').classList.toggle('active');
 }
 
 export function newsBlockWidth() {
@@ -24,7 +24,7 @@ export function newsBlockWidth() {
 
   if (wrapper) {
     root.style.setProperty('--newsLeftPosition', wrapper.offsetWidth / 2 + "px");  
-  }  
+  }    
 }
 
 export const mobileMenuHandler = () => {

@@ -4,7 +4,7 @@ import smoothscroll from 'smoothscroll-polyfill';
 const sortSelectBtn = document.querySelector('#sortSelectBtn');
 const burgerBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenuClose = document.querySelector('.mobile-menu__close');
-const btnSelectBtn = document.querySelector('.btn-select__btn');
+const selectButtons = document.querySelectorAll('.select-button');
 const popupCloseButtons = document.querySelectorAll('.popup__close');
 const popups = document.querySelectorAll('.popup');
 const selectElems = Array.from(document.querySelectorAll('.select'));
@@ -21,15 +21,22 @@ flsFunctions.newsBlockWidth();
 window.addEventListener('resize', flsFunctions.newsBlockWidth);
 burgerBtn.addEventListener('click', flsFunctions.mobileMenuHandler().open);
 mobileMenuClose.addEventListener('click', flsFunctions.mobileMenuHandler().close);
-btnSelectBtn.addEventListener('click', flsFunctions.selectHandler);
 
-chooseTokenBtn.addEventListener('click', (evt) => {
-	const popup = document.querySelector('.top-up-popup');
+if (selectButtons) {
+	selectButtons.forEach(el => {
+		el.addEventListener('click', flsFunctions.selectHandler);
+	})
+} 
 
-	evt.preventDefault();
-	popup.classList.add('active');
-	document.body.classList.add('fixed');
-})
+if (chooseTokenBtn) {
+	chooseTokenBtn.addEventListener('click', (evt) => {
+		const popup = document.querySelector('.top-up-popup');
+	
+		evt.preventDefault();
+		popup.classList.add('active');
+		document.body.classList.add('fixed');
+	})
+}
 
 if (moreBtn) {
   moreBtn.addEventListener('click', (evt) => {

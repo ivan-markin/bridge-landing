@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <!-- <link rel="stylesheet" href="./css/styles-old.css?_v=20230122140605"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230122140605">
+  <!-- <link rel="stylesheet" href="./css/styles-old.css"> -->
+  <link rel="stylesheet" href="./css/style.min.css">
   <title>Chainspot</title>
 </head>
 
@@ -16,7 +16,7 @@
   <div class="mobile-menu">
 	<div class="mobile-menu__header">
 		<a class="logo-link" href="/">
-			<picture><source srcset="img/chainspot-logo.webp" type="image/webp"><img class="logo" src="img/chainspot-logo.png" alt=""></picture>
+			<img class="logo" src="img/chainspot-logo.png" alt="">
 		</a>
 		<button class="mobile-menu__close"></button>
 	</div>
@@ -93,7 +93,7 @@
 	
 	
 		<a class="logo-link" href="/">
-	<picture><source srcset="img/chainspot-logo.webp" type="image/webp"><img class="logo" src="img/chainspot-logo.png" alt=""></picture>
+	<img class="logo" src="img/chainspot-logo.png" alt="">
 </a>
 			
 
@@ -110,7 +110,49 @@
 			<!-- <a class="header__cta-link" href="">Blog</a> -->
 			<!-- <a class="btn" href="">Launch App</a> -->
 			<div class="btn-select">
-				<button class="btn-select__btn btn btn_dark">Connect wallets</button>
+				<!-- NO WALLETS CONNECTED -->
+				<!-- <button class="btn-select__btn btn btn_dark">Connect wallets</button> -->
+				<!-- NO WALLETS CONNECTED -->
+				
+				<!-- ONE WALLET CONNECTED -->
+					
+				
+				
+					<button class="wallet-info-button  select-button">
+	<div class="wallet-info-button__logo">
+		<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
+		<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+	</div>
+	<div class="wallet-info-button__wallet-num">
+		<div>
+			<span class="wallet-info-button__num">0x07A0...B57F</span>					
+		</div>
+		<svg width="24" height="24" viewBox="0 0 24 24" fill="#003980" xmlns="http://www.w3.org/2000/svg">
+			<path d="M22.0002 10.9692V13.0292C22.0002 13.5792 21.5602 14.0292 21.0002 14.0492H19.0402C17.9602 14.0492 16.9702 13.2592 16.8802 12.1792C16.8202 11.5492 17.0602 10.9592 17.4802 10.5492C17.8502 10.1692 18.3602 9.94922 18.9202 9.94922H21.0002C21.5602 9.96922 22.0002 10.4192 22.0002 10.9692Z" />
+			<path d="M20.47 15.55H19.04C17.14 15.55 15.54 14.12 15.38 12.3C15.29 11.26 15.67 10.22 16.43 9.48C17.07 8.82 17.96 8.45 18.92 8.45H20.47C20.76 8.45 21 8.21 20.97 7.92C20.75 5.49 19.14 3.83 16.75 3.55C16.51 3.51 16.26 3.5 16 3.5H7C6.72 3.5 6.45 3.52 6.19 3.56C3.64 3.88 2 5.78 2 8.5V15.5C2 18.26 4.24 20.5 7 20.5H16C18.8 20.5 20.73 18.75 20.97 16.08C21 15.79 20.76 15.55 20.47 15.55ZM13 9.75H7C6.59 9.75 6.25 9.41 6.25 9C6.25 8.59 6.59 8.25 7 8.25H13C13.41 8.25 13.75 8.59 13.75 9C13.75 9.41 13.41 9.75 13 9.75Z" />
+		</svg>
+	</div>
+</button>
+					
+				<!-- ONE WALLET CONNECTED -->
+				
+				<!-- MULTIPLE WALLETS CONNECTED -->
+				<!-- <button class="wallet-info-button wallet-info-button_multiple dark select-button">
+					<div class="wallet-info-button__logo">
+						<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
+						<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+					</div>
+					<div class="wallet-info-button__logo">
+						<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
+						<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+					</div>
+					<div class="wallet-info-button__logo">
+						<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
+						<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+					</div>
+				</button> -->
+				<!-- MULTIPLE WALLETS CONNECTED -->
+				
 				<div class="btn-select__popup connect-wallets-popup connect-wallets-popup_dark">
 					<div class="connect-wallets-popup__content">
 						<h3 class="connect-wallets-popup__title">Select a wallet</h3>
@@ -119,24 +161,34 @@
 						</p>
 						<div class="connect-wallets-popup__wallets">
 							<div class="connect-wallets-popup__wallet">
-								<picture><source srcset="../img/metamask-wallet-icon.webp" type="image/webp"><img class="connect-wallets-popup__wallet-icon" src="../img/metamask-wallet-icon.png" alt=""></picture>
-								<span class="connect-wallets-popup__wallet-name">MetaMask</span>
-								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>
+								<div class="connect-wallets-popup__wallet-connected">
+									<div class="connect-wallets-popup__wallet-icons">
+										<img class="connect-wallets-popup__wallet-icon" src="img/metamask-wallet-icon.png" alt="">		
+										<img class="connect-wallets-popup__wallet-network-icon" src="img/tokens-logos/network.png" alt="">		
+									</div>
+									<div class="connect-wallets-popup__wallet-title">
+										<span class="connect-wallets-popup__wallet-name">0x07A0...B57F</span>
+										<span class="connect-wallets-popup__wallet-network">0 MATIC</span>
+									</div>
+								</div>
+								<button class="connect-wallets-popup__disconnect-btn">Disconnect</button>
 							</div>
+							
 							<div class="connect-wallets-popup__wallet">
-								<picture><source srcset="../img/ever-wallet-icon.webp" type="image/webp"><img class="connect-wallets-popup__wallet-icon" src="../img/ever-wallet-icon.png" alt=""></picture>
+								<img class="connect-wallets-popup__wallet-icon" src="img/ever-wallet-icon.png" alt="">
 								<span class="connect-wallets-popup__wallet-name">EverWallet</span>
 								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>
 							</div>
+							
 							<div class="connect-wallets-popup__wallet">
-								<picture><source srcset="../img/tron-wallet-icon.webp" type="image/webp"><img class="connect-wallets-popup__wallet-icon" src="../img/tron-wallet-icon.png" alt=""></picture>
+								<img class="connect-wallets-popup__wallet-icon" src="img/tron-wallet-icon.png" alt="">
 								<span class="connect-wallets-popup__wallet-name">TronWallet</span>
-								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>
+								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>								
 							</div>
 						</div>
 					</div>					
 				</div>
-			</div>			
+			</div>						
 		</div>
 	</div>
 
@@ -180,49 +232,49 @@
               <label class="rankings__tag">
                 <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
                 <div class="rankings__tag-container">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" class="icon_net__" alt=""></picture>
+                  <img src="img/avalanche-icon.png" class="icon_net__" alt="">
                   <span>Avalanche</span>
                 </div>
               </label>
               <label class="rankings__tag">
                 <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
                 <div class="rankings__tag-container">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" class="icon_net__" alt=""></picture>
+                  <img src="img/avalanche-icon.png" class="icon_net__" alt="">
                   <span>Avalanche</span>
                 </div>
               </label>
               <label class="rankings__tag">
                 <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
                 <div class="rankings__tag-container">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" class="icon_net__" alt=""></picture>
+                  <img src="img/avalanche-icon.png" class="icon_net__" alt="">
                   <span>Avalanche</span>
                 </div>
               </label>
               <label class="rankings__tag">
                 <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
                 <div class="rankings__tag-container">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" class="icon_net__" alt=""></picture>
+                  <img src="img/avalanche-icon.png" class="icon_net__" alt="">
                   <span>Avalanche</span>
                 </div>
               </label>
               <label class="rankings__tag">
                 <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
                 <div class="rankings__tag-container">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" class="icon_net__" alt=""></picture>
+                  <img src="img/avalanche-icon.png" class="icon_net__" alt="">
                   <span>Avalanche</span>
                 </div>
               </label>
               <label class="rankings__tag">
                 <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
                 <div class="rankings__tag-container">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" class="icon_net__" alt=""></picture>
+                  <img src="img/avalanche-icon.png" class="icon_net__" alt="">
                   <span>Avalanche</span>
                 </div>
               </label>
               <label class="rankings__tag">
                 <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
                 <div class="rankings__tag-container">
-                  <picture><source srcset="img/avalanche-icon.webp" type="image/webp"><img src="img/avalanche-icon.png" class="icon_net__" alt=""></picture>
+                  <img src="img/avalanche-icon.png" class="icon_net__" alt="">
                   <span>Avalanche</span>
                 </div>
               </label>     
@@ -263,11 +315,11 @@
 
       <section class="bridge-cards">
         <div class="bridge-cards__wrap wrap">
-          <div class="bridge-cards__cnt">
+          <div class="bridge-cards__cnt bridges__cards">
             <div class="bridge-card gold">
               <div class="bridge-card__content">
                 <div class="bridge-card__top">
-                  <picture><source srcset="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" type="image/webp"><img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt=""></picture>
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
                   <div class="bridge-card__reviews-block">
                       <span class="bridge-card__reviews">3 reviews</span>
                       <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
@@ -329,7 +381,7 @@
             <div class="bridge-card silver">
               <div class="bridge-card__content">
                 <div class="bridge-card__top">
-                  <picture><source srcset="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" type="image/webp"><img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt=""></picture>
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
                   <div class="bridge-card__reviews-block">
                       <span class="bridge-card__reviews">3 reviews</span>
                       <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
@@ -391,7 +443,7 @@
             <div class="bridge-card bronze">
               <div class="bridge-card__content">
                 <div class="bridge-card__top">
-                  <picture><source srcset="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" type="image/webp"><img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt=""></picture>
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
                   <div class="bridge-card__reviews-block">
                       <span class="bridge-card__reviews">3 reviews</span>
                       <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
@@ -491,7 +543,7 @@
             <div class="bridge-card">
               <div class="bridge-card__content">
                 <div class="bridge-card__top">
-                  <picture><source srcset="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" type="image/webp"><img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt=""></picture>
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
                   <div class="bridge-card__reviews-block">
                       <span class="bridge-card__reviews">3 reviews</span>
                       <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
@@ -553,7 +605,7 @@
             <div class="bridge-card">
               <div class="bridge-card__content">
                 <div class="bridge-card__top">
-                  <picture><source srcset="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" type="image/webp"><img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt=""></picture>
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
                   <div class="bridge-card__reviews-block">
                       <span class="bridge-card__reviews">3 reviews</span>
                       <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
@@ -615,7 +667,7 @@
             <div class="bridge-card">
               <div class="bridge-card__content">
                 <div class="bridge-card__top">
-                  <picture><source srcset="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" type="image/webp"><img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt=""></picture>
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
                   <div class="bridge-card__reviews-block">
                       <span class="bridge-card__reviews">3 reviews</span>
                       <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
@@ -749,7 +801,7 @@
 </footer>
   </div>  
 
-  <script src="./js/app.min.js?_v=20230122140605"></script>
+  <script src="./js/app.min.js"></script>
 </body>
 
 </html>

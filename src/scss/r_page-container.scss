@@ -1,0 +1,23 @@
+.page-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: auto;	
+	padding: 20px 3.8vw 0 3.8vw;
+
+	@media (max-width: 768px) {
+		padding: 0;
+	}
+
+	&_vertical {
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: flex-start;		
+	}
+
+	.wrapper {
+		@media (max-width: 768px) {
+			padding: 0;
+		}
+	}
+}
