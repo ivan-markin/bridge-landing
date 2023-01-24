@@ -86,6 +86,7 @@ fieldset {
 
 .container {  
   min-width: 320px;  
+  overflow-x: hidden;
 
   &_dark {
     background: #000212 url('../img/cnt-bg-dark.png') no-repeat center bottom;

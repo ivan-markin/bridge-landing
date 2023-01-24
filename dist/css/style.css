@@ -4271,6 +4271,7 @@ fieldset {
 
 .container {
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 .no-webp .container_dark {
