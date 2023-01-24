@@ -1696,6 +1696,7 @@ input:checked + .filter__btn {
   background: #FFFFFF;
   border: 1px solid #E0E7F2;
   border-radius: 12px;
+  min-height: 215px;
   padding: 24px 32px;
 }
 
