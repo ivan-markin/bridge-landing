@@ -4293,6 +4293,15 @@ fieldset {
   }
 }
 
+@media (max-width: 1080px) {
+  .bridge-card__top {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+
 @media (max-width: 1024px) {
   .header {
     height: 73px;
