@@ -824,7 +824,7 @@ template {
   -webkit-box-shadow: 0px 30px 80px -30px rgba(76, 86, 115, 0.12);
           box-shadow: 0px 30px 80px -30px rgba(76, 86, 115, 0.12);
   border-radius: 12px;
-  padding: 18px 66px 40px;
+  padding: 18px 66px 55px;
 }
 
 .hero-section__params-item {
@@ -848,12 +848,13 @@ template {
   position: absolute;
   bottom: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(calc(100% - 5px));
-      -ms-transform: translateX(-50%) translateY(calc(100% - 5px));
-          transform: translateX(-50%) translateY(calc(100% - 5px));
-  font-size: 18px;
-  line-height: 1.78;
+  -webkit-transform: translateX(-50%) translateY(100%);
+      -ms-transform: translateX(-50%) translateY(100%);
+          transform: translateX(-50%) translateY(100%);
+  font-size: 14px;
+  line-height: 1.33;
   white-space: nowrap;
+  text-align: center;
 }
 
 .block-title {
