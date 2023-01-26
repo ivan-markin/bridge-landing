@@ -29,7 +29,7 @@
 
 	&__switch-network-btn {
 		display: flex;
-		align-items: center;
+		align-items: center;		
 		gap: 6px;
 		width: 100%;
 		height: 60px;
@@ -47,6 +47,24 @@
 
 		&:hover {
 			background: #01041F;
+		}
+	}
+
+	&__switch-network-btn-confirm {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 14px;
+		font-weight: 400;
+		color: white;
+		margin-left: auto;
+
+		&::after {
+			content: '';
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: #FEB700;
 		}
 	}
 

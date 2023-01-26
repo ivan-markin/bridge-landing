@@ -3924,6 +3924,28 @@ input:checked + .filter__btn {
   background: #01041F;
 }
 
+.wrong-network-popup__switch-network-btn-confirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  margin-left: auto;
+}
+
+.wrong-network-popup__switch-network-btn-confirm::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #FEB700;
+}
+
 .wrong-network-popup__disconnect-btn {
   display: -webkit-box;
   display: -ms-flexbox;
