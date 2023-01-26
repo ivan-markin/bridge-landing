@@ -6,9 +6,12 @@
 		border-top: #2C2D54 1px solid;
 	}
 
-	&__logo {
-		height: 36px;
+	&__logo {		
 		margin-bottom: 26px;
+
+		img {
+			height: 36px;
+		}
 	}
 
 	&__cnt {
