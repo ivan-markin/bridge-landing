@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <!-- <link rel="stylesheet" href="./css/styles-old.css?_v=20230126233300"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230126233300">
+  <!-- <link rel="stylesheet" href="./css/styles-old.css?_v=20230127202410"> -->
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230127202410">
   <title>Chainspot</title>
 </head>
 
@@ -390,7 +390,7 @@
 </div>
 </div>
   
-  <div class="wrong-network-popup popup dark active" id="wrongNetworkPopup">
+  <div class="wrong-network-popup popup dark" id="wrongNetworkPopup">
 	<div class="popup__container">
 		<a class="popup__close" href="#"></a>
 		
@@ -614,7 +614,7 @@
 							<span>Pay</span>
 							<span>Balance: -</span>
 						</div>
-						<div class="gas-station__input-block">
+						<div class="gas-station__input-block error">
 							<input type="text" placeholder="Enter amount">
 							<button class="choose-token-button choose-token-button_dark">
 								<div class="choose-token-button__icons">
@@ -629,6 +629,7 @@
 								</div>
 							</button>
 						</div>
+						<span class="error-message">Wallet balance is insufficient</span>
 						<div class="gas-station__form-attention">
 							<span>
 								The liquidity you generate as gas is allocatedevenly throughout the networks.
@@ -644,7 +645,7 @@
 								<span class="gas-station__form-params-value">5%</span>
 							</div>
 						</div>
-						<button class="gas-station__form-submit btn btn_primary btn_dark">Swap in single transaction</button>
+						<button class="gas-station__form-submit btn btn_primary btn_dark" disabled>Swap in single transaction</button>
 					</form>
 				</section>
 
@@ -1008,7 +1009,7 @@
 </footer>   
   </div>  
 
-  <script src="./js/app.min.js?_v=20230126233300"></script>
+  <script src="./js/app.min.js?_v=20230127202410"></script>
 </body>
 
 </html>

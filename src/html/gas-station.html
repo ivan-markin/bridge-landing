@@ -30,7 +30,7 @@
 							<span>Pay</span>
 							<span>Balance: -</span>
 						</div>
-						<div class="gas-station__input-block">
+						<div class="gas-station__input-block error">
 							<input type="text" placeholder="Enter amount">
 							<button class="choose-token-button choose-token-button_dark">
 								<div class="choose-token-button__icons">
@@ -45,6 +45,7 @@
 								</div>
 							</button>
 						</div>
+						<span class="error-message">Wallet balance is insufficient</span>
 						<div class="gas-station__form-attention">
 							<span>
 								The liquidity you generate as gas is allocatedevenly throughout the networks.
@@ -60,7 +61,7 @@
 								<span class="gas-station__form-params-value">5%</span>
 							</div>
 						</div>
-						<button class="gas-station__form-submit btn btn_primary btn_dark">Swap in single transaction</button>
+						<button class="gas-station__form-submit btn btn_primary btn_dark" disabled>Swap in single transaction</button>
 					</form>
 				</section>
 
