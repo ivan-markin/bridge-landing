@@ -1,3 +1,13 @@
+@keyframes rorate {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
 .gas-station {
 	display: flex;
 	flex-direction: column;	
@@ -678,6 +688,44 @@
 		position: absolute;
 		right: 11px;
 		top: 11px;
+	}
+
+	&__status-block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 80px;
+	}
+
+	&__status-title {
+		font-size: 24px;
+		font-weight: 600;
+		color: white;
+		margin: 0 0 47px;
+	}
+
+	&__status-loader {
+		display: block;
+		width: 80px;
+		height: 80px;
+		background: url('../img/loader-huge-icon.svg') no-repeat center;
+		background-size: contain; 
+		animation: rotate linear 2s infinite;
+	}
+
+	&__status-label {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 18px;
+	}
+
+	&__status-caption {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 1.5;
+		color: #FFFFFF;
+		text-align: center;
 	}
 }
 
