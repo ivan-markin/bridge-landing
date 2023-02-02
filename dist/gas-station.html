@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <!-- <link rel="stylesheet" href="./css/styles-old.css?_v=20230130023704"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230130023704">
+  <!-- <link rel="stylesheet" href="./css/styles-old.css?_v=20230202145543"> -->
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230202145543">
   <title>Chainspot</title>
 </head>
 
@@ -656,7 +656,7 @@
 				</section>
 
 				<section class="gas-station__networks">
-					<span class="gas-station__networks-caption">
+					<!-- <span class="gas-station__networks-caption">
 						<img src="img/networks-icon.svg" alt="">
 						<span>
 							Select from
@@ -665,9 +665,9 @@
 							<span class="gas-station__networks-caption-value">1 Non-EVM</span>
 							networks to receive the gas tokens
 						</span>						
-					</span>
+					</span> -->
 
-					<div class="gas-station__networks-table-header">
+					<!-- <div class="gas-station__networks-table-header">
 						<button class="gas-station__networks-table-header-btn">Reset<br>all</button>
 						<span class="gas-station__networks-table-header-item i-asset">Asset</span>
 						<span class="gas-station__networks-table-header-item i-type">
@@ -676,9 +676,9 @@
 						</span>
 						<span class="gas-station__networks-table-header-item i-amount">Amount in fiat</span>
 						<span class="gas-station__networks-table-header-item i-address">Wallet address</span>
-					</div>
+					</div> -->
 
-					<div class="gas-station__networks-table">
+					<!-- <div class="gas-station__networks-table">
 						
 						
 							<div class="gas-station__networks-table-row">
@@ -950,6 +950,56 @@
 </div>
 						
 												
+					</div> -->			
+
+					<div class="gas-station__check-table">
+						
+						<div class="gas-station__networks-table-row gas-station__networks-table-row_check">							
+	<img class="gas-station__networks-table-row-icon" src="img/pending-icon.svg" width="34" height="34" alt="">
+	<div class="gas-station__networks-table-row-item i-asset">
+		<span class="gas-station__network-icon">
+			<picture><source srcset="img/currencies/ethereum.webp" type="image/webp"><img src="img/currencies/ethereum.png" alt=""></picture>
+		</span>
+		<div class="gas-station__networks-table-row-item-title">
+			<span class="gas-station__networks-table-row-item-name">
+				0.00082 ETH
+				<span class="check-label check-label_pending">Pending</span>
+			</span>
+			<span class="gas-station__networks-table-row-item-status">
+				on Ethereum
+				<span class="gas-station__networks-table-row-item-percent">10%</span>
+			</span>
+		</div>
+	</div>						
+	<a class="gas-station__networks-table-row-item white-link i-ether-link" href="">
+		<img src="../img/link-icon.svg" alt="">
+		Check on Etherscan
+	</a>
+</div>
+
+						<div class="gas-station__networks-table-row gas-station__networks-table-row_check">							
+	<img class="gas-station__networks-table-row-icon" src="img/completed-icon.svg" width="34" height="34" alt="">
+	<div class="gas-station__networks-table-row-item i-asset">
+		<span class="gas-station__network-icon">
+			<picture><source srcset="img/currencies/ethereum.webp" type="image/webp"><img src="img/currencies/ethereum.png" alt=""></picture>
+		</span>
+		<div class="gas-station__networks-table-row-item-title">
+			<span class="gas-station__networks-table-row-item-name">
+				0.00082 ETH
+				<span class="check-label check-label_completed">Completed</span>
+			</span>
+			<span class="gas-station__networks-table-row-item-status">
+				on Ethereum
+				<span class="gas-station__networks-table-row-item-percent">10%</span>
+			</span>
+		</div>
+	</div>						
+	<a class="gas-station__networks-table-row-item white-link i-ether-link" href="">
+		<img src="../img/link-icon.svg" alt="">
+		Check on Etherscan
+	</a>
+</div>
+
 					</div>
 				</section>
 			</div>
@@ -1018,7 +1068,7 @@
 </footer>   
   </div>  
 
-  <script src="./js/app.min.js?_v=20230130023704"></script>
+  <script src="./js/app.min.js?_v=20230202145543"></script>
 </body>
 
 </html>

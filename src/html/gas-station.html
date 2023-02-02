@@ -66,7 +66,7 @@
 				</section>
 
 				<section class="gas-station__networks">
-					<span class="gas-station__networks-caption">
+					<!-- <span class="gas-station__networks-caption">
 						<img src="@img/networks-icon.svg" alt="">
 						<span>
 							Select from
@@ -75,9 +75,9 @@
 							<span class="gas-station__networks-caption-value">1 Non-EVM</span>
 							networks to receive the gas tokens
 						</span>						
-					</span>
+					</span> -->
 
-					<div class="gas-station__networks-table-header">
+					<!-- <div class="gas-station__networks-table-header">
 						<button class="gas-station__networks-table-header-btn">Reset<br>all</button>
 						<span class="gas-station__networks-table-header-item i-asset">Asset</span>
 						<span class="gas-station__networks-table-header-item i-type">
@@ -86,9 +86,9 @@
 						</span>
 						<span class="gas-station__networks-table-header-item i-amount">Amount in fiat</span>
 						<span class="gas-station__networks-table-header-item i-address">Wallet address</span>
-					</div>
+					</div> -->
 
-					<div class="gas-station__networks-table">
+					<!-- <div class="gas-station__networks-table">
 						
 						@@for (var i = 0; i < 4; i++) {
 							@@include('network-table-row.html', {})
@@ -101,6 +101,13 @@
 							@@include('network-table-row_disabled.html', {})
 						}
 												
+					</div> -->			
+
+					<div class="gas-station__check-table">
+						
+						@@include('network-table-row_pending.html', {})
+						@@include('network-table-row_completed.html', {})
+
 					</div>
 				</section>
 			</div>
