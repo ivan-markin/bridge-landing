@@ -56,7 +56,7 @@
 		background: url('../../img/asterizm-form-header-bg.png') no-repeat center;
 		background-size: cover;
 		border-radius: 16px 16px 0 0;
-		border: 1px solid #2C2D54;
+		// border: 1px solid #2C2D54;
 		padding: 0 36px;
 
 		@media (max-width: 440px) {
@@ -324,7 +324,7 @@
 	}
 
 	&__title-block {		
-		border-bottom: #2C2D54 1px solid;		
+		border-bottom: rgba($color: white, $alpha: .15) 1px solid;		
 	}
 	
 	&__title {
@@ -384,7 +384,7 @@
 			background-clip: text;
 			text-fill-color: transparent;
 			padding-left: 16px;
-			margin-bottom: 17px;
+			margin-bottom: 27px;
 
 			&-value {
 				background: linear-gradient(180deg, #00E3FF 0%, #0074FF 100%);
@@ -392,7 +392,7 @@
 				-webkit-text-fill-color: transparent;
 				background-clip: text;
 				text-fill-color: transparent;
-			}
+			}			
 		}
 	}
 
@@ -500,6 +500,10 @@
 				padding: 10px 16px 24px;
 			}
 
+			&_blue-border {
+				border-color: #0072FF;
+			}
+
 			&_disabled {
 				border-color: #2C2D54;
 
@@ -517,8 +521,18 @@
 			}
 
 			&-icon {
-				width: 34px;
+				width: 34px;				
 				margin-right: 7px;
+
+				&_pending {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					height: 30px;
+					width: 30px;
+					border-radius: 50%;
+					border: 2px solid #FFC530;
+				}
 			}
 
 			&-item {

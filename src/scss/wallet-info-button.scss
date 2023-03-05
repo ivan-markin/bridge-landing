@@ -19,7 +19,7 @@
 
 	&.dark {
 		background: none;
-		border: #2C2D54 1px solid;
+		border: rgba($color: white, $alpha: .15) 1px solid;
 	}
 
 	&_multiple {

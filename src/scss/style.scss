@@ -9,6 +9,7 @@
 // @import './r_back-btn.scss';
 
 // Blocks
+@import './alert.scss';
 @import './ad-block.scss';
 @import './header.scss';
 @import './logo.scss';
@@ -57,6 +58,9 @@
 @import './error-message.scss';
 @import './bridges.scss';
 @import './check-label.scss';
+@import './loader.scss';
+@import './blue-gradient-text.scss';
+@import './blue-social-link.scss';
 
 *,
 *::before,
@@ -91,8 +95,12 @@ fieldset {
   overflow-x: hidden;
 
   &_dark {
-    background: #000212 url('../img/cnt-bg-dark.png') no-repeat center bottom;
-    background-size: 100%;
+    background: #000212;    
+  }
+
+  &_bnb {
+    background: #000212 url('../img/bnb-bg.png') no-repeat left top;
+    background-size: contain;
   }
 }
 

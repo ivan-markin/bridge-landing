@@ -9,7 +9,7 @@
 
 	&_dark {
 		background: none;
-		border-color: #2C2D54;
+		border-color: rgba($color: white, $alpha: .15);
 	}
 
 	@media (max-width: 1200px) {
@@ -41,7 +41,7 @@
 	}
 
 	&_dark &__socials {
-		border-color: #2C2D54;
+		border-color: rgba($color: white, $alpha: .15);
 	}
 
 	&__cta {
