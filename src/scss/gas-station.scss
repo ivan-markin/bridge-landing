@@ -120,6 +120,14 @@
 		background-color: #4554E5;
 	}
 
+	&__form-section.boba &__form-header {
+		background-color: #CBFE00;
+	}
+
+	&__form-section.celo &__form-header {
+		background-color: #FCFF52;
+	}
+
 	&__form-header-description {
 		display: flex;
 		align-items: flex-start;
