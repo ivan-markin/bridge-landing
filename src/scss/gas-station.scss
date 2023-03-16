@@ -21,6 +21,12 @@
 			flex-direction: column;
 			padding-top: 40px;
 		}
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			gap: 16px;		
+			padding-top: 20px;
+		}
 	}
 
 	&__form-section {
@@ -36,7 +42,8 @@
 		}
 
 		@media (max-width: 768px) {			
-			width: 100%;			
+			width: calc(100% + 40px);			
+			left: -20px;
 		}
 	}
 	
@@ -235,6 +242,10 @@
 		border: 1px solid #2C2D54;
 		border-radius: 0 0 16px 16px;
 		padding: 30px 32px 56px;
+
+		@media (max-width: 768px) {
+			padding: 25px 20px 20px;
+		}
 	}
 
 	&__input-header {
@@ -333,6 +344,10 @@
 
 	&__title-block {		
 		border-bottom: rgba($color: white, $alpha: .15) 1px solid;		
+
+		@media (max-width: 768px) {
+			border: none;
+		}
 	}
 	
 	&__title {
@@ -345,11 +360,12 @@
 		@media (max-width: 1024px) {
 			width: 100%;
 			margin: 0 0 32px;
-		}
+		}		
 
-		@media (max-width: 440px) {
-			flex-direction: column;			
-		}
+		@media (max-width: 768px) {			
+			gap: 15px;
+			margin: 0;
+		}	
 
 		span {
 			font-weight: 500;
@@ -363,10 +379,19 @@
 			text-fill-color: transparent;
 			padding-bottom: 10px;
 
-			@media (max-width: 440px) {
-				font-size: 30px;
-				padding: 0;			
+			@media (max-width: 768px) {
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 1.5;		
+				color: white;				
 			}
+		}
+
+		img {
+			@media (max-width: 768px) {
+				width: 47px;
+				height: 47px;
+			}		
 		}
 	}
 
@@ -400,7 +425,17 @@
 				-webkit-text-fill-color: transparent;
 				background-clip: text;
 				text-fill-color: transparent;
-			}			
+			}		
+			
+			.blue-social-link {
+				display: inline-flex;
+				position: relative;
+				bottom: -5px;
+
+				&:first-of-type {
+					margin-left: 10px;
+				}
+			}
 		}
 	}
 
@@ -438,11 +473,15 @@
 			line-height: 1.4;			
 			color: #EEF8FB;			
 			border-bottom: 1px solid #2C2D54;
-			padding: 0 16px 10px 16px;
+			padding: 0 16px 10px 48px;
 			margin: 0 19px 16px 0;
 
 			@media (max-width: 1024px) {
 				width: 100%;
+			}
+
+			@media (max-width: 768px) {
+				display: none;
 			}
 
 			&-item {
@@ -491,7 +530,13 @@
 			width: 100%;
 			border: 1px solid #2C2D54;
 			border-radius: 6px;
+			position: relative;
 			padding: 0 16px;
+
+			@media (max-width: 768px) {
+				gap: 6px;
+				height: 80px;
+			}
 
 			&-content {
 				display: flex;
@@ -521,7 +566,7 @@
 			}
 
 			.checkbox {
-				margin-right: 24px;
+				margin-right: 10px;
 			}
 
 			&_disabled .checkbox {
@@ -547,10 +592,25 @@
 				font-size: 14px;
 				color: white;
 
+				&:not(&.i-asset) {
+					@media (max-width: 768px) {												
+						text-align: left;
+						font-size: 12px;
+						width: auto;			
+						margin-top: 40px;
+					}
+				}									
+
 				&.i-asset {
 					display: flex;
 					align-items: center;
 					gap: 7px;
+
+					@media (max-width: 768px) {
+						position: absolute;
+						top: 10px;
+						left: 48px;
+					}
 				}
 
 				&.i-amount {
@@ -558,7 +618,7 @@
 					align-items: center;
 					justify-content: center;
 					text-align: center;
-					gap: 7px;
+					gap: 7px;					
 				}
 
 				&.i-type {
@@ -569,6 +629,35 @@
 					display: flex;
 					align-items: center;
 					gap: 8px;
+				}
+
+				&.i-address,
+				&.i-amount {
+					@media (max-width: 768px) {
+						display: flex;
+						align-items: center;
+						gap: 6px;
+					}
+
+					&::before {
+						content: '';
+						display: none;
+
+						@media (max-width: 768px) {
+							display: block;
+							width: 3px;
+							height: 3px;
+							border-radius: 50%;
+							background-color: #565B78;
+						}
+					}					
+				}
+
+				&.i-type,
+				&.i-amount {
+					@media (max-width: 768px) {
+						color: #565B78;
+					}
 				}
 
 				&-status {
@@ -598,7 +687,14 @@
 					display: flex;
 					flex-direction: column;
 					gap: 3px;
-					color: white;									
+					color: white;				
+					white-space: nowrap;		
+					
+					span:last-child {
+						@media (max-width: 768px) {
+							font-size: 12px;
+						}
+					}
 				}	
 				
 				&-name {
@@ -615,7 +711,7 @@
 				}
 			}	
 			
-			&_disabled &-item:not(.i-asset) {
+			&_disabled &-item:not(&.i-asset) {
 				opacity: .25;
 			}
 
@@ -754,20 +850,36 @@
 .i-asset {
 	width: 25.4%;
 	margin-right: 16px;
+
+	@media (max-width: 768px) {
+		margin-right: 0;
+	}
 }
 
 .i-type {
 	width: 19%;
 	margin-right: 33px;
+
+	@media (max-width: 768px) {
+		margin-right: 0;
+	}
 }
 
 .i-amount {
 	width: 14%;
 	margin-right: 16px;
+
+	@media (max-width: 768px) {
+		margin-right: 0;
+	}
 }
 
 .i-address {
 	margin-left: auto;
+
+	@media (max-width: 768px) {
+		margin-left: 0;
+	}
 }
 
 .i-ether-link {
