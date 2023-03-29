@@ -1,34 +1,25 @@
 <footer class="footer @@className">
-	<div class="wrap">
-		<div class="footer__cnt">
-			<a class="footer__logo" href="/">
-				<img src="@img/chainspot-logo_white.svg" alt="">
-			</a>
+	<div class="wrapper">
+		<div class="footer__container">
+			<!-- @@include('telegram-widget.html', {}) -->
 
-			<div class="footer__menu-block">
-
-				@@include('main-menu.html', {
-					'className': 'footer'
-				})
-
-				<!-- <div class="footer__contacts">
-					<span>Talk to us <a class="white-link" href="mailto:bridger@mail.io">bridger@mail.io</a></span>
-					<a class="btn btn_white" href="">Contact us</a>
-				</div> -->
-				<div class="footer__socials">
-					Follow us:
-					<a href="">
-						<img src="../img/telegram-icon_white.svg" alt="">
+			<div class="footer__left">
+				<span class="footer__copyrights">© 2022 DeBridges. All rights reserved</span>
+				<span class="footer__socials">
+					<a class="footer__socials-item" href="">
+						<img src="@img/telegram_footer-icon.svg" alt="">
+						Telegram
 					</a>
-					<a href="">
-						<img src="../img/twitter-icon_white.svg" alt="">
+					<a class="footer__socials-item" href="">
+						<img src="@img/twitter_footer-icon.svg" alt="">
+						Twitter
 					</a>
-				</div>
+				</span>
 			</div>
-
-			<div class="footer__copyrights-block">
-				<span class="footer__copyrights">© 2023 Chainspot. All rights reserved</span>				
+			<div class="footer__right">
+				<a class="footer__privacy-policy" href="">Privacy policy</a>
+				<span class="footer__email">Talk to us <a href="">bridger@mail.io</a></span>
 			</div>
 		</div>
-	</div>
+	</div>      
 </footer>
