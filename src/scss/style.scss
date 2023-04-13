@@ -1,12 +1,34 @@
 @import './normalize.scss';
 @import './fonts.scss';
 @import './variables';
+@import './swiper/swiper.scss';
+@import './swiper/effect-fade.scss';
 
 // Blocks
-@import './header.scss';
-@import './main-menu.scss';
+@import './back-btn.scss';
+@import './block-text.scss';
+@import './block-title.scss';
 @import './btn.scss';
+@import './collapse-btn.scss';
+@import './data.scss';
+@import './dropdown.scss';
+@import './examples.scss';
+@import './faq.scss';
+@import './features.scss';
+@import './footer.scss';
+@import './gcc-popup.scss';
+@import './go-crosschain.scss';
+@import './header.scss';
 @import './hero.scss';
+@import './how-it-works.scss';
+@import './main-menu.scss';
+@import './mobile-menu.scss';
+@import './onboarding.scss';
+@import './primary-subtitle.scss';
+@import './primary-title.scss';
+@import './steps.scss';
+@import './supported.scss';
+@import './why-asterizm.scss';
 
 *,
 *::before,
@@ -18,14 +40,27 @@ html {
   scroll-behavior: smooth;
 }
 
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .6;
+}
+
 body {
-  font-family: 'Inter', 'Roboto', sans-serif;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
   color: var(--font-color);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
-  background: black;
+  background: #020514;
 }
 
 fieldset {
@@ -39,15 +74,25 @@ fieldset {
 
 .container {  
   min-width: 320px;   
-  background: black;
+  // background: #020514 url('../img/stars-bg.png') repeat-y center;
+  // background-size: contain;  
   padding: 0 20px;   
+
+  @media (max-width: 768px) {
+    overflow: hidden;
+    padding: 0;
+  }
 }
 
 .wrap {
   width: 100%;
-  max-width: 1326px;
+  max-width: 1226px;
   padding: 0 63px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
 }
 
 

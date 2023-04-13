@@ -1,24 +1,51 @@
 <footer class="footer @@className">
-	<div class="wrapper">
-		<div class="footer__container">
-			<!-- @@include('telegram-widget.html', {}) -->
-
-			<div class="footer__left">
-				<span class="footer__copyrights">© 2022 DeBridges. All rights reserved</span>
-				<span class="footer__socials">
-					<a class="footer__socials-item" href="">
-						<img src="@img/telegram_footer-icon.svg" alt="">
-						Telegram
-					</a>
-					<a class="footer__socials-item" href="">
-						<img src="@img/twitter_footer-icon.svg" alt="">
-						Twitter
-					</a>
-				</span>
+	<div class="wrap">
+		<div class="footer__cnt">			
+			<picture>
+				<source srcset="@img/footer-logo.svg" media="(min-width: 769px)">
+				<source srcset="@img/footer-logo_mobile.svg" media="(max-width: 768px)">
+				<img class="footer__logo" src="@img/footer-logo.svg" alt="">
+			</picture>			
+			<div class="footer__menu">
+				<div class="footer__menu-col">
+					<span class="footer__menu-title">Product</span>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a href="">Send cross-chain message</a></li>
+						<li class="footer__menu-item"><a href="">Key Concept</a></li>
+						<li class="footer__menu-item"><a href="">Code Examples</a></li>
+						<li class="footer__menu-item"><a href="">Interfaces</a></li>
+						<li class="footer__menu-item"><a href="">FAQ</a></li>
+					</ul>
+				</div>
+				<div class="footer__menu-col">
+					<span class="footer__menu-title">Tools & References</span>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a>Asterizm Scanner <img src="@img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a href="https://docs.asterizm.io" target="_blank">Docs</a></li>
+						<li class="footer__menu-item"><a href="https://asterizm.io/white-paper/" target="_blank">White paper</a></li>					
+					</ul>
+				</div>
+				<div class="footer__menu-col">
+					<span class="footer__menu-title">Community</span>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a>Media kit <img src="@img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a href="https://twitter.com/Asterizm_layer" target="_blank">Twitter</a></li>
+						<li class="footer__menu-item"><a>Medium <img src="@img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a href="https://t.me/asterizm_protocol" target="_blank">Telegram</a></li>
+						<li class="footer__menu-item"><a>Discord <img src="@img/soon-badge.svg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="footer__menu-col">
+					<span class="footer__menu-title">Legal</span>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a>Privacy Policy <img src="@img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a>Terms of Use <img src="@img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a>Cookie Policy <img src="@img/soon-badge.svg" alt=""></a></li>				
+					</ul>
+				</div>
 			</div>
-			<div class="footer__right">
-				<a class="footer__privacy-policy" href="">Privacy policy</a>
-				<span class="footer__email">Talk to us <a href="">bridger@mail.io</a></span>
+			<div class="footer__copyrights">
+				<span>© 2023 ASTERIZM. All rights reserved</span>
 			</div>
 		</div>
 	</div>      

@@ -1,10 +1,74 @@
 .btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
 	font-size: 14px;
 	color: #031539;
 	height: 40px;
+	width: fit-content;
 	background-color: #fff;
 	border: none;
 	border-radius: 20px;
+	text-decoration: none;
 	cursor: pointer;
-	padding: 0 20px;
+	position: relative;
+	transition: all .3s;
+	padding: 0 30px;
+
+	&:hover {
+		background-color: #A6A7AD;
+	}
+
+	&_primary {
+		height: 48px;
+		font-size: 15px;
+		font-weight: 600;
+		border-radius: 24px;
+	}
+
+	&_black {
+		background-color: black;
+		color: white;
+
+		&:hover {
+			color: #A6A7AD;
+			background-color: black;
+		}
+	}
+
+	&_magic {
+		background: linear-gradient(140.06deg, #9095A0 0%, #080B1A 90.63%);
+		color: white;
+
+		&::after {
+			content: '';
+			width: calc(100% - 2px);
+			height: calc(100% - 2px);
+			border-radius: 24px;
+			background: linear-gradient(117.67deg, #111B32 0%, #060918 77.93%);
+			position: absolute;
+			top: 1px;
+			left: 1px;
+			z-index: 1;
+			transition: all .2s;
+		}
+
+		svg,
+		img {
+			position: relative;
+			z-index: 2;
+		}
+
+		span {
+			position: relative;
+			z-index: 2;
+		}
+
+		&:hover {
+			&::after {
+				opacity: .9;
+			}
+		}
+	}
 }

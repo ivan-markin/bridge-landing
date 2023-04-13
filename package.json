@@ -13,8 +13,10 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "aos": "^2.3.4",
     "gulp-cli": "^2.3.0",
     "leaflet": "1.9.2",
+    "particles.js": "^2.0.0",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
@@ -44,7 +46,7 @@
     "gulp-webp-html-nosvg": "^1.1.1",
     "gulp-webpcss": "^1.1.1",
     "sass": "^1.54.9",
-    "swiper": "^8.4.2",
+    "swiper": "^8.4.7",
     "vinyl-ftp": "^0.6.1",
     "webp-converter": "2.2.3",
     "webpack": "^5.74.0",

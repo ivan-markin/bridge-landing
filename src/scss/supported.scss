@@ -1,0 +1,135 @@
+@keyframes translateLogos {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(85%);
+	}
+}
+
+.supported {
+	margin-bottom: 200px;
+
+	@media (max-width: 768px) {
+		margin-bottom: 80px;
+	}
+
+	.wrap {
+		@media (max-width: 768px) {
+			padding: 0;
+		}
+	}
+
+	&__title {
+		margin-bottom: 42px;
+	}
+
+	&__cnt {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media (max-width: 768px) {
+			overflow-x: hidden;
+		}
+	}
+
+	&__networks-cnt {
+		position: relative;
+		
+		&::before,
+		&::after {
+			position: absolute;
+			top: 0;
+			width: 400px;
+			height: 100%;		
+			z-index: 3;
+
+			@media (max-width: 768px) {
+				width: 60px;
+			}
+		}
+		
+		&::before {
+			content: '';			
+			left: 0;
+			background: linear-gradient(to right, #020514 0%, transparent 100%);
+		}
+
+		&::after {
+			content: '';			
+			right: 0;
+			background: linear-gradient(to left, #020514 0%, transparent 100%);
+		}
+	}
+
+	&__logo {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%) translateY(calc(-50% + 10px));
+		z-index: 5;
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__networks {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		overflow-x: hidden;
+		width: var(--screenWidth);
+
+		@media (max-width: 768px) {
+			gap: 11px;					
+		}
+
+		&-top,
+		&-bottom {
+			display: flex;
+			align-items: center;
+			gap: 34px;
+			position: relative;
+			z-index: 4;
+
+			@media (max-width: 768px) {
+				gap: 18px;					
+			}
+
+			// img {
+			// 	@media (max-width: 768px) {
+			// 		width: 55px;					
+			// 	}
+			// }
+		}
+
+		&-top {
+			justify-content: flex-end;
+			animation-name: translateLogos;
+			animation-duration: 120s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;	
+
+			@media (max-width: 768px) {
+				animation-duration: 10s;
+			}			
+		}		
+		
+		&-bottom {
+			justify-content: flex-end;
+			transform: translateX(30px);
+			animation-name: translateLogos;
+			animation-duration: 120s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;			
+			
+			@media (max-width: 768px) {
+				animation-duration: 10s;
+			}
+		}
+	}
+}

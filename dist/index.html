@@ -6,47 +6,1059 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230413174832">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230413174832" rel="stylesheet">
   <title>Asterizm</title>
 </head>
 
 <body>
 
+  <div id="particles-js"></div>
+
+  <div class="gcc-popup">
+	<div class="gcc-popup__cnt">
+		<button class="gcc-popup__back-btn back-btn popup-toggler">Go back</button>
+		<h2 class="gcc-popup__title">Build secure cross-chain dApp</h2>
+		<div class="gcc-popup__menu">
+			<div class="gcc-popup__menu-item">
+				<div class="gcc-popup__menu-item-icon">
+					<img src="img/documentation-icon.svg" alt="">
+				</div>
+				<div class="gcc-popup__menu-item-title">
+					<a href="" class="gcc-popup__menu-item-name">Documentation</a>
+					<span class="gcc-popup__menu-item-caption">Read</span>
+				</div>
+			</div>
+			<div class="gcc-popup__menu-item">
+				<div class="gcc-popup__menu-item-icon">
+					<img src="img/integration-icon.svg" alt="">
+				</div>
+				<div class="gcc-popup__menu-item-title">
+					<a href="" class="gcc-popup__menu-item-name">Integration assistance + Grant</a>
+					<span class="gcc-popup__menu-item-caption">Apply</span>
+				</div>
+			</div>
+			<div class="gcc-popup__menu-item">
+				<div class="gcc-popup__menu-item-icon">
+					<img src="img/community-icon.svg" alt="">
+				</div>
+				<div class="gcc-popup__menu-item-title">
+					<a href="https://t.me/asterizm_protocol" target="_blank" class="gcc-popup__menu-item-name">Community Help</a>
+					<span class="gcc-popup__menu-item-caption">Go to Telegram</span>
+				</div>
+			</div>
+			<div class="gcc-popup__menu-item">
+				<div class="gcc-popup__menu-item-icon">
+					<img src="img/white-paper-icon.svg" alt="">
+				</div>
+				<div class="gcc-popup__menu-item-title">
+					<a href="" class="gcc-popup__menu-item-name">White paper</a>
+					<span class="gcc-popup__menu-item-caption">Explore White paper</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="gcc-popup__back popup-toggler"></div>
+</div>
+  <div class="mobile-menu">
+	<header class="mobile-menu__header header">
+		<img class="header__logo" src="img/asterizm-logo.svg" width="183" height="32" alt="">					
+		<button class="header__menu-btn header__menu-btn_close menu-close"></button>
+	</header>
+
+	<nav class="main-menu main-menu_mobile">
+	<ul class="main-menu__list">
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="#aboutSection">About</a>
+		</li>
+		<li class="main-menu__item main-menu__item_dropdown">
+			<a class="main-menu__link">Community</a>
+			<div class="dropdown">
+				<!-- <span class="dropdown__title">We are in social media</span> -->
+				<div class="dropdown__links">
+					<div class="dropdown__link dropdown__link_twitter">
+						<div class="dropdown__link-icon">
+							<svg width="16" height="14" viewBox="0 0 16 14" fill="#B6B9CE" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.6232 2.24121C15.0507 2.49448 14.4435 2.66081 13.8217 2.73471C14.477 2.34278 14.9675 1.72597 15.2017 0.999213C14.5867 1.36521 13.9125 1.62171 13.2097 1.76046C12.7377 1.25539 12.112 0.920434 11.43 0.807654C10.7479 0.694864 10.0477 0.810584 9.43816 1.1368C8.82866 1.46302 8.34396 1.98147 8.05956 2.61155C7.77506 3.24164 7.70676 3.94804 7.86516 4.62096C6.61806 4.55845 5.39794 4.23435 4.28416 3.66971C3.17038 3.10506 2.18779 2.31249 1.40019 1.34346C1.12141 1.8223 0.974908 2.36663 0.975688 2.92071C0.975688 4.00821 1.52919 4.96896 2.37069 5.53142C1.8727 5.51582 1.38567 5.38132 0.950187 5.13922V5.17822C0.950337 5.90252 1.20097 6.60442 1.65958 7.16502C2.11819 7.72562 2.75656 8.11032 3.46644 8.25392C3.00416 8.37922 2.51942 8.39772 2.04894 8.30792C2.24909 8.93142 2.6392 9.47662 3.16464 9.86732C3.69008 10.258 4.32454 10.4745 4.97919 10.4867C4.32855 10.9977 3.58358 11.3754 2.78685 11.5983C1.99013 11.8212 1.15729 11.8849 0.335938 11.7857C1.76972 12.7078 3.43877 13.1973 5.14344 13.1957C10.9132 13.1957 14.0685 8.41592 14.0685 4.27071C14.0685 4.13571 14.0647 3.99921 14.0587 3.86571C14.6729 3.42183 15.2029 2.87197 15.624 2.24196L15.6232 2.24121Z" fill=""/>
+							</svg>								
+						</div>
+						<div class="dropdown__link-title">
+							<span class="dropdown__link-name">Twitter</span>
+							<a class="dropdown__link-caption" href="https://twitter.com/Asterizm_layer" target="_blank">Follow us</a>
+						</div>
+					</div>
+					<div class="dropdown__link dropdown__link_telegram">
+						<div class="dropdown__link-icon">
+							<svg width="16" height="14" viewBox="0 0 16 14" fill="#B6B9CE" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2563 13.1861C12.4709 13.3381 12.7476 13.3761 12.9943 13.2828C13.2409 13.1888 13.4223 12.9781 13.4769 12.7228C14.0563 10.0001 15.4616 3.10877 15.9889 0.632099C16.0289 0.445432 15.9623 0.251432 15.8156 0.126766C15.6689 0.00209886 15.4656 -0.0339012 15.2843 0.0334321C12.4889 1.0681 3.88027 4.2981 0.361599 5.6001C0.138265 5.68276 -0.0070681 5.89743 0.000265236 6.13277C0.00826524 6.36876 0.166932 6.57343 0.395599 6.6421C1.9736 7.1141 4.04493 7.77076 4.04493 7.77076C4.04493 7.77076 5.01293 10.6941 5.5176 12.1808C5.58093 12.3674 5.72693 12.5141 5.9196 12.5648C6.1116 12.6148 6.31693 12.5621 6.46027 12.4268C7.27093 11.6614 8.52427 10.4781 8.52427 10.4781C8.52427 10.4781 10.9056 12.2241 12.2563 13.1861ZM4.91627 7.40143L6.0356 11.0934L6.28427 8.75543C6.28427 8.75543 10.6089 4.85477 13.0743 2.63143C13.1463 2.5661 13.1563 2.45677 13.0963 2.3801C13.0369 2.30343 12.9276 2.28543 12.8456 2.33743C9.98827 4.1621 4.91627 7.40143 4.91627 7.40143Z"/>
+							</svg>
+						</div>
+						<div class="dropdown__link-title">
+							<span class="dropdown__link-name">Telegram</span>
+							<a class="dropdown__link-caption" href="https://t.me/asterizm_protocol" target="_blank">Chat with us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="https://docs.asterizm.io" target="_blank">Docs</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="https://twitter.com/Asterizm_layer" target="_blank">Blog</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="https://asterizm.io/white-paper/" target="_blank">White paper</a>
+		</li>
+	</ul>
+	<button class="main-menu__cta btn">Integration assistance</button>
+</nav>
+
+	<a href="https://forms.gle/dY2ghfF6fNH5LKjP6" target="_blank" class="mobile-menu__cta btn btn_primary">Integration assistance</a>
+</div>
+
   <div class="container">
-    <div class="hero">
+    
+    <section class="hero">
       <div class="wrap">
         <div class="hero__content">
           
-          <header class="header">
-	<img src="img/asterizm-logo.svg" width="183" height="32" alt="">
+          <header class="header header_main">
+	<img class="header__logo" src="img/asterizm-logo.svg" width="183" height="32" alt="">
+	<img class="header__logo header__logo_short" src="img/asterizm-logo_short.svg" alt="">
 	
-	<nav class="main-menu">
-		<ul class="main-menu__list">
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">About</a>
-			</li>
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">Community</a>
-			</li>
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">Docs</a>
-			</li>
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">Blog</a>
-			</li>
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">White paper</a>
-			</li>
-		</ul>
-	</nav>
+	<nav class="main-menu main-menu_header">
+	<ul class="main-menu__list">
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="#aboutSection">About</a>
+		</li>
+		<li class="main-menu__item main-menu__item_dropdown">
+			<a class="main-menu__link">Community</a>
+			<div class="dropdown">
+				<!-- <span class="dropdown__title">We are in social media</span> -->
+				<div class="dropdown__links">
+					<div class="dropdown__link dropdown__link_twitter">
+						<div class="dropdown__link-icon">
+							<svg width="16" height="14" viewBox="0 0 16 14" fill="#B6B9CE" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.6232 2.24121C15.0507 2.49448 14.4435 2.66081 13.8217 2.73471C14.477 2.34278 14.9675 1.72597 15.2017 0.999213C14.5867 1.36521 13.9125 1.62171 13.2097 1.76046C12.7377 1.25539 12.112 0.920434 11.43 0.807654C10.7479 0.694864 10.0477 0.810584 9.43816 1.1368C8.82866 1.46302 8.34396 1.98147 8.05956 2.61155C7.77506 3.24164 7.70676 3.94804 7.86516 4.62096C6.61806 4.55845 5.39794 4.23435 4.28416 3.66971C3.17038 3.10506 2.18779 2.31249 1.40019 1.34346C1.12141 1.8223 0.974908 2.36663 0.975688 2.92071C0.975688 4.00821 1.52919 4.96896 2.37069 5.53142C1.8727 5.51582 1.38567 5.38132 0.950187 5.13922V5.17822C0.950337 5.90252 1.20097 6.60442 1.65958 7.16502C2.11819 7.72562 2.75656 8.11032 3.46644 8.25392C3.00416 8.37922 2.51942 8.39772 2.04894 8.30792C2.24909 8.93142 2.6392 9.47662 3.16464 9.86732C3.69008 10.258 4.32454 10.4745 4.97919 10.4867C4.32855 10.9977 3.58358 11.3754 2.78685 11.5983C1.99013 11.8212 1.15729 11.8849 0.335938 11.7857C1.76972 12.7078 3.43877 13.1973 5.14344 13.1957C10.9132 13.1957 14.0685 8.41592 14.0685 4.27071C14.0685 4.13571 14.0647 3.99921 14.0587 3.86571C14.6729 3.42183 15.2029 2.87197 15.624 2.24196L15.6232 2.24121Z" fill=""/>
+							</svg>								
+						</div>
+						<div class="dropdown__link-title">
+							<span class="dropdown__link-name">Twitter</span>
+							<a class="dropdown__link-caption" href="https://twitter.com/Asterizm_layer" target="_blank">Follow us</a>
+						</div>
+					</div>
+					<div class="dropdown__link dropdown__link_telegram">
+						<div class="dropdown__link-icon">
+							<svg width="16" height="14" viewBox="0 0 16 14" fill="#B6B9CE" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2563 13.1861C12.4709 13.3381 12.7476 13.3761 12.9943 13.2828C13.2409 13.1888 13.4223 12.9781 13.4769 12.7228C14.0563 10.0001 15.4616 3.10877 15.9889 0.632099C16.0289 0.445432 15.9623 0.251432 15.8156 0.126766C15.6689 0.00209886 15.4656 -0.0339012 15.2843 0.0334321C12.4889 1.0681 3.88027 4.2981 0.361599 5.6001C0.138265 5.68276 -0.0070681 5.89743 0.000265236 6.13277C0.00826524 6.36876 0.166932 6.57343 0.395599 6.6421C1.9736 7.1141 4.04493 7.77076 4.04493 7.77076C4.04493 7.77076 5.01293 10.6941 5.5176 12.1808C5.58093 12.3674 5.72693 12.5141 5.9196 12.5648C6.1116 12.6148 6.31693 12.5621 6.46027 12.4268C7.27093 11.6614 8.52427 10.4781 8.52427 10.4781C8.52427 10.4781 10.9056 12.2241 12.2563 13.1861ZM4.91627 7.40143L6.0356 11.0934L6.28427 8.75543C6.28427 8.75543 10.6089 4.85477 13.0743 2.63143C13.1463 2.5661 13.1563 2.45677 13.0963 2.3801C13.0369 2.30343 12.9276 2.28543 12.8456 2.33743C9.98827 4.1621 4.91627 7.40143 4.91627 7.40143Z"/>
+							</svg>
+						</div>
+						<div class="dropdown__link-title">
+							<span class="dropdown__link-name">Telegram</span>
+							<a class="dropdown__link-caption" href="https://t.me/asterizm_protocol" target="_blank">Chat with us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="https://docs.asterizm.io" target="_blank">Docs</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="https://twitter.com/Asterizm_layer" target="_blank">Blog</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="https://asterizm.io/white-paper/" target="_blank">White paper</a>
+		</li>
+	</ul>
+	<button class="main-menu__cta btn">Integration assistance</button>
+</nav>
 
-	<button class="btn">Integration assistance</button>
+	<a href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank" class="header__cta btn">Integration assistance</a>
+	<button class="header__menu-btn menu-open"></button>
 </header>
+
+          <!-- <img class="hero__bg-image" src="img/hero-image.png" alt=""> -->
+          <img class="hero__bg-image-alt" src="img/hero-image_alt.svg" alt="">
+          <img class="hero__bottom-glow" src="img/hero-bottom-glow.png" alt="">
+
+          <div class="hero__text-block">
+            <!-- <span class="hero__top-title">Introducing Asterizm</span> -->
+            <h1 class="hero__title primary-title">
+              Perform fast and confidential cross-chain transactions without overpaying
+            </h1>
+            <span class="primary-subtitle">
+              Develop cross-chain dApps, while saving money on transactions, avoiding penalties from regulators and risks of data leaks.
+            </span>
+            <div class="hero__cta">              
+              <a class="hero__main-btn btn btn_primary" href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank">
+                Go cross-chain
+                <img src="img/btn-arrow.svg" width="20" height="11" alt="">
+              </a>
+              <!-- <a class="hero__wp-btn btn btn_primary btn_black" href="https://asterizm.io/white-paper/" target="_blank">
+                White paper
+              </a> -->
+            </div>
+          </div>
+
+          <div class="hero__badges">            
+            <a class="hero__badges-item" href="https://hashex.org/" target="_blank">
+              <picture>
+                <source srcset="img/audit-badge_mobile.svg" media="(max-width: 768px)">
+                <source srcset="img/audit-badge.svg" media="(min-width: 769px)">                
+                <img src="img/audit-badge.svg" alt="">
+              </picture>              
+            </a>
+            <a class="hero__badges-item" href="https://www.techstars.com/" target="_blank">
+              <picture>
+                <source srcset="img/backed-badge_mobile.svg" media="(max-width: 768px)">
+                <source srcset="img/backed-badge.svg" media="(min-width: 769px)">              
+                <img src="img/backed-badge.svg" alt="">
+              </picture>              
+            </a>
+          </div>          
+
+          <div class="hero__scroll-down">
+            <img src="img/mouse-icon.svg" width="27" height="46" alt="">
+            Scroll<br>to explore
+          </div>
 
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="why-asterizm" data-aos="fade" data-aos-duration="500">
+      <div class="wrap">        
+        <div class="why-asterizm__cnt">
+          <h2 class="why-asterizm__title primary-title">Why Asterizm?</h2>
+          <div class="why-asterizm__content">
+            <div class="why-asterizm__item-cnt">
+              
+              <div class="why-asterizm__item privacy">
+                <div class="why-asterizm__item-front">
+                  <img class="why-asterizm__item-bg" src="img/card-bg-right.png" alt="">                  
+                  <h2 class="why-asterizm__item-title">
+                    Privacy
+                    <img src="img/card-mobile-arrow.svg" alt="">
+                  </h2>
+                  <img class="why-asterizm__item-icon" src="img/privacy-icon.svg" alt="">
+                </div>              
+                <div class="why-asterizm__item-back">
+                  <img class="why-asterizm__item-bg-back" src="img/privacy-back-bg.svg" width="155" height="176" alt="">
+                  <span>With Asterizm, you can transfer sensitive data to&nbsp;other networks without the risk of compromise at&nbsp;the Relayer level.</span>
+                  <div class="why-asterizm__item-iconed">
+                    <img src="img/eye-slash-icon.svg" alt="">
+                    <span>No more front-running and data leaks!</span>
+                  </div>                
+                </div>
+              </div>
+            </div>            
+            
+            <div class="why-asterizm__item-cnt">
+              <div class="why-asterizm__item high-speed">
+                <div class="why-asterizm__item-front">
+                  <img class="why-asterizm__item-bg" src="img/card-bg-left.png" alt="">              
+                  <h2 class="why-asterizm__item-title">
+                    High Speed<br>Low Cost 
+                    <img src="img/card-mobile-arrow.svg" alt="">
+                  </h2>
+                  <img class="why-asterizm__item-icon" src="img/high-speed-icon.svg" alt="">
+                </div>              
+                <div class="why-asterizm__item-back">                  
+                  <span>Thanks to&nbsp;the encryption-based protocol architecture, we don’t maintain a&nbsp;complex economic system to&nbsp;achieve consensus.</span>
+                  <span>This allows all cross-chain transactions to&nbsp;flow almost instantly and at&nbsp;one of&nbsp;the lowest fees on&nbsp;the market.</span>              
+                </div>
+              </div>
+            </div>
+            
+            <div class="why-asterizm__item-cnt">
+              <div class="why-asterizm__item flexibility">
+                <div class="why-asterizm__item-front">
+                  <img class="why-asterizm__item-bg" src="img/card-bg-right.png" alt="">                  
+                  <h2 class="why-asterizm__item-title">
+                    Flexibility
+                    <img src="img/card-mobile-arrow.svg" alt="">
+                  </h2>
+                  <img class="why-asterizm__item-icon" src="img/flexibility-icon.svg" alt="">
+                </div>              
+                <div class="why-asterizm__item-back">                  
+                  <span>The architecture allows to&nbsp;embed Asterizm Client module into any infrastructure used by&nbsp;the client dApp in&nbsp;compliance with the security policies and access levels.</span>                
+                </div>
+              </div>
+            </div>
+            
+            <div class="why-asterizm__item-cnt">
+              <div class="why-asterizm__item scalability">
+                <div class="why-asterizm__item-front">
+                  <img class="why-asterizm__item-bg" src="img/card-bg-left.png" alt="">                  
+                  <h2 class="why-asterizm__item-title">
+                    Scalability
+                    <img src="img/card-mobile-arrow.svg" alt="">
+                  </h2>
+                  <img class="why-asterizm__item-icon" src="img/scalability-icon.svg" alt="">
+                </div>              
+                <div class="why-asterizm__item-back">
+                  <img class="why-asterizm__item-bg-back" src="img/scalability-back-bg.png" width="154" height="166" alt="">
+                  <span>Asterizm is&nbsp;easily scalable — an&nbsp;increase in&nbsp;the number of&nbsp;transactions does not affect the stability of&nbsp;the protocol, the speed or&nbsp;the cost of&nbsp;transactions.</span>                
+                  <div class="why-asterizm__item-iconed">
+                    <img src="img/dev-icon.svg" alt="">
+                    <span>Developed for high<br>load systems</span>
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>          
+        </div>
+      </div>
+    </section>
+
+    <section class="data" data-aos="fade" data-aos-duration="500">
+      <div class="wrap">
+        <div class="data__cnt">
+          <h2 class="data__title primary-title">Your data belongs to&nbsp;you</h2>
+          <div class="data__cta">
+            <a class="data__btn data__prev-btn btn btn_primary" href="">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.53 7.77C17.46 7.76 17.39 7.76 17.32 7.77C15.77 7.72 14.54 6.45 14.54 4.89C14.54 3.3 15.83 2 17.43 2C19.02 2 20.32 3.29 20.32 4.89C20.31 6.45 19.08 7.72 17.53 7.77Z"/>
+                <path d="M20.79 14.7004C19.67 15.4504 18.1 15.7304 16.65 15.5404C17.03 14.7204 17.23 13.8104 17.24 12.8504C17.24 11.8504 17.02 10.9004 16.6 10.0704C18.08 9.8704 19.65 10.1504 20.78 10.9004C22.36 11.9404 22.36 13.6504 20.79 14.7004Z"/>
+                <path d="M6.44 7.77C6.51 7.76 6.58 7.76 6.65 7.77C8.2 7.72 9.43 6.45 9.43 4.89C9.43 3.29 8.14 2 6.54 2C4.95 2 3.66 3.29 3.66 4.89C3.66 6.45 4.89 7.72 6.44 7.77Z"/>
+                <path d="M6.55 12.8506C6.55 13.8206 6.76 14.7406 7.14 15.5706C5.73 15.7206 4.26 15.4206 3.18 14.7106C1.6 13.6606 1.6 11.9506 3.18 10.9006C4.25 10.1806 5.76 9.89059 7.18 10.0506C6.77 10.8906 6.55 11.8406 6.55 12.8506Z"/>
+                <path d="M12.12 15.87C12.04 15.86 11.95 15.86 11.86 15.87C10.02 15.81 8.55 14.3 8.55 12.44C8.56 10.54 10.09 9 12 9C13.9 9 15.44 10.54 15.44 12.44C15.43 14.3 13.97 15.81 12.12 15.87Z"/>
+                <path d="M8.87005 17.9406C7.36005 18.9506 7.36005 20.6106 8.87005 21.6106C10.59 22.7606 13.41 22.7606 15.13 21.6106C16.64 20.6006 16.64 18.9406 15.13 17.9406C13.42 16.7906 10.6 16.7906 8.87005 17.9406Z"/>
+              </svg>
+              <span>For public chains</span>
+            </a>
+            <a class="data__btn data__next-btn btn btn_primary" href="">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#06081B" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.6 4.15C10.6 4.34 10.44 4.5 10.25 4.5H9.12C6.96 4.5 5.2 6.26 5.2 8.42V17.65C5.2 17.84 5.04 18 4.85 18H4.15C2.96 18 2 17.04 2 15.85V4.15C2 2.96 2.96 2 4.15 2H8.45C9.64 2 10.6 2.96 10.6 4.15Z"/>
+                <path d="M22 4.15V15.85C22 17.04 21.04 18 19.85 18H19.22C19.03 18 18.87 17.84 18.87 17.65V8.42C18.87 6.26 17.11 4.5 14.95 4.5H13.75C13.56 4.5 13.4 4.34 13.4 4.15C13.4 2.96 14.36 2 15.55 2H19.85C21.04 2 22 2.96 22 4.15Z"/>
+                <path d="M14.95 6H9.12C7.78 6 6.7 7.08 6.7 8.42V19.58C6.7 20.92 7.78 22 9.12 22H10.75C11.03 22 11.25 21.78 11.25 21.5V19C11.25 18.59 11.59 18.25 12 18.25C12.41 18.25 12.75 18.59 12.75 19V21.5C12.75 21.78 12.97 22 13.25 22H14.96C16.29 22 17.37 20.92 17.37 19.59V8.42C17.37 7.08 16.29 6 14.95 6ZM14 14.75H10C9.59 14.75 9.25 14.41 9.25 14C9.25 13.59 9.59 13.25 10 13.25H14C14.41 13.25 14.75 13.59 14.75 14C14.75 14.41 14.41 14.75 14 14.75ZM14 11.75H10C9.59 11.75 9.25 11.41 9.25 11C9.25 10.59 9.59 10.25 10 10.25H14C14.41 10.25 14.75 10.59 14.75 11C14.75 11.41 14.41 11.75 14 11.75Z"/>
+              </svg>
+              <span>For private chains</span>
+            </a>            
+          </div>
+          <div class="data__content swiper">            
+            <div class="swiper-wrapper">
+              <div class="data__content-item public swiper-slide">
+                <p class="data__content-item-text">
+                  <span>Thanks to the encryption at the core of the protocol, benefit from fast and confidential cross-chain transactions while saving money on fees.</span>
+                  <span>No need to trust validators. Transfer sensitive data through an encrypted cross-chain channel without the risk of compromise.</span>
+                </p>
+                <img src="img/publick-block-image.svg" alt="">
+              </div> 
+              <div class="data__content-item private swiper-slide">
+                <p class="data__content-item-text">
+                  <span>Asterizm is the ideal solution for cross-chain communications in the following formats: private to private and private to public chains.</span>
+                  <span>Remain compliant with the latest regulatory requirements while  keeping your cross-chain operations fast, cost-efficient, secure and easily scalable.</span>
+                </p>
+                <img src="img/private-block-image.svg" alt="">
+              </div>              
+            </div>                                                         
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="supported" data-aos="fade" data-aos-duration="500">      
+      <div class="supported__cnt">
+        <h2 class="supported__title primary-title">Chains supported</h2>        
+        <div class="supported__networks-cnt">
+          <img class="supported__logo" src="img/supports-logo.png" width="664" height="339" alt="">
+          <div class="supported__networks">
+            <div class="supported__networks-top">
+              <img src="img/nw-top-1.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-2.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-3.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-4.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-5.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-6.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-7.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-8.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-9.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-10.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-11.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-12.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-13.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-14.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-15.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-16.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-17.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-18.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-19.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-20.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-21.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-22.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-23.svg" width="109" height="109" alt="">
+            </div>
+            <div class="supported__networks-bottom">
+              <img src="img/nw-bottom-1.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-2.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-3.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-4.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-5.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-6.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-7.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-8.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-9.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-10.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-11.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-12.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-13.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-14.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-15.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-16.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-17.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-18.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-19.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-20.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-21.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-22.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-23.svg" width="109" height="109" alt="">
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+
+    <section class="features">
+      <div class="wrap">
+        <div class="features__cnt">
+          <h2 class="features__title primary-title">
+            Be blockchain-agnostic.<br>Take advantage of multiple blockchains
+          </h2>
+          <div class="features__content">
+            <div class="features__list-cnt">
+              <div class="features__list">
+                <div class="features__list-content">
+                  <div class="features__list-item" id="featureSection1">
+                    <div class="features__list-item-image">
+                      <img src="img/manage-liquidity-image.svg" alt="">
+                    </div>
+                    <h3 class="features__list-item-title">Manage liquidity in&nbsp;multiple chains</h3>
+                    <span class="features__list-item-content">
+                      Create blockchain bridges, cross-chain DEXes and other liquidity solutions across networks.
+                    </span>
+                  </div>
+                  <div class="features__list-item" id="featureSection2">
+                    <div class="features__list-item-image">
+                      <img src="img/cross-chain-farming-image.svg" alt="">
+                    </div>
+                    <h3 class="features__list-item-title">Cross-chain farming strategies</h3>
+                    <span class="features__list-item-content">
+                      Implement effective revenue strategies by taking advantage of the best opportunities in each network.
+                    </span>
+                  </div>                            
+                  <div class="features__list-item" id="featureSection3">
+                    <div class="features__list-item-image">
+                      <img src="img/social-communications-image.svg" alt="">
+                    </div>
+                    <h3 class="features__list-item-title">Social communications</h3>
+                    <span class="features__list-item-content">
+                      Unite the Web3 community — create messengers and other communication products.
+                    </span>
+                  </div>                            
+                  <div class="features__list-item" id="featureSection4">
+                    <div class="features__list-item-image">
+                      <img src="img/cross-chain-image.svg" alt="">
+                    </div>
+                    <h3 class="features__list-item-title">Cross-chain GameFi &&nbsp;NFT</h3>
+                    <span class="features__list-item-content">
+                      Create omnichain marketplaces and NFT bridges, and aggregate communities from different networks in your product.
+                    </span>
+                  </div>                            
+                  <div class="features__list-item" id="featureSection5">
+                    <div class="features__list-item-image">
+                      <img src="img/cbdc-image.svg" alt="">
+                    </div>
+                    <h3 class="features__list-item-title">CBDCs & Fintech</h3>
+                    <span class="features__list-item-content">
+                      Take advantage of confidential cross-chain transactions for financial messaging and liquidity management across public and private networks.
+                    </span>
+                  </div>                            
+                  <div class="features__list-item" id="featureSection6">
+                    <div class="features__list-item-image">
+                      <img src="img/dao-image.svg" alt="">
+                    </div>
+                    <h3 class="features__list-item-title">Cross-chain DAO</h3>
+                    <span class="features__list-item-content">
+                      Activate community members to develop the protocol regardless of the native governance network of your project.
+                    </span>
+                  </div>                                                        
+                </div>                
+              </div>
+            </div>  
+            <div class="features__image-cnt">
+              <div class="features__image">
+                <img class="features__image-item active" id="img-1" src="img/manage-liquidity-image.svg" alt="">
+                <img class="features__image-item" id="img-2" src="img/cross-chain-farming-image.svg" alt="">
+                <img class="features__image-item" id="img-3" src="img/social-communications-image.svg" alt="">                
+                <img class="features__image-item" id="img-4" src="img/cbdc-image.svg" alt="">
+                <img class="features__image-item" id="img-5" src="img/cross-chain-image.svg" alt="">
+                <img class="features__image-item" id="img-6" src="img/dao-image.svg" alt="">
+              </div>              
+            </div>                      
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works" data-aos="fade" data-aos-duration="500">            
+      <h2 class="how-it-works__title primary-title">How it works</h2>
+      <div class="how-it-works__cnt">
+        <div class="wrap">
+          <div class="how-it-works__content">
+            <div class="how-it-works__scheme-cnt">
+              <picture>
+                <source srcset="img/scheme-desktop.svg" media="(min-width: 769px)">  
+                <source srcset="img/scheme-mobile.svg" media="(max-width: 768px)">  
+                <img class="how-it-works__scheme" src="img/scheme-desktop.svg" alt="">
+              </picture>              
+            </div>
+            <div class="how-it-works__links">
+              <div class="how-it-works__link">
+                <div class="how-it-works__link-icon">
+                  <img src="img/github-link-icon.svg" alt="">
+                </div>
+                <div class="how-it-works__link-title">
+                  <a class="how-it-works__link-name" href="https://github.com/Asterizm-Layer/asterizm-contracts" target="_blank">GitHub</a>
+                  <!-- <span class="how-it-works__link-descr">Learn docs</span> -->
+                </div>
+              </div>
+              <div class="how-it-works__link">
+                <div class="how-it-works__link-icon">
+                  <img src="img/medium-link-icon.svg" alt="">
+                </div>
+                <div class="how-it-works__link-title">
+                  <a class="how-it-works__link-name">Medium <img src="img/soon-badge.svg" alt=""></a>
+                  <!-- <span class="how-it-works__link-descr">Go to the medium</span> -->
+                </div>
+              </div>
+              <div class="how-it-works__link">
+                <div class="how-it-works__link-icon">
+                  <img src="img/wp-link-icon.svg" alt="">
+                </div>
+                <div class="how-it-works__link-title">
+                  <a class="how-it-works__link-name" href="https://asterizm.io/white-paper/" target="_blank">White Paper</a>
+                  <!-- <span class="how-it-works__link-descr">Learn docs</span> -->
+                </div>
+              </div>
+              <div class="how-it-works__link">
+                <div class="how-it-works__link-icon">
+                  <img src="img/docs-link-icon.svg" alt="">
+                </div>
+                <div class="how-it-works__link-title">
+                  <a class="how-it-works__link-name" href="https://docs.asterizm.io" target="_blank">Docs</a>
+                  <!-- <span class="how-it-works__link-descr">Read docs</span> -->
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+      
+      <div class="how-it-works__description" id="aboutSection">
+        <div class="wrap">
+          <div class="how-it-works__description-cnt">
+            <h3 class="how-it-works__description-title primary-title">
+              Asterizm secures cross-chain transactions using both on-chain and off-chain modules:
+            </h3>
+            <div class="how-it-works__description-blocks">
+              <div class="how-it-works__description-block">
+                <picture>
+                  <source srcset="img/asterizm-connector.svg" media="(min-width: 769px)">
+                  <source srcset="img/asterizm-connector_mobile.svg" media="(max-width: 768px)">
+                  <img src="img/asterizm-connector.svg" alt="">
+                </picture>                
+                <p class="how-it-works__description-block-text">
+                  An on-chain module that checks the validity and integrity of the transactions.
+                </p>
+              </div>
+              <div class="how-it-works__description-block">
+                <picture>
+                  <source srcset="img/asterizm-relayers.svg" media="(min-width: 769px)">
+                  <source srcset="img/asterizm-relayers_mobile.svg" media="(max-width: 768px)">
+                  <img src="img/asterizm-relayers.svg" alt="">
+                </picture>                
+                <p class="how-it-works__description-block-text">
+                  An off-chain module consisting of two independent entities that encrypt, decrypt and transmit the data.
+                </p>
+              </div>
+            </div> 
+          </div>
+        </div>                   
+      </div>      
+    </section>
+
+    <section class="steps" data-aos="fade" data-aos-duration="500">
+      <h2 class="steps__title primary-title">Cross-chain transaction flow</h2>
+      <!-- <p class="steps__subtitle">
+        Get Started Now! It won't take you long to get ready, and the result will not make itself long to wait!
+      </p> -->
+      <div class="steps__list">
+        <div class="wrap">
+          <div class="steps__list-cnt">
+            <div class="steps__list-item active">
+              <span>Step 1</span>
+            </div>
+            <div class="steps__list-item">
+              <span>Step 2</span>
+            </div>
+            <div class="steps__list-item">
+              <span>Step 2a</span>
+            </div>
+            <div class="steps__list-item">
+              <span>Step 3a</span>
+            </div>
+            <div class="steps__list-item">
+              <span>Step 3</span>
+            </div>            
+            <div class="steps__list-item">
+              <span>Step 4</span>
+            </div>
+            <div class="steps__list-item">
+              <span>Step 5</span>
+            </div>
+            <div class="steps__list-item">
+              <span>Step 6</span>
+            </div>
+            <div class="steps__list-item">
+              <span>Step 7</span>
+            </div>
+            <div class="steps__list-item">
+              <span>Step 8</span>
+            </div>
+            <div class="steps__list-item">
+              <span>Step 9</span>
+            </div>
+            <div class="steps__list-item">
+              <span>Step 10</span>
+            </div>
+            <div class="steps__list-item">
+              <span>Step 11</span>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <div class="steps__description-cnt">
+        <div class="steps__description swiper">
+          <div class="swiper-wrapper">
+            <div class="steps__description-item swiper-slide">
+              <h3 class="steps__description-title primary-title">Step 1</h3>
+              <p class="steps__description-text">
+                <span>The client implements a&nbsp;smart contract using an&nbsp;abstract class from Asterizm and deploys it&nbsp;to&nbsp;the required networks.</span>
+                <span>The <b>_initAsterizmTransferEvent()</b> method is&nbsp;used to&nbsp;initiate a&nbsp;cross-chain transaction on&nbsp;the contract. The data and parameters of&nbsp;the cross-chain transaction are transmitted to&nbsp;it.</span>
+                <span>The transaction can contain arbitrary information and one or&nbsp;multiple actions (instructions) to&nbsp;be&nbsp;performed on&nbsp;the destination networks.</span>
+              </p>
+            </div>
+            <div class="steps__description-item swiper-slide">
+              <h3 class="steps__description-title primary-title">Step 2</h3>
+              <p class="steps__description-text">
+                <span>The client’s smart contract sends the obtained data to the client’s off-chain module, generating a unique xID based on the transaction content, source address, destination address, source network ID, destination network ID and a unique transaction number.</span>
+              </p>
+            </div>
+            <div class="steps__description-item swiper-slide">
+              <h3 class="steps__description-title primary-title">Step 2a</h3>
+              <p class="steps__description-text">
+                <span>If there is a need to send assets together with a cross-chain message, the client off-chain module initiates a cross-chain swap rate request via API. On receipt of calldata, the module sends it to the client smart contract, and after that, the tokens are sent to the Asterizm module's cross-chain swap contract.</span>
+              </p>
+            </div>
+            <div class="steps__description-item swiper-slide">
+              <h3 class="steps__description-title primary-title">Step 3a</h3>
+              <p class="steps__description-text">
+                <span>The client's assets arrive at the target contract in the destination network.</span>
+              </p>
+            </div>
+            <div class="steps__description-item swiper-slide">
+              <h3 class="steps__description-title primary-title">Step 3</h3>
+              <p class="steps__description-text">
+                <span>The client’s off-chain module encrypts the cross-chain transaction content and sends it back to the client’s smart contract in the source Initializer network, calling the cross-chain transfer initialization method.</span>
+              </p>
+            </div>            
+            <div class="steps__description-item swiper-slide">
+              <h3 class="steps__description-title primary-title">Step 4</h3>
+              <p class="steps__description-text">
+                The client’s smart contract sends the encrypted data with transaction parameters to the Initializer smart contract for verification.
+              </p>
+            </div>
+            <div class="steps__description-item swiper-slide">
+              <h3 class="steps__description-title primary-title">Step 5</h3>
+              <p class="steps__description-text">
+                The Initializer smart contract checks the transaction nonce to preserve the cross-chain transaction execution sequence and transmits the encrypted data with the unique parameters to the Transmitter smart contract.
+              </p>
+            </div>
+            <div class="steps__description-item swiper-slide">
+              <h3 class="steps__description-title primary-title">Step 6</h3>
+              <p class="steps__description-text">
+                <span>Asterizm Relayer servers pull the encrypted data with the parameters from the Transmitter contract and send it to the Transmitter smart contract in the destination network for further processing.</span>
+              </p>
+            </div>
+            <div class="steps__description-item swiper-slide">
+              <h3 class="steps__description-title primary-title">Step 7</h3>
+              <p class="steps__description-text">
+                <span>The Translator smart contract on the destination network accepts the encrypted data with the parameters from the Relayers and passes it to the Initializer smart contract for validation.</span>
+              </p>
+            </div>
+            <div class="steps__description-item swiper-slide">
+              <h3 class="steps__description-title primary-title">Step 8</h3>
+              <p class="steps__description-text">
+                <span>After receiving the encrypted data and the parameters, the Initializer smart contract checks the nonce to comply with the transaction sequence, stores the transaction xID to validate the transaction at step 10, and transmits the data to the client’s smart contract.</span>
+              </p>
+            </div>
+            <div class="steps__description-item swiper-slide">
+              <h3 class="steps__description-title primary-title">Step 9</h3>
+              <p class="steps__description-text">
+                <span>The client’s smart contract in the destination network receives the encrypted data with the parameters, creates an event, and transmits the data to the client’s off-chain module for verification and decryption.</span>
+                <span class="steps__description-text_small"><b>Note:</b> This is where the first step of cross-chain transaction validation is performed by matching the xID generated in the source network at the transaction initialization, and by checking the source network and address. The client’s server verifies that the data is complete and consistent, thus eliminating the risk of compromise at the Relayer server level.</span>
+              </p>
+            </div>
+            <div class="steps__description-item swiper-slide">
+              <h3 class="steps__description-title primary-title">Step 10</h3>
+              <p class="steps__description-text">
+                <div class="steps__description-scroll-cnt">
+                  <span>
+                    After data verification and decryption, the client’s server initiates a transaction on the client smart contract in the destination network, sending the decrypted data and xID to the contract, and validating the transaction on the Initializer smart contract by checking the hash from the decrypted data and the xID, which was previously sent together with the transaction through the Initializer contract.
+                  </span>
+                  <span class="steps__description-text_small">
+                    <b>Note:</b> At this step, the integrity of the data and the trusted addresses is checked before the transaction is executed. This check eliminates the risk of hacking the client’s server.
+                  </span>
+                  <span class="steps__description-text_small">
+                    <b>Deep tech:</b> The verification is performed by checking the hash from the decrypted data and the xID that was previously stored on the Initializer contract. If the verification succeeds, it means that the client’s contract executes exactly the transaction it sent, and does so for the first time. This algorithm eliminates the possibility of spamming transactions and spoofing data on the client’s server (if, for example, the server is compromised).
+                  </span>
+                </div>                
+              </p>
+            </div>
+            <div class="steps__description-item swiper-slide">
+              <h3 class="steps__description-title primary-title">Step 11</h3>
+              <p class="steps__description-text">
+                <span>
+                  The client’s smart contract sends the encrypted data with transaction parameters to the Initializer smart contract for verification.
+                </span>
+              </p>
+            </div>
+          </div>            
+        </div>    
+        <div class="steps__slider-pagination"></div>    
+        <button class="steps__slider-btn steps__slider-btn_prev"></button>       
+        <button class="steps__slider-btn steps__slider-btn_next"></button>       
+      </div>      
+    </section>
+
+    <section class="onboarding" data-aos="fade" data-aos-duration="500">
+      <div class="wrap">
+        <div class="onboarding__cnt">
+          <h2 class="onboarding__title primary-title">Go cross-chain in 3 easy steps</h2>
+          <div class="onboarding__content">
+            <div class="onboarding__item">
+              <img class="onboarding__item-image" src="img/step-1-image.png" alt="">
+              <img class="onboarding__item-num" src="img/num-1-icon.svg" alt="">
+              <div class="onboarding__item-content">
+                <h3 class="onboarding__item-title">Set up the off-chain module</h3>
+                <span class="onboarding__item-text">
+                  Implement Client module (Docker image) on your server to encrypt and decrypt messages with SHA256.
+                </span>
+              </div>
+            </div>
+            <div class="onboarding__item">
+              <img class="onboarding__item-image" src="img/step-2-image.png" alt="">
+              <img class="onboarding__item-num" src="img/num-2-icon.svg" alt="">
+              <div class="onboarding__item-content">
+                <h3 class="onboarding__item-title">Deploy smart contract in preferred chains</h3>
+                <span class="onboarding__item-text">
+                  <span>Build smart contracts with cross-chain logic extending the Asterizm client interface.</span>
+                  <span>The encryption algorithm can be changed according to the company's security policies or requirements.</span>
+                </span>               
+              </div>
+            </div>
+            <div class="onboarding__item">
+              <img class="onboarding__item-image" src="img/step-3-image.png" alt="">
+              <img class="onboarding__item-num" src="img/num-3-icon.svg" alt="">
+              <div class="onboarding__item-content">
+                <h3 class="onboarding__item-title">Run cross-chain operations!</h3>
+                <span class="onboarding__item-text">
+                  Send and receive your first cross-chain message by calling the <b>_initAsterizmTransferEvent()</b> method on your Asterizm Client Contract
+                </span>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
+
+    <section class="examples" data-aos="fade" data-aos-duration="500">
+      <div class="wrap">
+        <div class="examples__cnt">
+          <h2 class="examples__title primary-title">Examples</h2>
+          <div class="examples__content">
+            <img src="img/examples-glow.png" class="examples__glow" alt="">
+            <div class="examples__tabs">
+              <div class="examples__tabs-cnt">
+                <div class="examples__tabs-item active">
+                  <div class="examples__tabs-item-header">
+                    <span class="examples__tabs-item-num">01</span>
+                    <span class="examples__tabs-item-title">Claimer.sol</span>
+                  </div>
+                  <p class="examples__tabs-item-content">
+                    Cross-chain distribution of the token accumulated in the protocol to several networks with a single transaction at claim.
+                  </p>
+                </div>
+                <div class="examples__tabs-item">
+                  <div class="examples__tabs-item-header">
+                    <span class="examples__tabs-item-num">02</span>
+                    <span class="examples__tabs-item-title">MultichainToken.sol</span>
+                  </div>
+                  <p class="examples__tabs-item-content">
+                    Distribute the emission across different networks depending on the demand for tokens in each network.
+                  </p>
+                </div>
+                <div class="examples__tabs-item">
+                  <div class="examples__tabs-item-header">
+                    <span class="examples__tabs-item-num">03</span>
+                    <span class="examples__tabs-item-title">GasStation.sol</span>
+                  </div>
+                  <p class="examples__tabs-item-content">
+                    Top up your gas token balance in multiple chains with a single transaction.
+                  </p>
+                </div>
+              </div>  
+              
+              <a class="examples__link" href="https://github.com/Asterizm-Layer/asterizm-contracts/tree/master/contracts/demo" target="_blank">
+                <img src="img/examples-link-arrow.svg" alt="">
+                View more code examples on GitHub
+              </a>
+            </div>
+            <div class="examples__tab-content swiper">
+              <div class="swiper-wrapper">
+                <img class="examples__tab-content-item swiper-slide" src="img/claimer-frame.svg" alt="">
+                <img class="examples__tab-content-item swiper-slide" src="img/multichain-frame.svg" alt="">
+                <img class="examples__tab-content-item swiper-slide" src="img/gas-station-frame.svg" alt="">                
+              </div>             
+            </div>            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="go-crosschain" data-aos="fade" data-aos-duration="500">
+      <div class="go-crosschain__cnt">
+        <img src="img/crosschain-icon.svg" alt="">
+        <h2 class="go-crosschain__title primary-title">Go cross-chain!</h2>
+        <a class="go-crosschain__cta btn btn_primary" href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank">Get started</a>
+      </div>      
+    </section>
+
+    <!-- <section class="faq" data-aos="fade" data-aos-duration="500">
+      <div class="wrap">
+        <div class="faq__cnt">
+          <h2 class="faq__title primary-title">Frequently Asked Questions</h2>
+          <div class="faq__list">
+            <div class="faq__list-item active">
+              <div class="faq__list-item-header">
+                <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
+                <button class="collapse-btn faq-toggler"></button>
+              </div>          
+              <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
+            </div>
+            <div class="faq__list-item">
+              <div class="faq__list-item-header">
+                <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
+                <button class="collapse-btn faq-toggler"></button>
+              </div>          
+              <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
+            </div>
+            <div class="faq__list-item">
+              <div class="faq__list-item-header">
+                <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
+                <button class="collapse-btn faq-toggler"></button>
+              </div>          
+              <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
+            </div>
+            <div class="faq__list-item">
+              <div class="faq__list-item-header">
+                <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
+                <button class="collapse-btn faq-toggler"></button>
+              </div>          
+              <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
+            </div>
+            <div class="faq__list-item">
+              <div class="faq__list-item-header">
+                <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
+                <button class="collapse-btn faq-toggler"></button>
+              </div>          
+              <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section> -->
+
+    <footer class="footer @@className">
+	<div class="wrap">
+		<div class="footer__cnt">			
+			<picture>
+				<source srcset="img/footer-logo.svg" media="(min-width: 769px)">
+				<source srcset="img/footer-logo_mobile.svg" media="(max-width: 768px)">
+				<img class="footer__logo" src="img/footer-logo.svg" alt="">
+			</picture>			
+			<div class="footer__menu">
+				<div class="footer__menu-col">
+					<span class="footer__menu-title">Product</span>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a href="">Send cross-chain message</a></li>
+						<li class="footer__menu-item"><a href="">Key Concept</a></li>
+						<li class="footer__menu-item"><a href="">Code Examples</a></li>
+						<li class="footer__menu-item"><a href="">Interfaces</a></li>
+						<li class="footer__menu-item"><a href="">FAQ</a></li>
+					</ul>
+				</div>
+				<div class="footer__menu-col">
+					<span class="footer__menu-title">Tools & References</span>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a>Asterizm Scanner <img src="img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a href="https://docs.asterizm.io" target="_blank">Docs</a></li>
+						<li class="footer__menu-item"><a href="https://asterizm.io/white-paper/" target="_blank">White paper</a></li>					
+					</ul>
+				</div>
+				<div class="footer__menu-col">
+					<span class="footer__menu-title">Community</span>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a>Media kit <img src="img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a href="https://twitter.com/Asterizm_layer" target="_blank">Twitter</a></li>
+						<li class="footer__menu-item"><a>Medium <img src="img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a href="https://t.me/asterizm_protocol" target="_blank">Telegram</a></li>
+						<li class="footer__menu-item"><a>Discord <img src="img/soon-badge.svg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="footer__menu-col">
+					<span class="footer__menu-title">Legal</span>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a>Privacy Policy <img src="img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a>Terms of Use <img src="img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a>Cookie Policy <img src="img/soon-badge.svg" alt=""></a></li>				
+					</ul>
+				</div>
+			</div>
+			<div class="footer__copyrights">
+				<span>© 2023 ASTERIZM. All rights reserved</span>
+			</div>
+		</div>
+	</div>      
+</footer>
   </div>
 
+  <script src="./js/app.min.js?_v=20230413174832"></script>   
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js?_v=20230413174832"></script>
+  <script>
+    particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 355,
+      "density": {
+        "enable": true,
+        "value_area": 789.1476416322727
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.48927153781200905,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 0.2,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 2,
+        "size_min": 0,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 0.2,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 83.91608391608392,
+        "size": 1,
+        "duration": 3,
+        "opacity": 1,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+  </script>
 </body>
 </html>

@@ -1,0 +1,17 @@
+.primary-subtitle {
+	font-size: 18px;
+	line-height: 1.56;
+	text-align: center;
+	letter-spacing: -0.006em;
+	color: #D2D4E7;
+	max-width: 420px;
+	margin-bottom: 33px;
+
+	@media (min-width: 769px) {
+		text-align: left;		
+	}
+
+	@media (max-width: 768px) {
+		margin-bottom: 40px;
+	}
+}

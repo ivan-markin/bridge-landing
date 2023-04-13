@@ -1,0 +1,155 @@
+.data {	
+	margin-bottom: 100px;
+
+	@media (max-width: 768px) {
+		margin-bottom: 80px;
+	}
+
+	.wrap {
+		@media (max-width: 768px) {
+			padding: 0;
+		}
+	}
+
+	&__cnt {
+		display: flex;
+		flex-direction: column;
+		align-items: center;		
+		border-radius: 24px;
+		background: #020514 url('../img/data-bg.jpg') no-repeat top center;
+		background-size: contain;
+		border: #2C2D54 1px solid;		
+		padding-top: 76px;
+
+		@media (max-width: 768px) {
+			background-size: 300%;
+			padding-top: 64px;
+		}
+	}
+
+	&__title {
+		position: relative;
+		z-index: 3;
+		margin-bottom: 20px;
+
+		@media (max-width: 768px) {
+			margin-bottom: 32px;
+		}
+	}
+
+	&__cta {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		position: relative;
+		z-index: 3;
+		margin-bottom: 60px;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			width: 250px;
+		}
+
+		.btn {
+			@media (max-width: 768px) {
+				width: 100%;
+			}
+		}
+	}
+
+	&__btn {
+		background: linear-gradient(140.06deg, #9095A0 0%, #080B1A 90.63%);
+		color: white;
+
+		&::after {
+			content: '';
+			width: calc(100% - 2px);
+			height: calc(100% - 2px);
+			border-radius: 24px;
+			background: linear-gradient(117.67deg, #111B32 0%, #060918 77.93%);
+			position: absolute;
+			top: 1px;
+			left: 1px;
+			z-index: 1;
+			transition: all .2s;
+		}
+
+		svg {
+			fill: white;
+		}
+
+		svg,
+		img {
+			position: relative;
+			z-index: 2;
+		}
+
+		span {
+			position: relative;
+			z-index: 2;
+		}
+
+		&:hover {
+			&::after {
+				opacity: .9;
+			}
+		}
+
+		&.swiper-button-disabled {
+			color: #06081B;
+			background: white;
+			cursor: default;
+
+			&::after {
+				opacity: 0;
+			}
+
+			svg {
+				fill: #06081B;
+			}
+		}
+	}
+
+	&__content {
+		width: 100%;
+		background: url('../img/text-block-bg.png') no-repeat left center;		
+	}
+
+	&__content-item {
+		display: flex;		
+		align-items: flex-start;		
+		gap: 70px;
+		width: 100%;		
+		padding: 0 125px 0 80px;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			align-items: center;
+			padding: 0 20px 37px 20px;
+		}
+
+		img {
+			width: 285px;
+			
+			@media (max-width: 768px) {
+				width: 185px;
+			}
+		}
+	}
+
+	&__content-item-text {
+		display: flex;		
+		flex-direction: column;
+		gap: 32px;
+		font-size: 24px;
+		line-height: 1.4;		
+		letter-spacing: -0.006em;		
+		padding-bottom: 100px;
+		margin: 0;
+
+		@media (max-width: 768px) {			
+			background: none;
+			padding-bottom: 25px;
+		}
+	}
+}

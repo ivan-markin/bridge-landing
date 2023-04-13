@@ -1,0 +1,24 @@
+.back-btn {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	border: none;
+	background: none;
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+	transition: all .2s;
+	padding: 0;
+
+	&::before {
+		content: '';
+		width: 13px;
+		height: 8px;
+		background: url('../img/back-btn-arrow.svg') no-repeat center;
+		background-size: contain;
+	}
+
+	&:hover {
+		opacity: .7;
+	}
+}

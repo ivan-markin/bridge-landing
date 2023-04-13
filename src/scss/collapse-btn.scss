@@ -1,0 +1,23 @@
+.collapse-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 33px;
+	height: 33px;
+	background: url('../img/collapse-btn-bg.png') no-repeat center;
+	background-size: contain;
+	border: none;
+	cursor: pointer;
+
+	&::after {
+		content: '+';
+		font-size: 24px;
+		font-weight: 600;
+		color: white;
+		margin-bottom: 2px;
+	}
+
+	.active &::after {
+		content: '–';
+	}
+}

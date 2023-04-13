@@ -1,0 +1,150 @@
+.examples {
+	margin-bottom: 20px;
+
+	&__cnt {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+	}
+
+	&__content {
+		display: flex;
+		align-items: flex-start;
+		gap: 56px;
+		width: 100%;		
+		position: relative;		
+	}
+
+	&__glow {
+		position: absolute;
+		top: -90px;
+		right: -80px;
+		z-index: 1;
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__tabs {		
+		flex: auto;
+		width: calc(50% - 28px);		
+		position: relative;
+		z-index: 3;
+
+		&-cnt {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 28px;
+		}
+
+		&-item {			
+			border-bottom: #2C2D54 3px solid;
+			transition: all .3s;			
+			cursor: pointer;
+
+			&.active {
+				background: #080C26;		
+				border-radius: 16px;
+				border-bottom: #1C3AD5 3px solid;
+				cursor: auto;
+				position: relative;				
+			}
+
+			&-header {
+				display: flex;
+				align-items: center;
+				gap: 28px;
+				height: 120px;
+				transition: all .3s;
+				padding: 0 25px;
+
+				@media (max-width: 768px) {
+					height: auto;
+					padding: 30px 18px;
+				}
+			}
+
+			&-num {
+				font-weight: 600;
+				font-size: 36px;			
+				line-height: 1;
+				letter-spacing: -0.02em;
+				color: #2C2D54;
+				border-right: #2C2D54 1px solid;
+				padding-right: 12px;
+
+				@media (max-width: 768px) {
+					font-size: 26px;
+				}
+			}
+
+			&.active .examples__tabs-item-num {
+				color: #1C3AD5;
+			}
+
+			&-title {
+				font-weight: 600;
+				font-size: 36px;			
+				letter-spacing: -0.02em;
+
+				@media (max-width: 768px) {
+					font-size: 24px;
+				}
+			}
+
+			&-content {
+				display: none;
+				font-size: 24px;
+				line-height: 1.67;			
+				letter-spacing: -0.006em;
+				color: #D2D4E7;
+				padding: 0 25px 40px 105px;
+				margin: 0;
+
+				@media (max-width: 768px) {
+					font-size: 20px;
+					padding: 0 25px 40px 18px;
+				}
+			}
+
+			&.active .examples__tabs-item-content {
+				display: block;
+			}
+		}
+	}
+	
+	&__tab-content {					
+		width: calc(50% - 28px);		
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+
+		&-item {			
+			width: 100%;			
+		}
+
+		&-title {
+			font-weight: 600;
+			font-size: 48px;		
+			line-height: 1;
+			letter-spacing: -0.02em;
+			margin: 0;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 14px;
+		font-weight: 600;
+		font-size: 15px;
+		color: white;
+		text-decoration: none;
+	}
+}

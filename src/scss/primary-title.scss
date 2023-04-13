@@ -1,0 +1,21 @@
+.primary-title {
+	font-weight: 600;
+	font-size: 62px;
+	line-height: 1;
+	text-align: center;
+	letter-spacing: -0.007em;	
+	background: linear-gradient(92.14deg, #7B7FAA 2.62%, #FCFCFC 41.03%, #FCFCFC 63.53%, #7B7FAA 92.92%), #FFFFFF;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	padding-bottom: 20px;	
+	margin-top: 0;
+
+	@media (max-width: 768px) {
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 1.07;
+		padding-bottom: 10px;	
+	}
+}

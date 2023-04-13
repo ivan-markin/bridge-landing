@@ -1,25 +1,11 @@
-<header class="header">
-	<img src="@img/asterizm-logo.svg" width="183" height="32" alt="">
+<header class="header @@className">
+	<img class="header__logo" src="@img/asterizm-logo.svg" width="183" height="32" alt="">
+	<img class="header__logo header__logo_short" src="@img/asterizm-logo_short.svg" alt="">
 	
-	<nav class="main-menu">
-		<ul class="main-menu__list">
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">About</a>
-			</li>
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">Community</a>
-			</li>
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">Docs</a>
-			</li>
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">Blog</a>
-			</li>
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">White paper</a>
-			</li>
-		</ul>
-	</nav>
+	@@include('main-menu.html', {
+		'className': 'main-menu_header'
+	})
 
-	<button class="btn">Integration assistance</button>
+	<a href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank" class="header__cta btn">Integration assistance</a>
+	<button class="header__menu-btn menu-open"></button>
 </header>

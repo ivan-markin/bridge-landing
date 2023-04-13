@@ -1,0 +1,134 @@
+.gcc-popup {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;	
+	z-index: -1;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .5s;
+
+	&.active {
+		z-index: 10;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	&__cnt {
+		position: absolute;
+		top: 0;
+		bottom: 0;		
+		right: 0;
+		height: 100%;
+		z-index: 11;
+		border: #2C2D54 1px solid;
+		border-radius: 32px 0 0 32px;
+		background-color: #020923;
+		max-width: 500px;
+		width: 100%;
+		transform: translateX(30%);
+		transition: all .5s;
+		padding: 28px 26px 28px 18px;
+	}
+
+	&.active &__cnt {
+		transform: translateX(0);
+	}
+
+	&__back {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(1, 11, 35, 0.75);
+		z-index: 10;
+	}
+
+	&__back-btn {
+		padding-left: 10px;
+		margin-bottom: 22px;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 28px;
+		padding-left: 10px;
+		margin: 0 0 53px;
+	}
+
+	&__menu {
+		display: flex;
+		flex-direction: column;
+		gap: 28px;
+
+		&-item {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			background: #020923;
+			border-radius: 23px;	
+			transition: all .2s;
+			cursor: pointer;
+			position: relative;		
+			padding: 10px;
+
+			&::after {
+				content: '';
+				width: 40px;
+				height: 40px;
+				background: url('../img/popup-link-arrow.svg') no-repeat center;
+				background-size: contain;
+				margin-left: auto;
+			}
+
+			&:hover {
+				background-color: #0C132C;
+			}
+
+			&-icon {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 64px;
+				height: 64px;
+				background: url('../img/popup-icon-cnt.png') no-repeat center;
+				background-size: contain; 
+			}
+
+			&-title {
+				display: flex;
+				flex-direction: column;
+				gap: 6px;
+			}
+
+			&-name {
+				font-weight: 700;
+				font-size: 18px;		
+				color: white;		
+				text-decoration: none;
+
+				&::after {
+					content: '';
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					position: absolute;
+				}
+			}
+
+			&-caption {
+				font-size: 14px;			
+				color: #7C80AB;
+			}
+		}
+	}
+}
