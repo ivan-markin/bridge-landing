@@ -2,16 +2,26 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HB7QPT29J4&_v=20230503155911"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HB7QPT29J4');
+  </script>
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230413174832">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230413174832" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230503155911">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230503155911" rel="stylesheet">
   <title>Asterizm</title>
 </head>
 
-<body>
+<body id="pageTop">
 
   <div id="particles-js"></div>
 
@@ -102,24 +112,35 @@
 			</div>
 		</li>
 		<li class="main-menu__item">
-			<a class="main-menu__link" href="https://docs.asterizm.io" target="_blank">Docs</a>
+			<a class="main-menu__link" href="http://docs.asterizm.io" target="_blank">Docs</a>
 		</li>
 		<li class="main-menu__item">
 			<a class="main-menu__link" href="https://twitter.com/Asterizm_layer" target="_blank">Blog</a>
 		</li>
 		<li class="main-menu__item">
-			<a class="main-menu__link" href="https://asterizm.io/white-paper/" target="_blank">White paper</a>
+			<a class="main-menu__link" href="./files/asterizm-white-paper-april-2023.pdf" target="_blank">White paper</a>
 		</li>
 	</ul>
-	<button class="main-menu__cta btn">Integration assistance</button>
+	<a href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank" class="main-menu__cta btn">Integration assistance</a>
 </nav>
 
 	<a href="https://forms.gle/dY2ghfF6fNH5LKjP6" target="_blank" class="mobile-menu__cta btn btn_primary">Integration assistance</a>
 </div>
 
   <div class="container">
+
+    <a class="back-to-top-btn" href=""></a>
     
     <section class="hero">
+
+      <!-- <img class="hero__bg-image" src="img/hero-image.png" alt=""> -->
+      <img class="hero__bg-image-alt" src="img/hero-image_alt.svg" alt="">
+          
+      <picture>
+        <source srcset="img/hero-bottom-glow.webp" type="image/webp">
+        <img class="hero__bottom-glow" src="img/hero-bottom-glow.png" alt="">
+      </picture> 
+
       <div class="wrap">
         <div class="hero__content">
           
@@ -163,25 +184,21 @@
 			</div>
 		</li>
 		<li class="main-menu__item">
-			<a class="main-menu__link" href="https://docs.asterizm.io" target="_blank">Docs</a>
+			<a class="main-menu__link" href="http://docs.asterizm.io" target="_blank">Docs</a>
 		</li>
 		<li class="main-menu__item">
 			<a class="main-menu__link" href="https://twitter.com/Asterizm_layer" target="_blank">Blog</a>
 		</li>
 		<li class="main-menu__item">
-			<a class="main-menu__link" href="https://asterizm.io/white-paper/" target="_blank">White paper</a>
+			<a class="main-menu__link" href="./files/asterizm-white-paper-april-2023.pdf" target="_blank">White paper</a>
 		</li>
 	</ul>
-	<button class="main-menu__cta btn">Integration assistance</button>
+	<a href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank" class="main-menu__cta btn">Integration assistance</a>
 </nav>
 
 	<a href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank" class="header__cta btn">Integration assistance</a>
 	<button class="header__menu-btn menu-open"></button>
-</header>
-
-          <!-- <img class="hero__bg-image" src="img/hero-image.png" alt=""> -->
-          <img class="hero__bg-image-alt" src="img/hero-image_alt.svg" alt="">
-          <img class="hero__bottom-glow" src="img/hero-bottom-glow.png" alt="">
+</header>                  
 
           <div class="hero__text-block">
             <!-- <span class="hero__top-title">Introducing Asterizm</span> -->
@@ -189,16 +206,16 @@
               Perform fast and confidential cross-chain transactions without overpaying
             </h1>
             <span class="primary-subtitle">
-              Develop cross-chain dApps, while saving money on transactions, avoiding penalties from regulators and risks of data leaks.
+              Build cross-chain dApps, while saving money on transactions, avoiding penalties from regulators and risks of data leaks.
             </span>
             <div class="hero__cta">              
               <a class="hero__main-btn btn btn_primary" href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank">
                 Go cross-chain
                 <img src="img/btn-arrow.svg" width="20" height="11" alt="">
               </a>
-              <!-- <a class="hero__wp-btn btn btn_primary btn_black" href="https://asterizm.io/white-paper/" target="_blank">
+              <a class="hero__wp-btn btn btn_primary btn_black" href="./files/asterizm-white-paper-april-2023.pdf" target="_blank">
                 White paper
-              </a> -->
+              </a>
             </div>
           </div>
 
@@ -219,16 +236,16 @@
             </a>
           </div>          
 
-          <div class="hero__scroll-down">
+          <a href="#whyAsterizm" class="hero__scroll-down">
             <img src="img/mouse-icon.svg" width="27" height="46" alt="">
             Scroll<br>to explore
-          </div>
+          </a>
 
         </div>
       </div>
     </section>
 
-    <section class="why-asterizm" data-aos="fade" data-aos-duration="500">
+    <section class="why-asterizm" id="whyAsterizm" data-aos="fade" data-aos-duration="500">
       <div class="wrap">        
         <div class="why-asterizm__cnt">
           <h2 class="why-asterizm__title primary-title">Why Asterizm?</h2>
@@ -237,7 +254,10 @@
               
               <div class="why-asterizm__item privacy">
                 <div class="why-asterizm__item-front">
-                  <img class="why-asterizm__item-bg" src="img/card-bg-right.png" alt="">                  
+                  <picture class="why-asterizm__item-bg">
+                    <source srcset="img/card-bg-right.webp" type="image/webp">
+                    <img class="why-asterizm__item-bg" src="img/card-bg-right.png" alt="">                  
+                  </picture>                  
                   <h2 class="why-asterizm__item-title">
                     Privacy
                     <img src="img/card-mobile-arrow.svg" alt="">
@@ -258,7 +278,10 @@
             <div class="why-asterizm__item-cnt">
               <div class="why-asterizm__item high-speed">
                 <div class="why-asterizm__item-front">
-                  <img class="why-asterizm__item-bg" src="img/card-bg-left.png" alt="">              
+                  <picture class="why-asterizm__item-bg">
+                    <source srcset="img/card-bg-left.webp" type="image/webp">
+                    <img class="why-asterizm__item-bg" src="img/card-bg-left.png" alt="">                  
+                  </picture>                  
                   <h2 class="why-asterizm__item-title">
                     High Speed<br>Low Cost 
                     <img src="img/card-mobile-arrow.svg" alt="">
@@ -275,7 +298,10 @@
             <div class="why-asterizm__item-cnt">
               <div class="why-asterizm__item flexibility">
                 <div class="why-asterizm__item-front">
-                  <img class="why-asterizm__item-bg" src="img/card-bg-right.png" alt="">                  
+                  <picture class="why-asterizm__item-bg">
+                    <source srcset="img/card-bg-right.webp" type="image/webp">
+                    <img class="why-asterizm__item-bg" src="img/card-bg-right.png" alt="">                  
+                  </picture>                  
                   <h2 class="why-asterizm__item-title">
                     Flexibility
                     <img src="img/card-mobile-arrow.svg" alt="">
@@ -291,7 +317,10 @@
             <div class="why-asterizm__item-cnt">
               <div class="why-asterizm__item scalability">
                 <div class="why-asterizm__item-front">
-                  <img class="why-asterizm__item-bg" src="img/card-bg-left.png" alt="">                  
+                  <picture class="why-asterizm__item-bg">
+                    <source srcset="img/card-bg-left.webp" type="image/webp">
+                    <img class="why-asterizm__item-bg" src="img/card-bg-left.png" alt="">                  
+                  </picture>                  
                   <h2 class="why-asterizm__item-title">
                     Scalability
                     <img src="img/card-mobile-arrow.svg" alt="">
@@ -316,9 +345,11 @@
     <section class="data" data-aos="fade" data-aos-duration="500">
       <div class="wrap">
         <div class="data__cnt">
+          <img class="data__cnt-bg" src="img/text-block-bg.png" alt="">
+          
           <h2 class="data__title primary-title">Your data belongs to&nbsp;you</h2>
           <div class="data__cta">
-            <a class="data__btn data__prev-btn btn btn_primary" href="">
+            <a class="data__btn data__prev-btn btn btn_primary">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.53 7.77C17.46 7.76 17.39 7.76 17.32 7.77C15.77 7.72 14.54 6.45 14.54 4.89C14.54 3.3 15.83 2 17.43 2C19.02 2 20.32 3.29 20.32 4.89C20.31 6.45 19.08 7.72 17.53 7.77Z"/>
                 <path d="M20.79 14.7004C19.67 15.4504 18.1 15.7304 16.65 15.5404C17.03 14.7204 17.23 13.8104 17.24 12.8504C17.24 11.8504 17.02 10.9004 16.6 10.0704C18.08 9.8704 19.65 10.1504 20.78 10.9004C22.36 11.9404 22.36 13.6504 20.79 14.7004Z"/>
@@ -329,7 +360,7 @@
               </svg>
               <span>For public chains</span>
             </a>
-            <a class="data__btn data__next-btn btn btn_primary" href="">
+            <a class="data__btn data__next-btn btn btn_primary">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="#06081B" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.6 4.15C10.6 4.34 10.44 4.5 10.25 4.5H9.12C6.96 4.5 5.2 6.26 5.2 8.42V17.65C5.2 17.84 5.04 18 4.85 18H4.15C2.96 18 2 17.04 2 15.85V4.15C2 2.96 2.96 2 4.15 2H8.45C9.64 2 10.6 2.96 10.6 4.15Z"/>
                 <path d="M22 4.15V15.85C22 17.04 21.04 18 19.85 18H19.22C19.03 18 18.87 17.84 18.87 17.65V8.42C18.87 6.26 17.11 4.5 14.95 4.5H13.75C13.56 4.5 13.4 4.34 13.4 4.15C13.4 2.96 14.36 2 15.55 2H19.85C21.04 2 22 2.96 22 4.15Z"/>
@@ -364,7 +395,10 @@
       <div class="supported__cnt">
         <h2 class="supported__title primary-title">Chains supported</h2>        
         <div class="supported__networks-cnt">
-          <img class="supported__logo" src="img/supports-logo.png" width="664" height="339" alt="">
+          <picture>
+            <source srcset="img/supports-logo.webp" type="image/webp">
+            <img class="supported__logo" src="img/supports-logo.png" width="664" height="339" alt="">
+          </picture>          
           <div class="supported__networks">
             <div class="supported__networks-top">
               <img src="img/nw-top-1.svg" width="109" height="109" alt="">
@@ -510,9 +544,9 @@
           <div class="how-it-works__content">
             <div class="how-it-works__scheme-cnt">
               <picture>
-                <source srcset="img/scheme-desktop.svg" media="(min-width: 769px)">  
-                <source srcset="img/scheme-mobile.svg" media="(max-width: 768px)">  
-                <img class="how-it-works__scheme" src="img/scheme-desktop.svg" alt="">
+                <source srcset="img/asterizm-scheme-desktop.svg" media="(min-width: 769px)">  
+                <source srcset="img/asterizm-scheme-mobile.svg" media="(max-width: 768px)">  
+                <img class="how-it-works__scheme" src="img/asterizm-scheme-desktop.svg" alt="">
               </picture>              
             </div>
             <div class="how-it-works__links">
@@ -539,7 +573,7 @@
                   <img src="img/wp-link-icon.svg" alt="">
                 </div>
                 <div class="how-it-works__link-title">
-                  <a class="how-it-works__link-name" href="https://asterizm.io/white-paper/" target="_blank">White Paper</a>
+                  <a class="how-it-works__link-name" href="./files/asterizm-white-paper-april-2023.pdf" target="_blank">White Paper</a>
                   <!-- <span class="how-it-works__link-descr">Learn docs</span> -->
                 </div>
               </div>
@@ -548,7 +582,7 @@
                   <img src="img/docs-link-icon.svg" alt="">
                 </div>
                 <div class="how-it-works__link-title">
-                  <a class="how-it-works__link-name" href="https://docs.asterizm.io" target="_blank">Docs</a>
+                  <a href="http://docs.asterizm.io" class="how-it-works__link-name" target="_blank">Docs</a>
                   <!-- <span class="how-it-works__link-descr">Read docs</span> -->
                 </div>                
               </div>
@@ -749,19 +783,10 @@
         <div class="onboarding__cnt">
           <h2 class="onboarding__title primary-title">Go cross-chain in 3 easy steps</h2>
           <div class="onboarding__content">
-            <div class="onboarding__item">
-              <img class="onboarding__item-image" src="img/step-1-image.png" alt="">
-              <img class="onboarding__item-num" src="img/num-1-icon.svg" alt="">
-              <div class="onboarding__item-content">
-                <h3 class="onboarding__item-title">Set up the off-chain module</h3>
-                <span class="onboarding__item-text">
-                  Implement Client module (Docker image) on your server to encrypt and decrypt messages with SHA256.
-                </span>
-              </div>
-            </div>
+            
             <div class="onboarding__item">
               <img class="onboarding__item-image" src="img/step-2-image.png" alt="">
-              <img class="onboarding__item-num" src="img/num-2-icon.svg" alt="">
+              <img class="onboarding__item-num" src="img/num-1-icon.svg" alt="">
               <div class="onboarding__item-content">
                 <h3 class="onboarding__item-title">Deploy smart contract in preferred chains</h3>
                 <span class="onboarding__item-text">
@@ -770,6 +795,18 @@
                 </span>               
               </div>
             </div>
+            
+            <div class="onboarding__item">
+              <img class="onboarding__item-image" src="img/step-1-image.png" alt="">
+              <img class="onboarding__item-num" src="img/num-2-icon.svg" alt="">
+              <div class="onboarding__item-content">
+                <h3 class="onboarding__item-title">Set up the off-chain module</h3>
+                <span class="onboarding__item-text">
+                  Implement Client module (Docker image) on your server to encrypt and decrypt messages with AES-256.
+                </span>
+              </div>
+            </div>            
+
             <div class="onboarding__item">
               <img class="onboarding__item-image" src="img/step-3-image.png" alt="">
               <img class="onboarding__item-num" src="img/num-3-icon.svg" alt="">
@@ -822,7 +859,7 @@
                 </div>
               </div>  
               
-              <a class="examples__link" href="https://github.com/Asterizm-Layer/asterizm-contracts/tree/master/contracts/demo" target="_blank">
+              <a class="examples__link" href="https://github.com/Asterizm-Layer/asterizm-contracts/" target="_blank">
                 <img src="img/examples-link-arrow.svg" alt="">
                 View more code examples on GitHub
               </a>
@@ -904,19 +941,19 @@
 				<div class="footer__menu-col">
 					<span class="footer__menu-title">Product</span>
 					<ul class="footer__menu-list">
-						<li class="footer__menu-item"><a href="">Send cross-chain message</a></li>
-						<li class="footer__menu-item"><a href="">Key Concept</a></li>
-						<li class="footer__menu-item"><a href="">Code Examples</a></li>
-						<li class="footer__menu-item"><a href="">Interfaces</a></li>
-						<li class="footer__menu-item"><a href="">FAQ</a></li>
+						<li class="footer__menu-item"><a href="https://docs.asterizm.io/guides/getting-started" target="_blank">Send cross-chain message</a></li>
+						<li class="footer__menu-item"><a href="https://docs.asterizm.io/what-is-asterizm/architecture" target="_blank">Key Concept</a></li>
+						<li class="footer__menu-item"><a href="https://docs.asterizm.io/guides/code-examples" target="_blank">Code Examples</a></li>
+						<li class="footer__menu-item"><a href="https://docs.asterizm.io/infrastructure/asterizm-interfaces" target="_blank">Interfaces</a></li>
+						<li class="footer__menu-item"><a href="https://docs.asterizm.io/what-is-asterizm/faq" target="_blank">FAQ</a></li>
 					</ul>
 				</div>
 				<div class="footer__menu-col">
 					<span class="footer__menu-title">Tools & References</span>
 					<ul class="footer__menu-list">
 						<li class="footer__menu-item"><a>Asterizm Scanner <img src="img/soon-badge.svg" alt=""></a></li>
-						<li class="footer__menu-item"><a href="https://docs.asterizm.io" target="_blank">Docs</a></li>
-						<li class="footer__menu-item"><a href="https://asterizm.io/white-paper/" target="_blank">White paper</a></li>					
+						<li class="footer__menu-item"><a href="http://docs.asterizm.io" target="_blank">Docs</a></li>
+						<li class="footer__menu-item"><a href="./files/asterizm-white-paper-april-2023.pdf" target="_blank">White paper</a></li>					
 					</ul>
 				</div>
 				<div class="footer__menu-col">
@@ -946,8 +983,8 @@
 </footer>
   </div>
 
-  <script src="./js/app.min.js?_v=20230413174832"></script>   
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js?_v=20230413174832"></script>
+  <script src="./js/app.min.js?_v=20230503155911"></script>   
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js?_v=20230503155911"></script>
   <script>
     particlesJS("particles-js", {
   "particles": {

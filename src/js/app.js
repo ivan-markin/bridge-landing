@@ -109,8 +109,7 @@ document.querySelectorAll('.faq-toggler').forEach(el => {
 })
 
 window.addEventListener('scroll', () => {
-	const container = document.querySelector('.features__list');
-	const sections = document.querySelectorAll('.features__list-item');
+	const container = document.querySelector('.features__list');	
 	const images = document.querySelectorAll('.features__image-item');
 
 	let section1 = document.getElementById('featureSection1').offsetTop;
@@ -168,6 +167,17 @@ window.addEventListener('scroll', () => {
 			document.getElementById('img-6').classList.add('active');
 		}								
 	}			
+
+	if (scrollY > 3000) {
+		document.querySelector('.back-to-top-btn').classList.add('shown');
+	} else document.querySelector('.back-to-top-btn').classList.remove('shown');
+})
+
+document.querySelector('.back-to-top-btn').addEventListener('click', () => {
+	scrollTo({
+		top: 0,
+		behavior: 'smooth'
+	})
 })
 
 flsFunctions.isWebp();

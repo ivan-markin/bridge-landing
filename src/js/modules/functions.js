@@ -40,11 +40,13 @@ export function popupToggler() {
 
 export function floatMenuToggler() {
   window.addEventListener('scroll', () => {
-    const header = document.querySelector('.header_main');
+    const header = document.querySelector('.header_main');    
     
-    scrollY > 900
-      ? header.classList.add('float')
-      : header.classList.remove('float') 		
+    if (scrollY > 900) {
+      header.classList.add('float');      
+    } else {
+      header.classList.remove('float'); 	      
+    }   
   })
 }
 

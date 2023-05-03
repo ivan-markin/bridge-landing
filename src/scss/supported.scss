@@ -3,11 +3,14 @@
 		transform: translateX(0);
 	}
 	100% {
-		transform: translateX(85%);
+		transform: translateX(50%);
 	}
 }
 
 .supported {
+	max-width: 1920px;
+	overflow: hidden;
+	height: max-content;
 	margin-bottom: 200px;
 
 	@media (max-width: 768px) {
@@ -36,6 +39,7 @@
 
 	&__networks-cnt {
 		position: relative;
+		max-width: 1920px;
 		
 		&::before,
 		&::after {
@@ -43,7 +47,7 @@
 			top: 0;
 			width: 400px;
 			height: 100%;		
-			z-index: 3;
+			z-index: 15;
 
 			@media (max-width: 768px) {
 				width: 60px;
@@ -71,7 +75,8 @@
 		z-index: 5;
 
 		@media (max-width: 768px) {
-			display: none;
+			width: 460px;
+			height: auto;
 		}
 	}
 

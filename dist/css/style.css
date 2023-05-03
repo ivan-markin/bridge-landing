@@ -389,6 +389,7 @@ template {
   src: url("../fonts/SegoeUI.woff2") format("woff2"), url("../fonts/SegoeUI.woff") format("woff"), url("../SegoeUI.ttf") format("ttf");
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -396,6 +397,7 @@ template {
   src: url("../fonts/SegoeUI-SemiBold.woff2") format("woff2"), url("../fonts/SegoeUI-SemiBold.woff") format("woff"), url("../SegoeUI-SemiBold.ttf") format("ttf");
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
@@ -403,11 +405,13 @@ template {
   src: url("../fonts/SegoeUI-Bold.woff2") format("woff2"), url("../fonts/SegoeUI-Bold.woff") format("woff"), url("../SegoeUI-Bold.ttf") format("ttf");
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
 }
 
 :root {
   --font-color: white;
   --screenWidth: 100%;
+  --hero-margin-bottom: 100px;
 }
 
 /**
@@ -703,6 +707,35 @@ template {
   opacity: 0.7;
 }
 
+.back-to-top-btn {
+  display: block;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 48px;
+  height: 82px;
+  background: url("../img/back-to-top-btn.svg") no-repeat center;
+  background-size: contain;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  -webkit-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.back-to-top-btn.shown {
+  visibility: visible;
+  opacity: 1;
+  z-index: 20;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .block-text {
   font-size: 18px;
   line-height: 1.78;
@@ -858,6 +891,14 @@ template {
   padding-top: 76px;
 }
 
+.data__cnt-bg {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(20%) translateX(-20%);
+      -ms-transform: translateY(20%) translateX(-20%);
+          transform: translateY(20%) translateX(-20%);
+}
+
 .data__title {
   position: relative;
   z-index: 3;
@@ -934,7 +975,6 @@ template {
 
 .data__content {
   width: 100%;
-  background: url("../img/text-block-bg.png") no-repeat left center;
 }
 
 .data__content-item {
@@ -1872,13 +1912,19 @@ template {
           justify-content: space-between;
   position: relative;
   z-index: 4;
-  margin-bottom: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header.float {
   position: fixed;
   top: 24px;
   left: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1933,15 +1979,17 @@ template {
 .hero {
   border-radius: 0 0 24px 24px;
   position: relative;
+  width: 100%;
   overflow: hidden;
-  padding-top: 20px;
   z-index: 2;
-  padding-bottom: 78px;
+  padding: 20px 0 78px;
   margin: 0 auto 100px;
 }
 
 .hero__content {
+  position: relative;
   width: 100%;
+  padding: 140px 0 100px;
 }
 
 .hero__secure-badge {
@@ -1978,7 +2026,7 @@ template {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 150%;
+  width: 100%;
   z-index: 3;
   border-radius: 0 0 24px 24px;
 }
@@ -1994,6 +2042,8 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 4;
 }
 
 .hero__top-title {
@@ -2021,7 +2071,7 @@ template {
           align-items: center;
   gap: 18px;
   position: relative;
-  z-index: 4;
+  z-index: 9;
   margin-bottom: 52px;
 }
 
@@ -2049,6 +2099,7 @@ template {
   letter-spacing: 0.6px;
   color: #2A32FC;
   text-transform: uppercase;
+  text-decoration: none;
   position: relative;
   z-index: 4;
 }
@@ -2241,6 +2292,7 @@ template {
   border: none;
   height: auto;
   padding: 0 0 0 10px;
+  margin-bottom: 30px;
 }
 
 .float .main-menu {
@@ -2317,6 +2369,11 @@ template {
   color: #6F7288;
 }
 
+.main-menu__link.disabled {
+  color: #6F7288;
+  cursor: auto;
+}
+
 .main-menu__cta {
   display: none;
 }
@@ -2349,10 +2406,11 @@ template {
   z-index: -1;
   visibility: hidden;
   opacity: 0;
+  overflow-y: scroll;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  padding: 20px 20px 42px;
+  padding: 120px 20px 42px;
 }
 
 .mobile-menu.active {
@@ -2362,12 +2420,17 @@ template {
 }
 
 .mobile-menu__header {
-  position: static;
+  position: fixed;
+  top: 20px;
+  width: calc(100% - 40px);
   margin-bottom: 52px;
 }
 
 .mobile-menu__cta {
   width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   margin-top: auto;
 }
 
@@ -2781,8 +2844,8 @@ template {
   }
 
   100% {
-    -webkit-transform: translateX(85%);
-            transform: translateX(85%);
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
   }
 }
 
@@ -2793,12 +2856,17 @@ template {
   }
 
   100% {
-    -webkit-transform: translateX(85%);
-            transform: translateX(85%);
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
   }
 }
 
 .supported {
+  max-width: 1920px;
+  overflow: hidden;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   margin-bottom: 200px;
 }
 
@@ -2821,6 +2889,7 @@ template {
 
 .supported__networks-cnt {
   position: relative;
+  max-width: 1920px;
 }
 
 .supported__networks-cnt::before,
@@ -2829,7 +2898,7 @@ template {
   top: 0;
   width: 400px;
   height: 100%;
-  z-index: 3;
+  z-index: 15;
 }
 
 .supported__networks-cnt::before {
@@ -3153,7 +3222,7 @@ canvas {
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.6;
+  opacity: 1;
 }
 
 body {
@@ -3177,7 +3246,9 @@ fieldset {
 
 .container {
   min-width: 320px;
+  max-width: 1920px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .wrap {
@@ -3235,7 +3306,17 @@ fieldset {
   }
 }
 
+@media (min-width: 1800px) {
+  .hero__bg-image-alt {
+    right: 3.9vw;
+  }
+}
+
 @media (max-width: 768px) {
+  :root {
+    --hero-margin-bottom: 80px;
+  }
+
   .data {
     margin-bottom: 80px;
   }
@@ -3338,6 +3419,7 @@ fieldset {
 
   .examples__tabs-item-header {
     height: auto;
+    gap: 16px;
     padding: 30px 18px;
   }
 
@@ -3507,6 +3589,10 @@ fieldset {
     background-size: 100%;
     padding-bottom: 100px;
     margin: 0 auto 80px;
+  }
+
+  .hero__content {
+    padding: 100px 0 100px;
   }
 
   .hero__secure-badge {
@@ -3721,7 +3807,8 @@ fieldset {
   }
 
   .supported__logo {
-    display: none;
+    width: 460px;
+    height: auto;
   }
 
   .supported__networks {

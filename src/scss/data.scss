@@ -25,6 +25,12 @@
 			background-size: 300%;
 			padding-top: 64px;
 		}
+
+		&-bg {
+			position: absolute;
+			bottom: 0;
+			transform: translateY(20%) translateX(-20%);
+		}
 	}
 
 	&__title {
@@ -112,7 +118,7 @@
 
 	&__content {
 		width: 100%;
-		background: url('../img/text-block-bg.png') no-repeat left center;		
+		// background: url('../img/text-block-bg.png') no-repeat left center;		
 	}
 
 	&__content-item {

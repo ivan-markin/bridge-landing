@@ -13,8 +13,9 @@
 	z-index: -1;
 	visibility: hidden;
 	opacity: 0;
+	overflow-y: scroll;
 	transition: all .3s;
-	padding: 20px 20px 42px;
+	padding: 120px 20px 42px;
 
 	&.active {
 		z-index: 12;
@@ -23,12 +24,18 @@
 	}
 
 	&__header {
-		position: static;
+		position: fixed;
+		top: 20px;
+		width: calc(100% - 40px);
 		margin-bottom: 52px;
 	}
 
 	&__cta {		
+		// position: fixed;
+		// bottom: 30px;
+		// width: calc(100% - 40px);		
 		width: 100%;
+		flex: none;
 		margin-top: auto;
 	}
 }

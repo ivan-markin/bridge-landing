@@ -13,7 +13,11 @@
 	justify-content: space-between;	
 	position: relative;
 	z-index: 4;
-	margin-bottom: 90px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	// margin-bottom: 90px;
 
 	@media (max-width: 768px) {		
 		height: 48px;
@@ -27,6 +31,7 @@
 		position: fixed;
 		top: 24px;
 		left: 50%;
+		width: fit-content;
 		transform: translateX(-50%);
 		z-index: 9;				
 		animation: appearance .5s 1;	

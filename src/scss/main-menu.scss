@@ -17,6 +17,7 @@
 		border: none;
 		height: auto;
 		padding: 0 0 0 10px;
+		margin-bottom: 30px;
 	}
 
 	.float & {
@@ -80,6 +81,11 @@
 
 		&:hover {
 			color: #6F7288;
+		}
+
+		&.disabled {
+			color: #6F7288;
+			cursor: auto;
 		}
 	}
 
