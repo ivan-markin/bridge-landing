@@ -4,7 +4,7 @@
 	width: 100%;
 	overflow: hidden;	
 	z-index: 2;	
-	padding: 20px 0 78px;
+	padding: 35px 0 78px;
 	margin: 0 auto 100px;
 
 	@media (max-width: 768px) {		
@@ -74,7 +74,7 @@
 		left: 50%;
 		transform: translateX(-50%);
 		width: 100%;
-		z-index: 3;
+		z-index: 2;
 		border-radius: 0 0 24px 24px;
 
 		@media (max-width: 768px) {
@@ -87,7 +87,7 @@
 		flex-direction: column;
 		align-items: center;	
 		position: relative;
-		z-index: 4;	
+		z-index: 2;	
 
 		@media (min-width: 769px) {
 			align-items: flex-start;

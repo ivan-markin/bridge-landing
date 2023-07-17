@@ -3,7 +3,7 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HB7QPT29J4&_v=20230503155911"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HB7QPT29J4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -16,13 +16,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230503155911">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230503155911" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Asterizm</title>
 </head>
 
 <body id="pageTop">
 
+  <div class="banner-top">
+	<div class="banner-top__telegram banner-top__cell">
+		<a href="https://t.me/asterizm_protocol" target="_blank"> 
+			<img src="img/top-banner-telegram-icon.svg"  alt="">
+			asterizm_protocol
+		</a>				
+	</div>
+	<div class="banner-top__message banner-top__cell">
+		<img src="img/top-banner-message-icon.svg" alt="">
+		<span>Stay tuned, big updates are coming!</span>
+	</div>
+	<div class="banner-top__discord banner-top__cell">
+		<a href="https://discord.gg/GshkYKTeaR" target="_blank">
+			<img src="img/top-banner-discord-icon.svg" alt="">
+			Asterizm Protocol
+		</a>				
+	</div>
+</div>
+  
   <div id="particles-js"></div>
 
   <div class="gcc-popup">
@@ -118,13 +137,40 @@
 			<a class="main-menu__link" href="https://twitter.com/Asterizm_layer" target="_blank">Blog</a>
 		</li>
 		<li class="main-menu__item">
-			<a class="main-menu__link" href="./files/asterizm-white-paper-april-2023.pdf" target="_blank">White paper</a>
+			<a class="main-menu__link" href="./files/wp.pdf" target="_blank">White paper</a>
 		</li>
 	</ul>
 	<a href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank" class="main-menu__cta btn">Integration assistance</a>
 </nav>
 
-	<a href="https://forms.gle/dY2ghfF6fNH5LKjP6" target="_blank" class="mobile-menu__cta btn btn_primary">Integration assistance</a>
+	<a href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank" class="mobile-menu__cta btn btn_primary open-form">Integration assistance</a>
+</div>
+  <div class="submit-form">
+	<button class="submit-form__close close-form"></button>
+	
+	<h2 class="submit-form__title">Contact us</h2>
+
+	<form class="submit-form__form" id="submitForm">
+		<input type="text" id="name" placeholder="Your name*">
+		<input type="email" id="email" placeholder="Your e-mail*">
+		<input type="text" id="telegram" placeholder="Your telegram account">
+		<textarea placeholder="Your message" id="message"></textarea>
+		<button type="submit" class="submit-form__btn">Submit</button>
+	</form>
+
+	<div class="submit-form__success">
+		<img class="submit-form__status-icon" src="img/form-success-icon.svg" alt="">
+		<h2 class="submit-form__status-title">Thank you!</h2>
+		<span>We will get back to you shortly</span>
+		<button class="submit-form__message-btn submit-form__btn close-form">Ok</button>
+	</div>
+
+	<div class="submit-form__error">
+		<img class="submit-form__status-icon" src="img/form-error-icon.svg" alt="">
+		<h2 class="submit-form__status-title">Error!</h2>
+		<span>Something went wrong</span>
+		<button class="submit-form__message-btn submit-form__btn close-form">Ok</button>
+	</div>
 </div>
 
   <div class="container">
@@ -132,8 +178,7 @@
     <a class="back-to-top-btn" href=""></a>
     
     <section class="hero">
-
-      <!-- <img class="hero__bg-image" src="img/hero-image.png" alt=""> -->
+      
       <img class="hero__bg-image-alt" src="img/hero-image_alt.svg" alt="">
           
       <picture>
@@ -190,18 +235,18 @@
 			<a class="main-menu__link" href="https://twitter.com/Asterizm_layer" target="_blank">Blog</a>
 		</li>
 		<li class="main-menu__item">
-			<a class="main-menu__link" href="./files/asterizm-white-paper-april-2023.pdf" target="_blank">White paper</a>
+			<a class="main-menu__link" href="./files/wp.pdf" target="_blank">White paper</a>
 		</li>
 	</ul>
 	<a href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank" class="main-menu__cta btn">Integration assistance</a>
 </nav>
 
-	<a href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank" class="header__cta btn">Integration assistance</a>
+	<a href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank" class="header__cta btn open-form">Integration assistance</a>
+	<!-- <a class="header__cta btn open-form">Integration assistance</a> -->
 	<button class="header__menu-btn menu-open"></button>
 </header>                  
 
-          <div class="hero__text-block">
-            <!-- <span class="hero__top-title">Introducing Asterizm</span> -->
+          <div class="hero__text-block">            
             <h1 class="hero__title primary-title">
               Perform fast and confidential cross-chain transactions without overpaying
             </h1>
@@ -209,11 +254,11 @@
               Build cross-chain dApps, while saving money on transactions, avoiding penalties from regulators and risks of data leaks.
             </span>
             <div class="hero__cta">              
-              <a class="hero__main-btn btn btn_primary" href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank">
+              <a class="hero__main-btn btn btn_primary open-form" href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank">
                 Go cross-chain
                 <img src="img/btn-arrow.svg" width="20" height="11" alt="">
-              </a>
-              <a class="hero__wp-btn btn btn_primary btn_black" href="./files/asterizm-white-paper-april-2023.pdf" target="_blank">
+              </a>              
+              <a class="hero__wp-btn btn btn_primary btn_black" href="./files/wp.pdf" target="_blank">
                 White paper
               </a>
             </div>
@@ -341,6 +386,21 @@
         </div>
       </div>
     </section>
+
+    
+    <!-- <section class="banner-block">
+      <div class="wrap">
+        <a href="https://gas.chainspot.io" target="_blank">
+          <picture>
+            <source srcset="img/banner-gas.webp" media="(min-width: 769px)" type="image/webp">
+            <source srcset="img/banner-gas_mobile.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="img/banner-gas.png" media="(min-width: 769px)" type="image/png">
+            <source srcset="img/banner-gas_mobile.png" media="(max-width: 768px)" type="image/png">
+            <img class="banner-gas" src="img/banner-gas.png" alt="">
+          </picture>      
+        </a>
+      </div>      
+    </section>     -->
 
     <section class="data" data-aos="fade" data-aos-duration="500">
       <div class="wrap">
@@ -544,8 +604,8 @@
           <div class="how-it-works__content">
             <div class="how-it-works__scheme-cnt">
               <picture>
-                <source srcset="img/asterizm-scheme-desktop.svg" media="(min-width: 769px)">  
                 <source srcset="img/asterizm-scheme-mobile.svg" media="(max-width: 768px)">  
+                <source srcset="img/asterizm-scheme-desktop.svg" media="(min-width: 769px)">                  
                 <img class="how-it-works__scheme" src="img/asterizm-scheme-desktop.svg" alt="">
               </picture>              
             </div>
@@ -564,7 +624,7 @@
                   <img src="img/medium-link-icon.svg" alt="">
                 </div>
                 <div class="how-it-works__link-title">
-                  <a class="how-it-works__link-name">Medium <img src="img/soon-badge.svg" alt=""></a>
+                  <a class="how-it-works__link-name" href="https://medium.com/asterizm-labs" target="_blank">Medium</a>
                   <!-- <span class="how-it-works__link-descr">Go to the medium</span> -->
                 </div>
               </div>
@@ -573,7 +633,7 @@
                   <img src="img/wp-link-icon.svg" alt="">
                 </div>
                 <div class="how-it-works__link-title">
-                  <a class="how-it-works__link-name" href="./files/asterizm-white-paper-april-2023.pdf" target="_blank">White Paper</a>
+                  <a class="how-it-works__link-name" href="./files/wp.pdf" target="_blank">White Paper</a>
                   <!-- <span class="how-it-works__link-descr">Learn docs</span> -->
                 </div>
               </div>
@@ -638,12 +698,12 @@
             <div class="steps__list-item">
               <span>Step 2</span>
             </div>
-            <div class="steps__list-item">
+            <!-- <div class="steps__list-item">
               <span>Step 2a</span>
             </div>
             <div class="steps__list-item">
               <span>Step 3a</span>
-            </div>
+            </div> -->
             <div class="steps__list-item">
               <span>Step 3</span>
             </div>            
@@ -681,17 +741,18 @@
               <h3 class="steps__description-title primary-title">Step 1</h3>
               <p class="steps__description-text">
                 <span>The client implements a&nbsp;smart contract using an&nbsp;abstract class from Asterizm and deploys it&nbsp;to&nbsp;the required networks.</span>
-                <span>The <b>_initAsterizmTransferEvent()</b> method is&nbsp;used to&nbsp;initiate a&nbsp;cross-chain transaction on&nbsp;the contract. The data and parameters of&nbsp;the cross-chain transaction are transmitted to&nbsp;it.</span>
+                <span>The <b><i>_initAsterizmTransferEvent()</i></b> method is&nbsp;used to&nbsp;initiate a&nbsp;cross-chain transaction on&nbsp;the contract. The data and parameters of&nbsp;the cross-chain transaction are transmitted to&nbsp;it.</span>
                 <span>The transaction can contain arbitrary information and one or&nbsp;multiple actions (instructions) to&nbsp;be&nbsp;performed on&nbsp;the destination networks.</span>
               </p>
             </div>
             <div class="steps__description-item swiper-slide">
               <h3 class="steps__description-title primary-title">Step 2</h3>
               <p class="steps__description-text">
-                <span>The client’s smart contract sends the obtained data to the client’s off-chain module, generating a unique xID based on the transaction content, source address, destination address, source network ID, destination network ID and a unique transaction number.</span>
+                <span>The client smart contract sends the received data and <b><i>hash</i></b> based on the payload generated at that moment <b><i>xID</i></b>, source chain id, destination chain id, client smart contract address in the source and destination chains.</span>
+                <span class="steps__description-text_small"><b>Note:</b> At this step, the key parameters are formed, which will further ensure the security of the cross-chain transaction, namely to confirm its validity and integrity in the destination chain.</span>
               </p>
             </div>
-            <div class="steps__description-item swiper-slide">
+            <!-- <div class="steps__description-item swiper-slide">
               <h3 class="steps__description-title primary-title">Step 2a</h3>
               <p class="steps__description-text">
                 <span>If there is a need to send assets together with a cross-chain message, the client off-chain module initiates a cross-chain swap rate request via API. On receipt of calldata, the module sends it to the client smart contract, and after that, the tokens are sent to the Asterizm module's cross-chain swap contract.</span>
@@ -702,29 +763,31 @@
               <p class="steps__description-text">
                 <span>The client's assets arrive at the target contract in the destination network.</span>
               </p>
-            </div>
+            </div> -->
             <div class="steps__description-item swiper-slide">
               <h3 class="steps__description-title primary-title">Step 3</h3>
               <p class="steps__description-text">
-                <span>The client’s off-chain module encrypts the cross-chain transaction content and sends it back to the client’s smart contract in the source Initializer network, calling the cross-chain transfer initialization method.</span>
+                <span>The Client off-chain module encrypts the cross-chain transaction contents and sends it back to the client’s smart contract in the source initializer network, calling the cross-chain transfer initialization method <b><i>initAsterizmTransfer().</i></b></span>
               </p>
             </div>            
             <div class="steps__description-item swiper-slide">
               <h3 class="steps__description-title primary-title">Step 4</h3>
               <p class="steps__description-text">
-                The client’s smart contract sends the encrypted data with transaction parameters to the Initializer smart contract for verification.
+                <span>Before sending the encrypted data received from the client off-chain module to the Initializer smart contract, the Client smart contract checks the received data using <b><i>hash</i></b> matching, thus preventing spam and spoofed transactions.</span>
+                <span class="steps__description-text_small"><b>Note:</b> This step verifies that this exact transaction was initiated on the client's smart contract, which eliminates the possibility of spam from the client's off-chain module.</span>
               </p>
             </div>
             <div class="steps__description-item swiper-slide">
               <h3 class="steps__description-title primary-title">Step 5</h3>
               <p class="steps__description-text">
-                The Initializer smart contract checks the transaction nonce to preserve the cross-chain transaction execution sequence and transmits the encrypted data with the unique parameters to the Transmitter smart contract.
+                <span>The Initializer smart contract checks the transaction nonce to preserve the cross-chain transaction execution sequence and transmits the encrypted data with the unique parameters to the Transmitter smart contract.</span>
+                <span class="steps__description-text_small"><b>Note:</b> When a data packet is received on the Initializer smart contract, the client is identified based on the destination chain id, the Client smart contract address in the destination chain, and the client smart contract address in the source chain. After the client (sender) of the cross-chain transaction is determined, the nonce value is incremented for it.</span>
               </p>
             </div>
             <div class="steps__description-item swiper-slide">
               <h3 class="steps__description-title primary-title">Step 6</h3>
               <p class="steps__description-text">
-                <span>Asterizm Relayer servers pull the encrypted data with the parameters from the Transmitter contract and send it to the Transmitter smart contract in the destination network for further processing.</span>
+                <span>Asterizm Relayer servers pull the encrypted data with the parameters from the Translator contract and send it to the Translator smart contract in the destination network for further processing.</span>
               </p>
             </div>
             <div class="steps__description-item swiper-slide">
@@ -736,14 +799,14 @@
             <div class="steps__description-item swiper-slide">
               <h3 class="steps__description-title primary-title">Step 8</h3>
               <p class="steps__description-text">
-                <span>After receiving the encrypted data and the parameters, the Initializer smart contract checks the nonce to comply with the transaction sequence, stores the transaction xID to validate the transaction at step 10, and transmits the data to the client’s smart contract.</span>
+                <span>After receiving the encrypted data and the parameters, the Initializer smart contract checks the nonce to comply with the transaction sequence, stores the transaction <b><i>xID</i></b> to validate the transaction at step 10, and transmits the data to the client’s smart contract.</span>
               </p>
             </div>
             <div class="steps__description-item swiper-slide">
               <h3 class="steps__description-title primary-title">Step 9</h3>
               <p class="steps__description-text">
                 <span>The client’s smart contract in the destination network receives the encrypted data with the parameters, creates an event, and transmits the data to the client’s off-chain module for verification and decryption.</span>
-                <span class="steps__description-text_small"><b>Note:</b> This is where the first step of cross-chain transaction validation is performed by matching the xID generated in the source network at the transaction initialization, and by checking the source network and address. The client’s server verifies that the data is complete and consistent, thus eliminating the risk of compromise at the Relayer server level.</span>
+                <span class="steps__description-text_small"><b>Note:</b> This is where the first step of cross-chain transaction validation is performed by matching the <b><i>hash</i></b> from the decrypted data, original data and <b><i>xID</i></b> generated in the source network at the transaction initialization, and by checking the source network and address. The client’s server verifies that the data is complete and consistent, thus eliminating the risk of compromise at the Relayer server level.</span>
               </p>
             </div>
             <div class="steps__description-item swiper-slide">
@@ -751,7 +814,7 @@
               <p class="steps__description-text">
                 <div class="steps__description-scroll-cnt">
                   <span>
-                    After data verification and decryption, the client’s server initiates a transaction on the client smart contract in the destination network, sending the decrypted data and xID to the contract, and validating the transaction on the Initializer smart contract by checking the hash from the decrypted data and the xID, which was previously sent together with the transaction through the Initializer contract.
+                    After data verification and decryption, the client’s server initiates the transaction on the client smart contract by calling the <b><i>asterizmClReceive()</i></b> method in the destination network, sending the decrypted data and <b>xID</b> to the contract, and validating the transaction on the Initializer smart contract by checking the <b>hash.</b>
                   </span>
                   <span class="steps__description-text_small">
                     <b>Note:</b> At this step, the integrity of the data and the trusted addresses is checked before the transaction is executed. This check eliminates the risk of hacking the client’s server.
@@ -766,7 +829,7 @@
               <h3 class="steps__description-title primary-title">Step 11</h3>
               <p class="steps__description-text">
                 <span>
-                  The client’s smart contract sends the encrypted data with transaction parameters to the Initializer smart contract for verification.
+                  After receiving the confirmation of the validity and integrity of the cross-chain transaction, the client’s smart contract executes the instructions or data sent in the cross-chain transaction, calling methods of other contracts or performing calculations on the client’s contract. The logic of this step depends solely on the client’s business logic implemented in the cross-chain transaction.
                 </span>
               </p>
             </div>
@@ -953,7 +1016,7 @@
 					<ul class="footer__menu-list">
 						<li class="footer__menu-item"><a>Asterizm Scanner <img src="img/soon-badge.svg" alt=""></a></li>
 						<li class="footer__menu-item"><a href="http://docs.asterizm.io" target="_blank">Docs</a></li>
-						<li class="footer__menu-item"><a href="./files/asterizm-white-paper-april-2023.pdf" target="_blank">White paper</a></li>					
+						<li class="footer__menu-item"><a href="./files/wp.pdf" target="_blank">White paper</a></li>					
 					</ul>
 				</div>
 				<div class="footer__menu-col">
@@ -961,9 +1024,9 @@
 					<ul class="footer__menu-list">
 						<li class="footer__menu-item"><a>Media kit <img src="img/soon-badge.svg" alt=""></a></li>
 						<li class="footer__menu-item"><a href="https://twitter.com/Asterizm_layer" target="_blank">Twitter</a></li>
-						<li class="footer__menu-item"><a>Medium <img src="img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a href="https://medium.com/asterizm-labs" target="_blank">Medium</a></li>
 						<li class="footer__menu-item"><a href="https://t.me/asterizm_protocol" target="_blank">Telegram</a></li>
-						<li class="footer__menu-item"><a>Discord <img src="img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a href="https://discord.gg/GshkYKTeaR" target="_blank">Discord</a></li>
 					</ul>
 				</div>
 				<div class="footer__menu-col">
@@ -977,14 +1040,14 @@
 			</div>
 			<div class="footer__copyrights">
 				<span>© 2023 ASTERIZM. All rights reserved</span>
-			</div>
+			</div>			
 		</div>
 	</div>      
 </footer>
   </div>
 
-  <script src="./js/app.min.js?_v=20230503155911"></script>   
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js?_v=20230503155911"></script>
+  <script src="./js/app.min.js"></script>   
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
     particlesJS("particles-js", {
   "particles": {
@@ -1096,6 +1159,6 @@
   },
   "retina_detect": true
 });
-  </script>
+  </script> 
 </body>
 </html>

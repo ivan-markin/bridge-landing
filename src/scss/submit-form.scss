@@ -1,0 +1,126 @@
+.submit-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #03081E;
+	border: 1px solid #2C2D54;
+	box-shadow: 0px 30px 80px -30px rgba(76, 86, 115, 0.12);
+	border-radius: 16px;
+	width: 90%;
+	max-width: 490px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: -1;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .3s;
+	padding: 42px;
+
+	&.active {
+		z-index: 999;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		width: 100%;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		font-size: 16px;
+		color: #A1A6B3;		
+		outline: none;
+	}
+
+	input {
+		border: 1px solid #2C2D54;
+		border-radius: 100px;
+		background: none;
+		height: 52px;
+		padding: 0 18px;
+	}
+
+	textarea {
+		border: 1px solid #2C2D54;
+		border-radius: 24px;
+		background: none;
+		height: 109px;
+		resize: none;
+		padding: 18px;
+	}
+
+	&__btn {
+		background: #FFFFFF;
+		border-radius: 99px;
+		height: 48px;
+		border: none;
+		font-size: 18px;
+		color: #03081E;
+		cursor: pointer;
+		transition: all .2s;
+
+		&:hover {
+			background-color: #A6A7AD;
+		}
+	}
+
+	&__message-btn {
+		width: 80%;
+		max-width: 300px;
+		margin-top: 48px;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 24px;		
+		text-align: center;
+		color: #FFFFFF;
+		margin: 0 0 35px;
+	}
+
+	&__status-title {
+		font-weight: 600;
+		font-size: 24px;		
+		text-align: center;
+		color: #FFFFFF;
+		margin: 0 0 24px;
+	}
+
+	&__status-icon {		
+		margin: 0 0 30px;
+	}
+
+	&__close {
+		width: 15px;
+		height: 15px;
+		background: url('../img/form-close-icon.svg') no-repeat center;
+		background-size: contain;
+		position: absolute;
+		top: 24px;
+		right: 24px;
+		border: none;
+		cursor: pointer;		
+	}
+
+	&__success,
+	&__error {		
+		display: none;
+		flex-direction: column;
+		align-items: center;		
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+
+		&.active {
+			display: flex;
+		}
+	}	
+}

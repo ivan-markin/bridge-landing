@@ -185,4 +185,5 @@ flsFunctions.isWebp();
 flsFunctions.floatMenuToggler();
 flsFunctions.clientWidthPropertyHandler();
 flsFunctions.mobileMenuHandler();
+// flsFunctions.openSubmitForm();
 smoothscroll.polyfill();

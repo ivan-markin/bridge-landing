@@ -1,0 +1,142 @@
+.banner-top {
+	display: grid;
+	grid-template-columns: 1fr minmax(35%, 510px) 1fr;
+	grid-template-rows: 60px;	
+	width: 100%;
+	position: relative;
+	z-index: 3;
+
+	@media (max-width: 768px) {
+		grid-template-columns: 33% 40% 27%;
+		grid-template-rows: 48px;
+	}
+
+	&__cell {
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		@media (max-width: 768px) {
+			font-size: 9px;
+			line-height: 1.22;
+			font-weight: 500;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			gap: 7px;
+			color: white;
+			text-decoration: none;
+			transition: opacity .1s;
+
+			@media (max-width: 768px) {
+				flex-direction: column;
+				gap: 3px;
+			}
+
+			&:hover {
+				opacity: .7;
+			}
+
+			&::after {
+				content: '';
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+
+			img {
+				width: 27px;
+
+				@media (max-width: 768px) {
+					width: 18px;
+				}
+			}
+		}
+	}
+	
+	&__telegram {		
+		justify-content: flex-end;		
+		background: linear-gradient(267.87deg, #2BA2DE -4.05%, #2BA1DD 0.86%, #2B9FDB 5.77%, #2B9AD8 10.67%, #2B94D3 15.58%, #2C8CCC 20.49%, #2C82C5 25.4%, #2C78BC 30.31%, #2D6DB4 35.22%, #2D63AB 40.13%, #2D59A4 45.04%, #2E519D 49.95%, #2E4B98 54.86%, #2E4695 59.77%, #2E4493 64.68%, #2E4392 69.58%),
+								linear-gradient(0deg, #3F2AFC, #3F2AFC);
+		padding: 0 68px 0 20px;
+
+		@media (max-width: 1200px) {
+			padding-right: 4vw;
+		}
+
+		@media (max-width: 768px) {
+			padding-right: 10vw;
+		}
+		
+		&::after {			
+			background: url('../img/blue-corner.svg') no-repeat center;		
+			
+			@media (max-width: 768px) {
+				background: url('../img/blue-corner_mobile.svg') no-repeat center;
+			}
+		}
+	}
+
+	&__message {
+		justify-content: center;		
+		background: linear-gradient(270deg, #3E43FE 0%, #4656F3 31.81%, #424CEE 100%);
+		font-size: 18px;
+		font-weight: 600;
+		padding: 0 30px 0 20px;
+
+		@media (max-width: 768px) {
+			font-size: 9px;
+			font-weight: 700;
+			padding: 0 24px 0 5px;
+		}
+
+		&::after {			
+			background: url('../img/violet-corner.svg') no-repeat center;		
+			
+			@media (max-width: 768px) {
+				background: url('../img/violet-corner_mobile.svg') no-repeat center;		
+			}
+		}
+
+		img {
+			position: relative;
+			top: -3px;
+
+			@media (max-width: 768px) {
+				width: 25px;
+			}
+		}
+	}
+
+	&__telegram::after,
+	&__message::after {
+		content: '';
+		width: 24px;
+		height: 60px;
+		background-size: contain;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+		@media (max-width: 768px) {
+			width: 19px;
+			height: 48px;
+		}
+	}
+
+	&__discord {	
+		justify-content: flex-start;				
+		background: linear-gradient(to right, #7E6CE8 2.21%, #49007E 45%, #180856 75%);
+		padding: 0 20px 0 50px;		
+
+		@media (max-width: 1200px) {
+			padding: 0 2vw 0 4vw;		
+		}
+	}
+}

@@ -72,3 +72,32 @@ export function mobileMenuHandler() {
     document.body.classList.remove('fixed');
   })
 }
+
+export function openSubmitForm() {
+  const form = document.querySelector('.submit-form');
+
+  function closeOnEsc(e) {
+		if (e.key === 'Escape' || e.key === 'Esc') {
+			document.querySelector('.submit-form').classList.remove('active');
+      document.body.classList.remove('fixed');
+		}
+	}
+		
+	document.querySelectorAll('.close-form').forEach(el => {
+		el.addEventListener('click', () => {
+			document.querySelector('.submit-form').classList.remove('active');
+      document.body.classList.remove('fixed');
+			document.removeEventListener('keydown', closeOnEsc);
+      document.querySelector('.submit-form__error').classList.remove('active');                
+      document.querySelector('.submit-form__success').classList.remove('active');                
+		})
+	})
+  
+  document.querySelectorAll('.open-form').forEach(el => {
+    el.addEventListener('click', () => {
+      form.classList.add('active');
+      document.body.classList.add('fixed');
+      document.addEventListener('keydown', closeOnEsc);
+    })
+  })
+}
