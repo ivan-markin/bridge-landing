@@ -18,4 +18,27 @@
 		line-height: 1.07;
 		padding-bottom: 10px;	
 	}
+
+	&__badge {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		font-size: 16px;
+		font-weight: 600;
+		color: white;
+		width: fit-content;
+		border-radius: 16px;
+		border: 1px solid rgba(255, 255, 255, 0.20);
+		background: linear-gradient(87deg, #18AB88 17.44%, #3174B5 100%), #07091F;
+		box-shadow: 0px -2px 8px 0px rgba(13, 36, 121, 0.61) inset;
+		-webkit-background-clip: none;
+		-webkit-text-fill-color: white;
+		height: 32px;
+		padding: 0 12px;
+		margin: 0 auto 10px;
+
+		@media (max-width: 768px) {			
+			font-size: 13px;		
+		}
+	}
 }

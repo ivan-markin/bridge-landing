@@ -74,23 +74,23 @@
 		@media (max-width: 768px) {			
 			border-radius: 0;			
 			height: auto;			
+			border-bottom: #2C2D54 1px solid;
 			padding: 0 0 3.8vh 30px;
-		}	
-
-		&:first-child {
-			@media (max-width: 768px) {
-				border-bottom: #2C2D54 1px solid;
-			}
-		}
+		}		
 
 		&:last-child {
 			@media (max-width: 768px) {
+				border: none;
 				padding-bottom: 0;
 			}
 		}
 
 		&:hover {
 			background-color: #0C132C;
+
+			@media (max-width: 768px) {
+				background: none;
+			}
 		}
 
 		svg {
@@ -137,7 +137,7 @@
 			text-decoration: none;
 
 			@media (max-width: 768px) {			
-				display: none;
+				// display: none;
 			}	
 
 			&::after {
@@ -147,6 +147,7 @@
 				top: 0;
 				left: 0;
 				position: absolute;
+				z-index: 100;
 			}
 		}
 	}

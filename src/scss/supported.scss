@@ -7,6 +7,15 @@
 	}
 }
 
+@keyframes translateLogosMobile {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
 .supported {
 	max-width: 1920px;
 	overflow: hidden;
@@ -83,8 +92,8 @@
 	&__networks {
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
-		overflow-x: hidden;
+		gap: 16px;
+		overflow-x: hidden;		
 		width: var(--screenWidth);
 
 		@media (max-width: 768px) {
@@ -97,6 +106,7 @@
 			align-items: center;
 			gap: 34px;
 			position: relative;
+			height: 124px;
 			z-index: 4;
 
 			@media (max-width: 768px) {
@@ -113,13 +123,14 @@
 		&-top {
 			justify-content: flex-end;
 			animation-name: translateLogos;
-			animation-duration: 120s;
+			animation-duration: 110s;
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
 			animation-direction: alternate;	
 
 			@media (max-width: 768px) {
 				animation-duration: 10s;
+				animation-name: translateLogosMobile;
 			}			
 		}		
 		
@@ -127,14 +138,20 @@
 			justify-content: flex-end;
 			transform: translateX(30px);
 			animation-name: translateLogos;
-			animation-duration: 120s;
+			animation-duration: 110s;
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
 			animation-direction: alternate-reverse;			
 			
 			@media (max-width: 768px) {
 				animation-duration: 10s;
+				animation-name: translateLogosMobile;
 			}
-		}
+		}		
+	}
+
+	&__new {
+		position: relative;
+		top: -4px;
 	}
 }

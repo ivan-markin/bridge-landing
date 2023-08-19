@@ -5,6 +5,8 @@
 
 <body id="pageTop">
 
+  <noscript><div><img src="https://mc.yandex.ru/watch/94435349" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
   @@include('./html/banner-top.html', {})
   
   <div id="particles-js"></div>
@@ -173,9 +175,8 @@
         </div>
       </div>
     </section>
-
     
-    <section class="banner-block">
+    <!-- <section class="banner-block">
       <div class="wrap">
         <a href="https://gas.chainspot.io" target="_blank">
           <picture>
@@ -187,7 +188,7 @@
           </picture>      
         </a>
       </div>      
-    </section>    
+    </section>     -->
 
     <section class="data" data-aos="fade" data-aos-duration="500">
       <div class="wrap">
@@ -240,7 +241,13 @@
 
     <section class="supported" data-aos="fade" data-aos-duration="500">      
       <div class="supported__cnt">
-        <h2 class="supported__title primary-title">Chains supported</h2>        
+        <h2 class="supported__title primary-title">
+          <span class="primary-title__badge">
+            <img src="@img/badge-highlight.svg" alt="">
+            New: Venom Network integration just landed
+          </span>          
+          Chains supported
+        </h2>        
         <div class="supported__networks-cnt">
           <picture>
             <source srcset="@img/supports-logo.webp" type="image/webp">
@@ -254,6 +261,7 @@
               <img src="@img/nw-top-4.svg" width="109" height="109" alt="">
               <img src="@img/nw-top-5.svg" width="109" height="109" alt="">
               <img src="@img/nw-top-6.svg" width="109" height="109" alt="">
+              <img src="@img/nw-top-venom.svg" class="supported__new" width="109" height="116" alt="">
               <img src="@img/nw-top-7.svg" width="109" height="109" alt="">
               <img src="@img/nw-top-8.svg" width="109" height="109" alt="">
               <img src="@img/nw-top-9.svg" width="109" height="109" alt="">
@@ -261,12 +269,14 @@
               <img src="@img/nw-top-11.svg" width="109" height="109" alt="">
               <img src="@img/nw-top-12.svg" width="109" height="109" alt="">
               <img src="@img/nw-top-13.svg" width="109" height="109" alt="">
+              <img src="@img/nw-top-venom.svg" class="supported__new" width="109" height="116" alt="">
               <img src="@img/nw-top-14.svg" width="109" height="109" alt="">
               <img src="@img/nw-top-15.svg" width="109" height="109" alt="">
               <img src="@img/nw-top-16.svg" width="109" height="109" alt="">
               <img src="@img/nw-top-17.svg" width="109" height="109" alt="">
               <img src="@img/nw-top-18.svg" width="109" height="109" alt="">
               <img src="@img/nw-top-19.svg" width="109" height="109" alt="">
+              <img src="@img/nw-top-venom.svg" class="supported__new" width="109" height="116" alt="">
               <img src="@img/nw-top-20.svg" width="109" height="109" alt="">
               <img src="@img/nw-top-21.svg" width="109" height="109" alt="">
               <img src="@img/nw-top-22.svg" width="109" height="109" alt="">
@@ -402,7 +412,7 @@
                   <img src="@img/github-link-icon.svg" alt="">
                 </div>
                 <div class="how-it-works__link-title">
-                  <a class="how-it-works__link-name" href="https://github.com/Asterizm-Layer/asterizm-contracts" target="_blank">GitHub</a>
+                  <a class="how-it-works__link-name" href="https://github.com/Asterizm-Protocol" target="_blank">GitHub</a>
                   <!-- <span class="how-it-works__link-descr">Learn docs</span> -->
                 </div>
               </div>
