@@ -1,0 +1,130 @@
+<nav class="main-menu main-menu_ent @@className">
+	<ul class="main-menu__list">
+		<li class="main-menu__item">
+			<a class="main-menu__link">
+				Products
+				<img src="@img/select-arrow.svg" alt="">
+			</a>
+			
+			<div class="dropdown-ent" id="productsDropdown">
+				<div class="wrap-ent">					
+					<div class="dropdown-ent__products">
+						
+						@@include('./dropdown-product.html', {
+							'imageSrc': '@img/product-icons/asset-bridge.svg',
+							'name': 'Plug&Play asset bridge',
+							'description': 'Short product description',
+							'link': 'href="/crossdomain-asset-bridge.html"',
+							'disabled': ''
+						})
+						
+						@@include('./dropdown-product.html', {
+							'imageSrc': '@img/product-icons/crosschain-token.svg',
+							'name': 'Plug&play native cross-chain token',
+							'description': 'Short product description',
+							'link': 'href="/cdat.html"',
+							'disabled': ''
+						})
+						
+						@@include('./dropdown-product.html', {
+							'imageSrc': '@img/product-icons/nft-bridge.svg',
+							'name': 'Plug&play NFT bridge',
+							'description': 'Short product description',
+							'disabled': 'disabled'
+						})
+						
+						@@include('./dropdown-product.html', {
+							'imageSrc': '@img/product-icons/crosschain-dapp.svg',
+							'name': 'Arbitrary cross-chain dApp',
+							'description': 'Short product description',
+							'disabled': 'disabled'
+						})
+
+						@@include('./dropdown-product.html', {
+							'imageSrc': '@img/product-icons/native-crosschain-nft.svg',
+							'name': 'Plug&play native cross-chain NFT',
+							'description': 'Short product description',
+							'disabled': 'disabled'
+						})
+
+					</div>
+				</div>	
+			</div>
+
+		</li>
+		<li class="main-menu__item main-menu__item_dropdown">
+			<a class="main-menu__link">
+				Use cases
+				<img src="@img/select-arrow.svg" alt="">
+			</a>
+
+			<div class="dropdown-ent" id="useCasesDropdown">
+				<div class="wrap-ent">
+					<div class="dropdown-ent__usecases">
+						<a class="dropdown-product disabled">							
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Deploy a native cross-chain NFT into your dApp <img src="@img/arrow-right.svg" alt=""></span>
+								<!-- <span class="dropdown-product__description">Short product description</span> -->
+							</div>							
+						</a>
+						<div class="dropdown-ent__divider"></div>
+						<a class="dropdown-product disabled">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Build cross-chain asset pools <img src="@img/arrow-right.svg" alt=""></span>
+								<!-- <span class="dropdown-product__description">Short product description</span> -->
+							</div>
+						</a>						
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">
+				Explorer				
+			</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="https://docs.asterizm.io/what-is-asterizm/overview" target="_blank">
+				Documentation				
+			</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link">
+				Community
+				<img src="@img/select-arrow.svg" alt="">
+			</a>	
+			
+			<div class="dropdown-ent" id="socialsDropdown">
+				<div class="wrap-ent">
+					<div class="dropdown-ent__socials">
+						<a class="dropdown-product" href="https://twitter.com/Asterizm_layer" target="_blank">							
+							<img src="@img/menu-socials-icons/x.svg" alt="">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Twitter <img src="@img/arrow-right.svg" alt=""></span>								
+							</div>							
+						</a>						
+						<a class="dropdown-product" href="https://discord.gg/z5QVerD48C" target="_blank">
+							<img src="@img/menu-socials-icons/discord.svg" alt="">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Discord <img src="@img/arrow-right.svg" alt=""></span>								
+							</div>
+						</a>
+						<a class="dropdown-product" href="https://t.me/asterizm_protocol" target="_blank">
+							<img src="@img/menu-socials-icons/telegram.svg" alt="">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Telegram <img src="@img/arrow-right.svg" alt=""></span>								
+							</div>
+						</a>						
+						<a class="dropdown-product" href="https://medium.com/asterizm-labs" target="_blank">
+							<img src="@img/menu-socials-icons/medium.svg" alt="">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Medium <img src="@img/arrow-right.svg" alt=""></span>								
+							</div>
+						</a>												
+					</div>
+				</div>
+		</li>	
+	</ul>
+	<a href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank" class="main-menu__cta btn">Integration assistance</a>
+</nav>
+

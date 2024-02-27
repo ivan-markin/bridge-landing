@@ -1,0 +1,84 @@
+<section class="scheme-ent" data-aos="fade" data-aos-duration="1000">
+	<div class="wrap-ent">
+		<div class="scheme-ent__cnt">
+			<div class="scheme-ent__cnt-main">
+				<picture>
+					<source srcset="@img/scheme-ent_mobile.svg" media="(max-width: 768px)">
+					<source srcset="@img/scheme-ent_desktop.svg" media="(min-width: 769px)">              
+					<img class="scheme-ent__scheme" src="@img/scheme-ent_desktop.svg" alt="">
+				</picture>            
+				<div class="scheme-ent__content">
+					<h2 class="scheme-ent__title section-title-ent">How Asterizm Protocol<br>operates?</h2>
+					<span class="scheme-ent__description">
+						Asterizm secures cross-chain transactions using both on-chain and off-chain modules:
+					</span>
+					<div class="scheme-ent__modules">
+						<div class="scheme-ent__module">
+							<div class="scheme-ent__module-title">
+								<span class="scheme-ent__module-num scheme-ent__module-cnt">
+									<span>1</span>
+								</span>
+								<span class="scheme-ent__module-name scheme-ent__module-cnt">
+									<span>Asterizm Connector</span>
+								</span>
+							</div>
+							<span class="scheme-ent__module-content">
+								An on-chain module that checks the validity and integrity of the transactions.
+							</span>
+						</div>
+						
+						<div class="scheme-ent__module">
+							<div class="scheme-ent__module-title">
+								<span class="scheme-ent__module-num scheme-ent__module-cnt">
+									<span>2</span>
+								</span>
+								<span class="scheme-ent__module-name scheme-ent__module-cnt">
+									<span>Asterizm Relayers and Client off-chain module</span>
+								</span>
+							</div>
+							<span class="scheme-ent__module-content">
+								Two independent entities that encrypt and transmit the data.
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>  
+			<div class="scheme-ent__links">
+				<h3 class="scheme-ent__links-title section-title-ent">
+					Learn more
+				</h3>
+				<div class="scheme-ent__links-cnt">
+					
+					@@include('./link-block.html', {
+						'icon': '@img/ent-links-icons/github.svg',
+						'name': 'GitHub',
+						'description': 'Learn docs',
+						'link': 'https://github.com/Asterizm-Protocol'
+					})
+					
+					@@include('./link-block.html', {
+						'icon': '@img/ent-links-icons/medium.svg',
+						'name': 'Medium',
+						'description': 'Go to the medium',
+						'link': 'https://medium.com/asterizm-labs'
+					})
+					
+					@@include('./link-block.html', {
+						'icon': '@img/ent-links-icons/white-paper.svg',
+						'name': 'White Paper',
+						'description': 'Learn docs',
+						'link': './files/wp.pdf'
+					})
+					
+					@@include('./link-block.html', {
+						'icon': '@img/ent-links-icons/docs.svg',
+						'name': 'Docs',
+						'description': 'Read docs',
+						'link': 'https://docs.asterizm.io/what-is-asterizm/overview'
+					})
+
+				</div>
+			</div>        
+		</div>        
+	</div>
+</section>

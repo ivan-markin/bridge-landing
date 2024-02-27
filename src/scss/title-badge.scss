@@ -1,0 +1,28 @@
+.title-badge {
+	display: flex;
+	align-items: center;		
+	border-radius: 6px;
+	border: 1px solid #C5DFF8;
+	background: linear-gradient(180deg, rgba(194, 225, 255, 0.47) 0%, rgba(194, 225, 255, 0.00) 100%);
+	font-size: 12px;		
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	color: #13358F;
+	height: 24px;
+	width: fit-content;
+	padding: 0 12px;
+
+	&_primary {
+		font-size: 16px;
+		letter-spacing: 0;
+		height: 30px;
+
+		@media (max-width: 768px) {
+			font-size: 12px;
+			height: 28px;
+			margin: 0 auto;
+		}
+	}
+}

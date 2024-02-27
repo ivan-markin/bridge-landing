@@ -1,0 +1,38 @@
+.menu-button {
+	display: flex;
+	align-items: center;
+	height: 30px;
+	border-radius: 15px;
+	background-color: #2C2D54;
+	border: none;
+	cursor: pointer;
+	padding: 0 16px;
+
+	&_ent {
+		background-color: #2556BC;
+
+		@media (min-width: 1025px) {
+			display: none;
+		}
+
+		@media (max-width: 1024px) {
+			display: flex !important;
+		}
+	}
+
+	&::after {
+		content: '';
+		width: 15px;
+		height: 12px;
+		background: url('../img/burger-icon.svg') no-repeat center;
+		background-size: contain;				
+	}
+
+	@media (min-width: 1025px) {
+		display: none;
+	}
+
+	&_close::after {
+		background: url('../img/mobile-menu-close-icon.svg') no-repeat center;
+	}
+}

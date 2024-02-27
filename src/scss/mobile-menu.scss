@@ -4,7 +4,7 @@
 	justify-content: space-between;
 	position: fixed;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -13,14 +13,33 @@
 	z-index: -1;
 	visibility: hidden;
 	opacity: 0;
-	overflow-y: scroll;
+	// overflow-y: scroll;
 	transition: all .3s;
-	padding: 120px 20px 42px;
+	padding: 120px 20px 92px;	
 
 	&.active {
 		z-index: 12;
 		visibility: visible;
 		opacity: 1;
+
+		@media (min-width: 1025px) {
+			z-index: -1;
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+
+	&_ent {
+		background-color: #fff;
+	}
+
+	&__menu-cnt {
+		overflow-y: scroll;
+		height: calc(100vh - 82px);		
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 
 	&__header {
@@ -28,15 +47,30 @@
 		left: 20px;
 		top: 20px;
 		width: calc(100% - 40px);
+		z-index: 1000;
 		margin-bottom: 52px;
 	}
 
+	&_ent &__header {
+		top: 0;
+		left: 20px;
+		width: calc(100% - 40px);
+
+		.wrap-ent {
+			padding: 0;
+		}
+
+		&__cnt {
+			width: 100%;
+		}
+	}
+
 	&__cta {		
-		// position: fixed;
-		// bottom: 30px;
-		// width: calc(100% - 40px);		
-		width: 100%;
-		flex: none;
-		margin-top: auto;
+		position: fixed;
+		bottom: 30px;
+		left: 20px;
+		width: calc(100% - 40px);				
+		flex: none;		
+		z-index: 10;
 	}
 }

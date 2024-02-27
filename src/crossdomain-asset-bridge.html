@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./html/head.html', {})
+
+<body>
+
+  @@include('./html/request-popup-ent.html', {})
+  @@include('./html/success-message.html', {})
+  @@include('./html/error-message.html', {})
+  @@include('./html/mobile-menu-ent.html', {})
+
+  <div class="container container-ent">           
+    
+    @@include('./html/header-enterprises.html', {})
+
+    <div class="hero-ent hero-ent_product" data-aos="fade" data-aos-duration="1000">
+      <div class="wrap-ent">
+        <div class="hero-ent__cnt">
+          <div class="hero-ent__title-block">
+            <span class="hero-ent__title-badge title-badge title-badge_primary">Cross-domain asset bridge</span>
+            <h1 class="hero-ent__title section-title-ent">
+              Launch your cross-chain asset bridge with Asterizm Protocol<br><span class="blue-mark">in minutes</span>
+            </h1>
+            <span class="hero-ent__description content-text">
+              Integrate the bridge into your protocol or connect your network with other ecosystems without the need for spending hundreds of thousands of dollars on development and multiple partnerships
+            </span>
+            <div class="hero-ent__cta-block">
+              <button class="btn btn_ent popup-open">Request free assistance</button>
+              <a href="https://docs.asterizm.io/what-is-asterizm/overview" class="btn btn_ent btn_ent-secondary" target="_blank">
+                <span>See templates in docs</span>
+                <img src="@img/button-arrow.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <img class="hero-ent__image" src="@img/crossdomain-asset-bridge_hero-img.svg" alt="">
+        </div>
+      </div>           
+    </div>  
+
+    <section class="about-ent about-ent_product" data-aos="fade" data-aos-duration="1000">
+      <div class="wrap-ent">
+        <div class="about-ent__cnt">
+          <h2 class="about-ent__title section-title-ent">
+            Why Asterizm?
+          </h2>
+
+          @@include('./html/about-ent-cards.html', {})
+        </div>
+      </div>
+    </section>
+
+    @@include('./html/scheme-ent.html', {})
+
+    @@include('./html/proccess-ent.html', {})
+
+    @@include('./html/promo-ent.html', {})
+
+    @@include('./html/footer-ent.html', {
+      'className': 'footer_ent'
+    })
+  </div>  
+</body>
+</html>

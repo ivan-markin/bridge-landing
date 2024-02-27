@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HB7QPT29J4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HB7QPT29J4');
+  </script>
+
+   <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(94435349, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    });
+  </script>
+
+<script src="./js/app.min.js" defer></script>     
+    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicons/favicon.ico" sizes="any">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="img/favicons/manifest.webmanifest">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Asterizm</title>
+</head>
+
+<body>
+
+  <div class="popup">
+	<div class="popup__bg popup-close"></div>
+	<div class="popup__cnt">
+		<button class="popup__close popup-close">
+			<svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+				<path d="M1 14.9258L14 1.92578" stroke="#7C80AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M14 14.9258L1 1.92578" stroke="#7C80AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+		<h2 class="popup__title">Contact us</h2>
+		<form class="popup__form" id="requestForm">
+			<input class="popup__input" name="name" type="text" placeholder="Name*" required>
+			<input class="popup__input" name="company" type="text" placeholder="Company">
+			<input class="popup__input" name="email" type="email" placeholder="Mail*" required>
+			<div class="popup__input-cnt">
+				<input class="popup__input" name="telegram" type="text" placeholder="Telegram">
+				<input class="popup__input" name="website" type="text" placeholder="Website">
+			</div>
+			<button class="popup__btn btn btn_ent" type="submit">Submit</button> 
+		</form>
+	</div>	
+</div>
+  <div class="popup" id="entFormSuccess">
+	<div class="popup__bg popup-close"></div>
+	<div class="popup__cnt">
+		<button class="popup__close popup-close">
+			<svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+				<path d="M1 14.9258L14 1.92578" stroke="#7C80AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M14 14.9258L1 1.92578" stroke="#7C80AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+		<div class="form-success-cnt">
+			<img src="img/success-icon.svg" alt="">
+			<h2 class="popup__title">Thank you!</h2>
+			<span class="form-success-cnt__message">We'll get back to you shortly.</span>
+			<button class="popup__btn btn btn_ent popup-close">Ok</button>
+		</div>		
+	</div>	
+</div>
+  <div class="popup" id="entFormError">
+	<div class="popup__bg popup-close"></div>
+	<div class="popup__cnt">
+		<button class="popup__close popup-close">
+			<svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+				<path d="M1 14.9258L14 1.92578" stroke="#7C80AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M14 14.9258L1 1.92578" stroke="#7C80AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+		<div class="form-success-cnt">
+			<img src="img/form-error-icon.svg" alt="">
+			<h2 class="popup__title">Something went wrong</h2>
+			<span class="form-success-cnt__message">Please try again later</span>
+			<button class="popup__btn btn btn_ent popup-close">Ok</button>
+		</div>		
+	</div>	
+</div>
+  <div class="mobile-menu mobile-menu_ent">
+	<header class="mobile-menu__header header-ent">
+		<div class="wrap-ent">
+			<div class="header-ent__cnt">
+				<img class="header__logo" src="img/asterizm-logo_dark.svg" width="183" height="32" alt="">					
+				<button class="menu-button menu-button_ent menu-button_close menu-close"></button>
+			</div>
+		</div>		
+	</header>
+
+	<div class="mobile-menu__menu-cnt">
+		<nav class="main-menu main-menu_ent main-menu_mobile">
+	<ul class="main-menu__list">
+		<li class="main-menu__item">
+			<a class="main-menu__link">
+				Products
+				<img src="img/select-arrow.svg" alt="">
+			</a>
+			
+			<div class="dropdown-ent" id="productsDropdown">
+				<div class="wrap-ent">					
+					<div class="dropdown-ent__products">
+						
+						<a class="dropdown-product " href="/crossdomain-asset-bridge.html">
+	<img src="img/product-icons/asset-bridge.svg" alt="">
+	<div class="dropdown-product__title">
+		<span class="dropdown-product__name">Plug&Play asset bridge <img src="img/arrow-right.svg" alt=""></span>
+		<!-- <span class="dropdown-product__description">Short product description</span> -->
+	</div>
+</a>
+						
+						<a class="dropdown-product " href="/cdat.html">
+	<img src="img/product-icons/crosschain-token.svg" alt="">
+	<div class="dropdown-product__title">
+		<span class="dropdown-product__name">Plug&play native cross-chain token <img src="img/arrow-right.svg" alt=""></span>
+		<!-- <span class="dropdown-product__description">Short product description</span> -->
+	</div>
+</a>
+						
+						<a class="dropdown-product disabled" @@link>
+	<img src="img/product-icons/nft-bridge.svg" alt="">
+	<div class="dropdown-product__title">
+		<span class="dropdown-product__name">Plug&play NFT bridge <img src="img/arrow-right.svg" alt=""></span>
+		<!-- <span class="dropdown-product__description">Short product description</span> -->
+	</div>
+</a>
+						
+						<a class="dropdown-product disabled" @@link>
+	<img src="img/product-icons/crosschain-dapp.svg" alt="">
+	<div class="dropdown-product__title">
+		<span class="dropdown-product__name">Arbitrary cross-chain dApp <img src="img/arrow-right.svg" alt=""></span>
+		<!-- <span class="dropdown-product__description">Short product description</span> -->
+	</div>
+</a>
+
+						<a class="dropdown-product disabled" @@link>
+	<img src="img/product-icons/native-crosschain-nft.svg" alt="">
+	<div class="dropdown-product__title">
+		<span class="dropdown-product__name">Plug&play native cross-chain NFT <img src="img/arrow-right.svg" alt=""></span>
+		<!-- <span class="dropdown-product__description">Short product description</span> -->
+	</div>
+</a>
+
+					</div>
+				</div>	
+			</div>
+
+		</li>
+		<li class="main-menu__item main-menu__item_dropdown">
+			<a class="main-menu__link">
+				Use cases
+				<img src="img/select-arrow.svg" alt="">
+			</a>
+
+			<div class="dropdown-ent" id="useCasesDropdown">
+				<div class="wrap-ent">
+					<div class="dropdown-ent__usecases">
+						<a class="dropdown-product disabled">							
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Deploy a native cross-chain NFT into your dApp <img src="img/arrow-right.svg" alt=""></span>
+								<!-- <span class="dropdown-product__description">Short product description</span> -->
+							</div>							
+						</a>
+						<div class="dropdown-ent__divider"></div>
+						<a class="dropdown-product disabled">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Build cross-chain asset pools <img src="img/arrow-right.svg" alt=""></span>
+								<!-- <span class="dropdown-product__description">Short product description</span> -->
+							</div>
+						</a>						
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">
+				Explorer				
+			</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="https://docs.asterizm.io/what-is-asterizm/overview" target="_blank">
+				Documentation				
+			</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link">
+				Community
+				<img src="img/select-arrow.svg" alt="">
+			</a>	
+			
+			<div class="dropdown-ent" id="socialsDropdown">
+				<div class="wrap-ent">
+					<div class="dropdown-ent__socials">
+						<a class="dropdown-product" href="https://twitter.com/Asterizm_layer" target="_blank">							
+							<img src="img/menu-socials-icons/x.svg" alt="">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Twitter <img src="img/arrow-right.svg" alt=""></span>								
+							</div>							
+						</a>						
+						<a class="dropdown-product" href="https://discord.gg/z5QVerD48C" target="_blank">
+							<img src="img/menu-socials-icons/discord.svg" alt="">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Discord <img src="img/arrow-right.svg" alt=""></span>								
+							</div>
+						</a>
+						<a class="dropdown-product" href="https://t.me/asterizm_protocol" target="_blank">
+							<img src="img/menu-socials-icons/telegram.svg" alt="">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Telegram <img src="img/arrow-right.svg" alt=""></span>								
+							</div>
+						</a>						
+						<a class="dropdown-product" href="https://medium.com/asterizm-labs" target="_blank">
+							<img src="img/menu-socials-icons/medium.svg" alt="">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Medium <img src="img/arrow-right.svg" alt=""></span>								
+							</div>
+						</a>												
+					</div>
+				</div>
+		</li>	
+	</ul>
+	<a href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank" class="main-menu__cta btn">Integration assistance</a>
+</nav>
+
+
+	</div>	
+
+	<button class="mobile-menu__cta btn btn_ent popup-open">Integration assistance</button>
+</div>
+
+  <div class="container container-ent">           
+    
+    <header class="header-ent">
+	<div class="wrap-ent">
+		<div class="header-ent__cnt">
+			<a href="/" class="logo-link">
+				<img class="logo-ent" src="img/asterizm-logo_dark.svg" alt="">	
+			</a>			
+			
+			<nav class="main-menu main-menu_ent main-menu_header">
+	<ul class="main-menu__list">
+		<li class="main-menu__item">
+			<a class="main-menu__link">
+				Products
+				<img src="img/select-arrow.svg" alt="">
+			</a>
+			
+			<div class="dropdown-ent" id="productsDropdown">
+				<div class="wrap-ent">					
+					<div class="dropdown-ent__products">
+						
+						<a class="dropdown-product " href="/crossdomain-asset-bridge.html">
+	<img src="img/product-icons/asset-bridge.svg" alt="">
+	<div class="dropdown-product__title">
+		<span class="dropdown-product__name">Plug&Play asset bridge <img src="img/arrow-right.svg" alt=""></span>
+		<!-- <span class="dropdown-product__description">Short product description</span> -->
+	</div>
+</a>
+						
+						<a class="dropdown-product " href="/cdat.html">
+	<img src="img/product-icons/crosschain-token.svg" alt="">
+	<div class="dropdown-product__title">
+		<span class="dropdown-product__name">Plug&play native cross-chain token <img src="img/arrow-right.svg" alt=""></span>
+		<!-- <span class="dropdown-product__description">Short product description</span> -->
+	</div>
+</a>
+						
+						<a class="dropdown-product disabled" @@link>
+	<img src="img/product-icons/nft-bridge.svg" alt="">
+	<div class="dropdown-product__title">
+		<span class="dropdown-product__name">Plug&play NFT bridge <img src="img/arrow-right.svg" alt=""></span>
+		<!-- <span class="dropdown-product__description">Short product description</span> -->
+	</div>
+</a>
+						
+						<a class="dropdown-product disabled" @@link>
+	<img src="img/product-icons/crosschain-dapp.svg" alt="">
+	<div class="dropdown-product__title">
+		<span class="dropdown-product__name">Arbitrary cross-chain dApp <img src="img/arrow-right.svg" alt=""></span>
+		<!-- <span class="dropdown-product__description">Short product description</span> -->
+	</div>
+</a>
+
+						<a class="dropdown-product disabled" @@link>
+	<img src="img/product-icons/native-crosschain-nft.svg" alt="">
+	<div class="dropdown-product__title">
+		<span class="dropdown-product__name">Plug&play native cross-chain NFT <img src="img/arrow-right.svg" alt=""></span>
+		<!-- <span class="dropdown-product__description">Short product description</span> -->
+	</div>
+</a>
+
+					</div>
+				</div>	
+			</div>
+
+		</li>
+		<li class="main-menu__item main-menu__item_dropdown">
+			<a class="main-menu__link">
+				Use cases
+				<img src="img/select-arrow.svg" alt="">
+			</a>
+
+			<div class="dropdown-ent" id="useCasesDropdown">
+				<div class="wrap-ent">
+					<div class="dropdown-ent__usecases">
+						<a class="dropdown-product disabled">							
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Deploy a native cross-chain NFT into your dApp <img src="img/arrow-right.svg" alt=""></span>
+								<!-- <span class="dropdown-product__description">Short product description</span> -->
+							</div>							
+						</a>
+						<div class="dropdown-ent__divider"></div>
+						<a class="dropdown-product disabled">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Build cross-chain asset pools <img src="img/arrow-right.svg" alt=""></span>
+								<!-- <span class="dropdown-product__description">Short product description</span> -->
+							</div>
+						</a>						
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">
+				Explorer				
+			</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="https://docs.asterizm.io/what-is-asterizm/overview" target="_blank">
+				Documentation				
+			</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link">
+				Community
+				<img src="img/select-arrow.svg" alt="">
+			</a>	
+			
+			<div class="dropdown-ent" id="socialsDropdown">
+				<div class="wrap-ent">
+					<div class="dropdown-ent__socials">
+						<a class="dropdown-product" href="https://twitter.com/Asterizm_layer" target="_blank">							
+							<img src="img/menu-socials-icons/x.svg" alt="">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Twitter <img src="img/arrow-right.svg" alt=""></span>								
+							</div>							
+						</a>						
+						<a class="dropdown-product" href="https://discord.gg/z5QVerD48C" target="_blank">
+							<img src="img/menu-socials-icons/discord.svg" alt="">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Discord <img src="img/arrow-right.svg" alt=""></span>								
+							</div>
+						</a>
+						<a class="dropdown-product" href="https://t.me/asterizm_protocol" target="_blank">
+							<img src="img/menu-socials-icons/telegram.svg" alt="">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Telegram <img src="img/arrow-right.svg" alt=""></span>								
+							</div>
+						</a>						
+						<a class="dropdown-product" href="https://medium.com/asterizm-labs" target="_blank">
+							<img src="img/menu-socials-icons/medium.svg" alt="">
+							<div class="dropdown-product__title">
+								<span class="dropdown-product__name">Medium <img src="img/arrow-right.svg" alt=""></span>								
+							</div>
+						</a>												
+					</div>
+				</div>
+		</li>	
+	</ul>
+	<a href="https://efpmoaz9ius.typeform.com/to/s2QfDgTN" target="_blank" class="main-menu__cta btn">Integration assistance</a>
+</nav>
+
+
+
+			<button class="header-ent__cta btn btn_ent popup-open">Request support</button>
+
+			<button class="menu-button menu-button_ent menu-open"></button>
+		</div>
+	</div>	
+</header>
+
+    <div class="hero-ent hero-ent_product" data-aos="fade" data-aos-duration="1000">
+      <div class="wrap-ent">
+        <div class="hero-ent__cnt">
+          <div class="hero-ent__title-block">
+            <span class="hero-ent__title-badge title-badge title-badge_primary">Cross-domain asset bridge</span>
+            <h1 class="hero-ent__title section-title-ent">
+              Launch your cross-chain asset bridge with Asterizm Protocol<br><span class="blue-mark">in minutes</span>
+            </h1>
+            <span class="hero-ent__description content-text">
+              Integrate the bridge into your protocol or connect your network with other ecosystems without the need for spending hundreds of thousands of dollars on development and multiple partnerships
+            </span>
+            <div class="hero-ent__cta-block">
+              <button class="btn btn_ent popup-open">Request free assistance</button>
+              <a href="https://docs.asterizm.io/what-is-asterizm/overview" class="btn btn_ent btn_ent-secondary" target="_blank">
+                <span>See templates in docs</span>
+                <img src="img/button-arrow.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <img class="hero-ent__image" src="img/crossdomain-asset-bridge_hero-img.svg" alt="">
+        </div>
+      </div>           
+    </div>  
+
+    <section class="about-ent about-ent_product" data-aos="fade" data-aos-duration="1000">
+      <div class="wrap-ent">
+        <div class="about-ent__cnt">
+          <h2 class="about-ent__title section-title-ent">
+            Why Asterizm?
+          </h2>
+
+          <div class="about-ent__content">
+	<div class="technology-ent__card content-card">
+	<div class="content-card__title-block">
+		<h3 class="content-card__title">Exclusively on&#8209;chain&nbsp;validation</h3>
+		<img src="img/validation-icon.svg" alt="">
+	</div>              
+	<span class="content-card__description">
+		The cross-chain transaction validation in Asterizm relies solely on the cryptography employed by the respective blockchains involved. It avoids off-chain consensus and the use of third-party validators to ensure the security and confidentiality of transmitted data.
+	</span>
+</div>
+
+	<div class="technology-ent__card content-card">
+	<div class="content-card__title-block">
+		<h3 class="content-card__title">Emergency<br>brake</h3>
+		<img src="img/emergency-icon.svg" alt="">
+	</div>              
+	<span class="content-card__description">
+		The ability to halt all operations in a single click without requiring consensus from any external entity is a truly remarkable feature. Furthermore, there is no single point of vulnerability for the creation of malicious transactions - the integrity and validity checks of transactions are decentralized and on-chain, with the Client having the sole capability to stop operations.
+	</span>
+</div>
+
+	<div class="technology-ent__card content-card">
+	<div class="content-card__title-block">
+		<h3 class="content-card__title">Privacy and&nbsp;flexibility</h3>
+		<img src="img/privacy-flexibility-icon.svg" alt="">
+	</div>              
+	<span class="content-card__description">
+		A flexible client-server module (docker image) seamlessly integrates into any security framework while ensuring the complete confidentiality of transmitted data.
+	</span>
+</div>
+
+	<div class="technology-ent__card content-card">
+	<div class="content-card__title-block">
+		<h3 class="content-card__title">Ready-to-use modules</h3>
+		<img src="img/modules-icon.svg" alt="">
+	</div>              
+	<span class="content-card__description">
+		Utilize pre-built modules for a quick launch of popular cross-chain solutions tailored for enterprise use cases.
+	</span>
+</div>
+
+	<div class="technology-ent__card content-card">
+	<div class="content-card__title-block">
+		<h3 class="content-card__title">51% attack-impossible</h3>
+		<img src="img/no-attack-icon.svg" alt="">
+	</div>              
+	<span class="content-card__description">
+		The architecture of Asterizm is designed in such a way that if at least 1 server is functioning correctly, a cross-chain transaction cannot be altered, tampered with or fabricated.
+	</span>
+</div>
+
+	<div class="technology-ent__card content-card">
+	<div class="content-card__title-block">
+		<h3 class="content-card__title">Full&#8209;time&nbsp;assistance at&nbsp;every step</h3>
+		<img src="img/support-icon.svg" alt="">
+	</div>              
+	<span class="content-card__description">
+		Our team will be happy to address all your inquiries and apply our expertise to assist in the most efficient implementation of your product.
+	</span>
+</div>
+</div>                    
+        </div>
+      </div>
+    </section>
+
+    <section class="scheme-ent" data-aos="fade" data-aos-duration="1000">
+	<div class="wrap-ent">
+		<div class="scheme-ent__cnt">
+			<div class="scheme-ent__cnt-main">
+				<picture>
+					<source srcset="img/scheme-ent_mobile.svg" media="(max-width: 768px)">
+					<source srcset="img/scheme-ent_desktop.svg" media="(min-width: 769px)">              
+					<img class="scheme-ent__scheme" src="img/scheme-ent_desktop.svg" alt="">
+				</picture>            
+				<div class="scheme-ent__content">
+					<h2 class="scheme-ent__title section-title-ent">How Asterizm Protocol<br>operates?</h2>
+					<span class="scheme-ent__description">
+						Asterizm secures cross-chain transactions using both on-chain and off-chain modules:
+					</span>
+					<div class="scheme-ent__modules">
+						<div class="scheme-ent__module">
+							<div class="scheme-ent__module-title">
+								<span class="scheme-ent__module-num scheme-ent__module-cnt">
+									<span>1</span>
+								</span>
+								<span class="scheme-ent__module-name scheme-ent__module-cnt">
+									<span>Asterizm Connector</span>
+								</span>
+							</div>
+							<span class="scheme-ent__module-content">
+								An on-chain module that checks the validity and integrity of the transactions.
+							</span>
+						</div>
+						
+						<div class="scheme-ent__module">
+							<div class="scheme-ent__module-title">
+								<span class="scheme-ent__module-num scheme-ent__module-cnt">
+									<span>2</span>
+								</span>
+								<span class="scheme-ent__module-name scheme-ent__module-cnt">
+									<span>Asterizm Relayers and Client off-chain module</span>
+								</span>
+							</div>
+							<span class="scheme-ent__module-content">
+								Two independent entities that encrypt and transmit the data.
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>  
+			<div class="scheme-ent__links">
+				<h3 class="scheme-ent__links-title section-title-ent">
+					Learn more
+				</h3>
+				<div class="scheme-ent__links-cnt">
+					
+					<a class="link-block" href="https://github.com/Asterizm-Protocol">
+	<div class="link-block__icon">
+		<img src="img/ent-links-icons/github.svg" alt="">
+	</div>
+	<div class="link-block__title">
+		<span class="link-block__name">GitHub</span>
+		<span class="link-block__description">Learn docs</span>
+	</div>
+	<img class="link-block__arrow" src="img/arrow-right_white.svg" alt="">
+</a>
+					
+					<a class="link-block" href="https://medium.com/asterizm-labs">
+	<div class="link-block__icon">
+		<img src="img/ent-links-icons/medium.svg" alt="">
+	</div>
+	<div class="link-block__title">
+		<span class="link-block__name">Medium</span>
+		<span class="link-block__description">Go to the medium</span>
+	</div>
+	<img class="link-block__arrow" src="img/arrow-right_white.svg" alt="">
+</a>
+					
+					<a class="link-block" href="./files/wp.pdf">
+	<div class="link-block__icon">
+		<img src="img/ent-links-icons/white-paper.svg" alt="">
+	</div>
+	<div class="link-block__title">
+		<span class="link-block__name">White Paper</span>
+		<span class="link-block__description">Learn docs</span>
+	</div>
+	<img class="link-block__arrow" src="img/arrow-right_white.svg" alt="">
+</a>
+					
+					<a class="link-block" href="https://docs.asterizm.io/what-is-asterizm/overview">
+	<div class="link-block__icon">
+		<img src="img/ent-links-icons/docs.svg" alt="">
+	</div>
+	<div class="link-block__title">
+		<span class="link-block__name">Docs</span>
+		<span class="link-block__description">Read docs</span>
+	</div>
+	<img class="link-block__arrow" src="img/arrow-right_white.svg" alt="">
+</a>
+
+				</div>
+			</div>        
+		</div>        
+	</div>
+</section>
+
+    <section class="proccess-ent" data-aos="fade" data-aos-duration="1000">
+	<div class="wrap-ent">
+		<div class="proccess-ent__cnt">
+			<h2 class="proccess-ent__title section-title-ent">A quick, simple<br>and efficient process</h2>
+			<div class="proccess-ent__content">
+				<div class="proccess-ent__card">
+					<img class="proccess-ent__card-image" src="img/proccess-1-icon.svg" alt="">
+					<h3 class="proccess-ent__card-title block-title-ent">1. Detailed discussion<br>of the use case</h3>
+					<span class="proccess-ent__card-description">Our team participates in discussions about the desired outcome you wish to achieve upon launching the cross-chain solution, and we create a roadmap by selecting the appropriate tools and ready-made products for a rapid and efficient deployment.</span>
+				</div>
+				<div class="proccess-ent__card">
+					<img class="proccess-ent__card-image" src="img/proccess-2-icon.svg" alt="">
+					<h3 class="proccess-ent__card-title block-title-ent">2. Deploy your<br>cross-chain product</h3>
+					<span class="proccess-ent__card-description">We assist you in deploying your cross-chain product using pre-built modules or provide consultation for custom development, involving our developers if needed.</span>
+				</div>
+				<div class="proccess-ent__card">
+					<img class="proccess-ent__card-image" src="img/proccess-3-icon.svg" alt="">
+					<h3 class="proccess-ent__card-title block-title-ent">3.We support you at<br>every step of the project</h3>
+					<span class="proccess-ent__card-description">We are always in touch, leveraging our network to seek new efficient partnerships and growth opportunities, while also continuously working on enhancing Asterizm to keep your product at the forefront of cross-chain technologies.</span>
+				</div>
+			</div>  
+			<button class="btn btn_ent popup-open">Request a consultation</button>        
+		</div>
+	</div>
+</section>
+
+    <section class="promo-ent" data-aos="fade" data-aos-duration="1000">
+	<div class="wrap-ent">
+		<div class="promo-ent__cnt">
+			<img class="promo-ent__logo" src="img/asterizm-logo-promo.png" alt="">
+			<h2 class="promo-ent__title">
+				Future-proof your business with blockchain interoperability
+			</h2>
+			<span class="promo-ent__description">
+				Get a free consultation and support from the Asterizm team in implementing any cross-chain solution
+			</span>
+			<button class="btn btn_ent popup-open">Start your project</button>
+		</div>
+	</div>
+</section>
+
+    <footer class="footer footer_ent">
+	<div class="wrap-ent">
+		<div class="footer__cnt footer__cnt-ent">					
+			<div class="footer__logo-ent">
+				<img src="img/asterizm-logo_dark.svg" alt="">
+				<span>Secure blockchain solutions</span>
+			</div>
+			<div class="footer__menu">				
+				<div class="footer__menu-col">
+					<span class="footer__menu-title">Products</span>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a href="crossdomain-asset-bridge.html">Asset bridge</a></li>
+						<li class="footer__menu-item"><a href="cdat.html">Native cross-chain token</a></li>
+						<li class="footer__menu-item disabled"><a>NFT bridge</a></li>						
+						<li class="footer__menu-item disabled"><a>Arbitrary cross-chain dApp</a></li>
+						<li class="footer__menu-item disabled"><a>Native cross-chain NFT</a></li>																							
+					</ul>
+				</div>
+				<div class="footer__menu-col">
+					<span class="footer__menu-title">Resources</span>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a href="https://scan.asterizm.io/" target="_blank">Asterizm Scanner</a></li>						
+						<li class="footer__menu-item"><a href="https://docs.asterizm.io/what-is-asterizm/overview" target="_blank">Docs</a></li>						
+						<li class="footer__menu-item"><a href="./files/wp.pdf" target="_blank">White Paper 2.0</a></li>						
+						<li class="footer__menu-item"><a href="https://github.com/Asterizm-Protocol" target="_blank">Github</a></li>						
+						<li class="footer__menu-item disabled"><a>Media Kit</a></li>						
+					</ul>
+				</div>				
+				<div class="footer__menu-col">
+					<span class="footer__menu-title">Use cases</span>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item disabled"><a>Native cross-chain NFT</a></li>
+						<li class="footer__menu-item disabled"><a>Cross-chain asset pools</a></li>
+					</ul>
+				</div>
+				<div class="footer__menu-col">
+					<span class="footer__menu-title">Legal</span>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item disabled"><a>Privacy Policy</a></li>
+						<li class="footer__menu-item disabled"><a>Terms of Use</a></li>						
+						<li class="footer__menu-item disabled"><a>Cookie Policy</a></li>						
+					</ul>
+				</div>
+				<div class="footer__menu-col">
+					<span class="footer__menu-title">Community</span>
+					<ul class="footer__menu-list">						
+						<li class="footer__menu-item"><a href="https://twitter.com/Asterizm_layer" target="_blank">Twitter</a></li>
+						<li class="footer__menu-item"><a href="https://discord.gg/z5QVerD48C" target="_blank">Discord</a></li>
+						<li class="footer__menu-item"><a href="https://t.me/asterizm_protocol" target="_blank">Telegram</a></li>
+						<li class="footer__menu-item"><a href="https://medium.com/asterizm-labs" target="_blank">Medium</a></li>												
+					</ul>
+				</div>
+			</div>					
+		</div>
+		<div class="footer__copyrights">
+			<span>© 2023 ASTERIZM. All rights reserved</span>
+		</div>
+	</div>      
+</footer>
+  </div>  
+</body>
+</html>

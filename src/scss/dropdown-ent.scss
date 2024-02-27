@@ -1,0 +1,102 @@
+.dropdown-ent {
+	position: fixed;
+	top: 81px;
+	left: 0;
+	width: 100%;
+	background-color: rgb(255 255 255 / 0.65);	
+	backdrop-filter: blur(40px);
+	box-shadow: 0px 0.12188px 0.58262px 0px rgba(18, 21, 76, 0.01), 0px 0.525px 1.09844px 0px rgba(18, 21, 76, 0.01), 0px 1.26563px 1.83691px 0px rgba(18, 21, 76, 0.01), 0px 2.4px 3.0875px 0px rgba(18, 21, 76, 0.01), 0px 3.98438px 5.13965px 0px rgba(18, 21, 76, 0.02), 0px 6.075px 8.28281px 0px rgba(18, 21, 76, 0.02), 0px 8.72812px 12.80645px 0px rgba(18, 21, 76, 0.02), 0px 12px 19px 0px rgba(18, 21, 76, 0.03);	
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;	
+	transition: all .5s;
+
+	@media (max-width: 1024px) {
+		display: none;
+		position: relative;		
+		top: 0;
+		box-shadow: none;
+		border: none;
+	}
+
+	.wrap-ent {
+		@media (max-width: 1024px) {
+			padding: 0;
+		}
+	}
+
+	.main-menu__item:hover & {
+		z-index: 11;
+		opacity: 1;
+		visibility: visible;	
+		
+		@media (max-width: 1024px) {
+			display: block;
+		}
+	}	
+	
+	&#productsDropdown {
+		padding: 36px 0 44px;
+	}
+
+	&#useCasesDropdown {
+		padding: 24px 0;
+	}
+
+	&#socialsDropdown {
+		padding: 24px 0;
+	}
+
+	&#productsDropdown,
+	&#useCasesDropdown,
+	&#socialsDropdown {
+		@media (max-width: 1024px) {
+			padding: 32px 0 0;	
+		}		
+	}
+
+	&__divider {
+		height: 106px;
+		width: 1px;
+		background-color: #E2E2E8;
+
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+
+	&__products {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px 20px;
+
+		@media (max-width: 1024px) {
+			grid-template-columns: 1fr;
+			gap: 30px;
+		}
+	}
+
+	&__usecases {
+		display: flex;
+		align-items: center;
+		gap: 50px;
+
+		@media (max-width: 1024px) {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 30px;
+		}
+	}
+
+	&__socials {
+		display: flex;
+		align-items: center;
+		gap: 80px;
+
+		@media (max-width: 1024px) {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 20px;
+		}
+	}
+}

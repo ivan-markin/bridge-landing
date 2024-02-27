@@ -5,35 +5,61 @@
 @import './swiper/effect-fade.scss';
 
 // Blocks
+@import './about-ent.scss';
+@import './apis-ent.scss';
 @import './back-btn.scss';
 @import './back-to-top-btn.scss';
+@import './banner-top.scss';
+@import './banner-gas.scss';
+@import './banner-block.scss';
+@import './blue-mark.scss';
 @import './block-text.scss';
 @import './block-title.scss';
+@import './block-title-ent.scss';
 @import './btn.scss';
 @import './collapse-btn.scss';
+@import './content-card.scss';
+@import './content-text.scss';
 @import './data.scss';
 @import './dropdown.scss';
+@import './dropdown-ent.scss';
+@import './dropdown-product.scss';
 @import './examples.scss';
 @import './faq.scss';
 @import './features.scss';
+@import './form-success-cnt.scss';
 @import './footer.scss';
 @import './gcc-popup.scss';
 @import './go-crosschain.scss';
 @import './header.scss';
+@import './header-ent.scss';
 @import './hero.scss';
+@import './hero-ent.scss';
 @import './how-it-works.scss';
+@import './link-block.scss';
+@import './logo-ent.scss';
+@import './logo-link.scss';
 @import './main-menu.scss';
+@import './marked-list-ent.scss';
+@import './menu-button.scss';
 @import './mobile-menu.scss';
 @import './onboarding.scss';
+@import './params-ent.scss';
+@import './popup.scss';
 @import './primary-subtitle.scss';
 @import './primary-title.scss';
+@import './proccess-ent.scss';
+@import './products-ent.scss';
+@import './promo-ent.scss';
+@import './scheme-ent.scss';
+@import './section-title-ent.scss';
+@import './solutions.scss';
 @import './steps.scss';
 @import './submit-form.scss';
 @import './supported.scss';
+@import './title-badge.scss';
+@import './title-block-ent.scss';
 @import './why-asterizm.scss';
-@import './banner-top.scss';
-@import './banner-gas.scss';
-@import './banner-block.scss';
 
 *,
 *::before,
@@ -75,6 +101,9 @@ fieldset {
 
 .fixed {
   position: fixed;
+  top: var(--offset-fixed);
+  left: 0;
+  right: 0;
 }
 
 .container {  
@@ -89,10 +118,27 @@ fieldset {
   }
 }
 
+.container-ent {
+  background-color: #FAFAFC;
+  color: #555770;
+  padding: 0;
+}
+
 .wrap {
   width: 100%;
   max-width: 1226px;
   padding: 0 63px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+}
+
+.wrap-ent {
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 40px;
   margin: 0 auto;
 
   @media (max-width: 768px) {

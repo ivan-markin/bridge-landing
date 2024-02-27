@@ -11,6 +11,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;	
+	gap: 20px;
 	position: relative;
 	z-index: 4;
 	position: absolute;
@@ -19,7 +20,7 @@
 	width: 100%;
 	// margin-bottom: 90px;
 
-	@media (max-width: 768px) {		
+	@media (max-width: 1024px) {		
 		height: 48px;
 		border-radius: 24px;
 		border: 1px solid #383A4D;
@@ -36,7 +37,7 @@
 		z-index: 9;				
 		animation: appearance .5s 1;	
 
-		@media (max-width: 768px) {
+		@media (max-width: 1024px) {
 			background-color: #010314;
 			width: calc(100% - 40px);
 		}
@@ -45,7 +46,7 @@
 	&__logo {
 		display: block;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1024px) {
 			width: 137px;
 		}
 
@@ -58,7 +59,7 @@
 		display: none;
 
 		&_short {
-			@media (max-width: 768px) {
+			@media (max-width: 1024px) {
 				display: block;
 				height: 24px;
 				width: auto;	
@@ -67,7 +68,7 @@
 	}
 
 	&__cta {
-		@media (max-width: 768px) {
+		@media (max-width: 1024px) {
 			display: none;
 		}
 	}
@@ -75,7 +76,7 @@
 	&.float &__cta {
 		display: none;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1024px) {
 			display: flex;
 			height: 30px;
 			font-size: 12px;
@@ -102,7 +103,7 @@
 			background-size: contain;				
 		}
 
-		@media (min-width: 769px) {
+		@media (min-width: 1025px) {
 			display: none;
 		}
 

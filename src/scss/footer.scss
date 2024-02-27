@@ -1,10 +1,19 @@
 .footer {
-	background: url('../img/footer-top-border.png') no-repeat center top;
+	// background: url('../img/footer-top-border.png') no-repeat center top;
 	background-size: contain;
 	padding-top: 72px;
 
 	@media (max-width: 768px) {
 		padding-top: 40px;
+	}
+
+	&__cnt-ent {
+		display: flex;
+		gap: 20px;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
 	}
 
 	&__logo {
@@ -13,6 +22,22 @@
 
 		@media (max-width: 768px) {
 			margin: 0 auto 64px auto;
+		}
+	}
+
+	&__logo-ent {
+		display: flex;
+		flex-direction: column;
+		gap: 10px !important;
+		flex: none;
+		min-width: 240px;
+
+		@media (max-width: 768px) {
+			padding-bottom: 30px;
+		}
+		
+		img {
+			width: 171px;
 		}
 	}
 
@@ -85,13 +110,80 @@
 		}		
 	}
 
+	&_ent &__menu {		
+		flex-wrap: wrap;
+		gap: 40px 20px;
+		flex: auto;
+		padding-left: 0;
+
+		@media (max-width: 972px) {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+		}
+
+		@media (max-width: 768px) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			row-gap: 44px;
+			column-gap: 20px;
+			padding: 0 0 50px;
+		}
+	}
+	
+	&_ent &__menu-title {
+		font-family: 'Inter';
+		color: #3F3F46;				
+		font-size: 14px;		
+		font-weight: 500;
+		line-height: 1;
+		letter-spacing: 0.3px;
+		text-transform: uppercase;
+	}
+
+	&_ent &__menu-col {
+		gap: 24px;
+	}
+
+	&_ent &__menu-list {
+		gap: 24px;
+	}
+
+	&_ent &__menu-item {
+		font-size: 16px;		
+		line-height: 1;
+		font-weight: 400;
+
+		a {
+			color: #687076;
+
+			&:hover {
+				color: rgb(29, 29, 29);
+			}
+		}
+
+		&.disabled {
+			opacity: .5;
+			
+			a:hover {				
+				color: #687076;
+			}
+		}
+	}
+
 	&__copyrights {
 		display: flex;
 		align-items: center;
 		height: 96px;
-		background: url('../img/footer-bottom-border.png') no-repeat center top;
+		// background: url('../img/footer-bottom-border.png') no-repeat center top;
 		background-size: contain;
 		font-size: 14px;
 		padding-left: 50px;
+	}
+
+	&_ent &__copyrights {
+		justify-content: center;
+		font-size: 16px;
+		border-top: 1px solid #E2E2E8;
+		padding: 0;
 	}
 }

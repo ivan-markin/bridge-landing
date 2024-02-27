@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./html/head.html', {})
+
+<body>
+
+  @@include('./html/request-popup-ent.html', {})
+  @@include('./html/success-message.html', {})
+  @@include('./html/error-message.html', {})  
+  @@include('./html/mobile-menu-ent.html', {})
+
+  <div class="container container-ent">           
+    
+    @@include('./html/header-enterprises.html', {})
+
+    <div class="hero-ent hero-ent_product" data-aos="fade" data-aos-duration="1000">
+      <div class="wrap-ent">
+        <div class="hero-ent__cnt">
+          <div class="hero-ent__title-block">
+            <span class="hero-ent__title-badge title-badge title-badge_primary">Cross-domain asset tokenizer (CDAT)</span>
+            <h1 class="hero-ent__title section-title-ent">
+              Tokenize any assets on private or public blockchains <span class="blue-mark">in minutes</span>
+            </h1>
+            <span class="hero-ent__description content-text">
+              Make your asset accessible across many public and private chains with a single smart contract
+            </span>
+            <div class="hero-ent__cta-block">
+              <button class="btn btn_ent popup-open">Request free assistance</button>
+              <a href="https://docs.asterizm.io/guides/code-examples" class="btn btn_ent btn_ent-secondary" target="_blank">
+                <span>See templates in docs</span>
+                <img src="@img/button-arrow.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <img class="hero-ent__image hero-ent__image_ccat" src="@img/ccat_hero-img.svg" alt="">
+        </div>
+      </div>           
+    </div>  
+
+    <section class="about-ent about-ent_product" data-aos="fade" data-aos-duration="1000">
+      <div class="wrap-ent">
+        <div class="about-ent__cnt">
+          <h2 class="about-ent__title section-title-ent">
+            Why Asterizm?
+          </h2>
+
+          @@include('./html/about-ent-cards.html', {})
+        </div>
+      </div>
+    </section>
+
+    <section class="products-ent" data-aos="fade" data-aos-duration="1000">
+      <div class="wrap-ent">
+        <div class="products-ent__cnt">
+          
+          <div class="products-ent__item">
+            <div class="products-ent__item-content">
+              <div class="products-ent__item-title-cnt">
+                <img src="@img/product-icons/crosschain-token.svg" alt="">
+                <h2 class="products-ent__item-title block-title-ent">Native cross-chain token</h2>
+              </div>
+              <span class="products-ent__item-description">Tokenize your asset as a native cross-chain token capable of seamlessly moving between any public and private blockchains</span>
+              <ul class="marked-list-ent">
+                <li>Synthetic stablecoin in a private or public network</li>
+                <li>Governance token of web3 project for voting on any chain</li>
+                <li>LP tokens of a DeFi dApp: farming, lending, staking, etc.</li>
+              </ul>
+              <div class="products-ent__item-cta">
+                <button class="btn btn_ent popup-open">Request a consultation</button>
+                <a href="https://docs.asterizm.io/guides/code-examples" class="btn btn_ent btn_ent-secondary" target="_blank">
+                  <span>See templates in docs</span>
+                  <img src="@img/button-arrow.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <img class="products-ent__image" src="@img/crosschain-token-image.svg" alt="">
+          </div>
+
+          <div class="products-ent__item">
+            <div class="products-ent__item-content">
+              <div class="products-ent__item-title-cnt">
+                <img src="@img/product-icons/native-crosschain-nft.svg" alt="">
+                <h2 class="products-ent__item-title block-title-ent">Native cross-chain NFT</h2>
+              </div>
+              <span class="products-ent__item-description">Tokenize your asset as a native cross-chain NFT, capable of seamlessly moving between any public and private blockchains</span>
+              <ul class="marked-list-ent">
+                <li>Digitization of documents or artworks</li>
+                <li>Utility NFTs in DeFi, GameFi, SoFi web3 projects</li>
+                <li>Tickets and certificates</li>
+              </ul>
+              <div class="products-ent__item-cta">
+                <button class="btn btn_ent popup-open">Request a consultation</button>
+                <a href="https://docs.asterizm.io/guides/code-examples" class="btn btn_ent btn_ent-secondary" target="_blank">
+                  <span>See templates in docs</span>
+                  <img src="@img/button-arrow.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <img class="products-ent__image" src="@img/crosschain-nft-image.svg" alt="">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    @@include('./html/scheme-ent.html', {})
+
+    @@include('./html/proccess-ent.html', {})
+
+    @@include('./html/promo-ent.html', {})
+
+    @@include('./html/footer-ent.html', {
+      'className': 'footer_ent'
+    })
+  </div>  
+</body>
+</html>

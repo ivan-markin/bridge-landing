@@ -1,0 +1,160 @@
+.solutions {
+	margin-bottom: 152px;
+
+	@media (max-width: 768px) {
+		margin-bottom: 75px;
+	}
+
+	.wrap {
+		@media (max-width: 768px) {
+			padding: 0;
+		}
+	}
+
+	&__table {
+		display: flex;
+		font-size: 16px;
+		color: #D2D4E7;
+		line-height: 1.5;	
+		
+		@media (max-width: 768px) {
+			font-size: 12px;
+			padding-left: 20px;
+		}	
+	}
+
+	&__table-header {
+		display: flex;
+		flex-direction: column;
+		flex: none;
+		width: 240px;
+
+		@media (max-width: 768px) {
+			width: 130px;
+		}	
+
+		span {
+			display: flex;
+			align-items: center;
+			height: 96px;
+			border-bottom: 1px solid #2C2D55;
+
+			@media (max-width: 768px) {
+				height: 82px;
+			}	
+		
+			&:first-child,
+			&:last-child {
+				border: none;
+			}
+			
+			&:first-child {
+				height: 64px;
+				padding-top: 24px;
+
+				@media (max-width: 768px) {
+					opacity: 0;
+					height: 52px;
+					padding-top: 20px;
+				}	
+			}
+			
+			&:last-child {
+				height: 130px;
+			}
+		}
+	}
+
+	&__table-cnt {
+		flex: auto;
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	&__table-content {
+		display: flex;
+	}
+
+	&__table-item {
+		display: flex;
+		flex-direction: column;
+		scroll-snap-align: center;
+
+		&_marked {
+			flex: none;
+			background: linear-gradient(110deg, #7F81CAA6 0%, #7F81CA00 100%);
+			border-radius: 12px;
+			position: relative;
+			font-weight: 700;
+			color: white;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 1px;
+				bottom: 1px;
+				left: 1px;
+				right: 1px;
+				background: linear-gradient(180deg, #080A1F 0%, #0D1449 100%);
+				border-radius: 11px;
+				z-index: 1;
+			}
+
+			& > * {
+				position: relative;
+				z-index: 2;				
+			}
+
+			.solutions__table-item-cell {
+				@media (max-width: 768px) {
+					border: none;
+				}
+			}
+		}
+	}
+
+	&__table-item-cell {
+		display: flex;
+		align-items: center;
+		justify-content: center;		
+		height: 96px;
+		border-bottom: 1px solid #2C2D55;		
+		text-align: center;
+		padding: 0 26px;
+
+		@media (max-width: 768px) {
+			height: 82px;
+			padding: 0 14px;
+		}	
+		
+		&:first-child,
+		&:last-child {
+			border: none;
+		}
+		
+		&:first-child {
+			height: 64px;
+			padding-top: 24px;
+
+			@media (max-width: 768px) {
+				height: 52px;
+				padding-top: 20px;
+			}	
+
+			img {
+				@media (max-width: 768px) {
+					width: 75px;
+					height: auto;
+				}	
+			}
+		}
+		
+		&:last-child {
+			height: 130px;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+.link-block {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	border-radius: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.45);
+	text-decoration: none;
+	transition: border .2s;
+	padding: 10px;
+
+	&:hover {
+		border-color: rgba(255, 255, 255, .8);
+	}
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: none;
+		width: 48px;
+		height: 48px;
+		background-color: white;
+		border-radius: 8px;
+	}
+
+	&__title {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	&__name {
+		font-size: 16px;
+		font-weight: 700;
+		color: white;
+	}
+
+	&__description {
+		font-size: 14px;
+		color: white;
+	}
+
+	&__arrow {
+		transition: transform .2s;
+		margin: 0 10px 0 auto;
+	}
+
+	&:hover &__arrow {
+		transform: translateX(5px);
+	}
+}

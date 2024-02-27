@@ -13,6 +13,7 @@
 	text-decoration: none;
 	cursor: pointer;
 	position: relative;
+	white-space: nowrap;
 	transition: all .3s;
 	padding: 0 30px;
 
@@ -20,6 +21,59 @@
 		background-color: #A6A7AD;
 	}
 
+	&_ent {
+		height: 45px;
+		border-radius: 4px;
+		background-color: #2556BC;
+		color: white;
+		font-size: 16px;
+		font-weight: 700;
+
+		&:hover {
+			background-color: #153F95;
+		}
+	}
+	
+	&_ent-secondary {				
+		background: white;
+		color: #2556BC;
+		border: 1px solid #2556BC;
+		gap: 10px;
+		overflow: hidden;
+		flex: none;
+		padding: 0 20px;
+
+		&::before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background: linear-gradient(to left, white 0%, transparent 100%);
+			z-index: 1;
+		}
+
+		& > * {
+			position: relative;
+			z-index: 2;
+		}
+
+		&:hover {
+			background-color: #ddedf8;			
+
+			img {
+				transform: translateX(4px);
+			}
+		}
+
+		img {
+			transition: transform .2s;
+		}
+	}
+	
 	&_primary {
 		height: 48px;
 		font-size: 15px;

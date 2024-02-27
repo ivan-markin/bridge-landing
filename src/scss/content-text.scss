@@ -1,0 +1,9 @@
+.content-text {
+	font-size: 20px;
+	line-height: 1.65;
+	color: #555770;
+
+	@media (max-width: 1024px) {
+		font-size: 16px;
+	}
+}

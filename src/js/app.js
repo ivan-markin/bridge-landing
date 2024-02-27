@@ -1,7 +1,10 @@
 import * as flsFunctions from "./modules/functions.js";
+import { sendMessage } from "./modules/tgSender.js";
 import smoothscroll from 'smoothscroll-polyfill';
 import Swiper, {Navigation, Pagination, EffectFade} from "swiper";
 import Aos from "aos";
+
+const toTopButton = document.querySelector('.back-to-top-btn');
 
 const dataSwiper = new Swiper('.data__content', {
 	modules: [EffectFade, Navigation],
@@ -109,79 +112,82 @@ document.querySelectorAll('.faq-toggler').forEach(el => {
 })
 
 window.addEventListener('scroll', () => {
-	const container = document.querySelector('.features__list');	
+	const container = document.querySelector('.features__list');
 	const images = document.querySelectorAll('.features__image-item');
 
-	let section1 = document.getElementById('featureSection1').offsetTop;
-	let section2 = document.getElementById('featureSection2').offsetTop;
-	let section3 = document.getElementById('featureSection3').offsetTop;
-	let section4 = document.getElementById('featureSection4').offsetTop;
-	let section5 = document.getElementById('featureSection5').offsetTop;
-	let section6 = document.getElementById('featureSection6').offsetTop;
-	
-	if (scrollY > container.offsetTop && scrollY < container.offsetTop + container.offsetHeight) {									
+	if (container) {
+		let section1 = document.getElementById('featureSection1').offsetTop;
+		let section2 = document.getElementById('featureSection2').offsetTop;
+		let section3 = document.getElementById('featureSection3').offsetTop;
+		let section4 = document.getElementById('featureSection4').offsetTop;
+		let section5 = document.getElementById('featureSection5').offsetTop;
+		let section6 = document.getElementById('featureSection6').offsetTop;
+		
+		if (scrollY > container.offsetTop && scrollY < container.offsetTop + container.offsetHeight) {									
 
-		images.forEach(img => {
-			img.classList.remove('active');
-		})
-		
-		if (scrollY < section1 ) {
 			images.forEach(img => {
 				img.classList.remove('active');
 			})
-			document.getElementById('img-1').classList.add('active');
-		}	
+			
+			if (scrollY < section1 ) {
+				images.forEach(img => {
+					img.classList.remove('active');
+				})
+				document.getElementById('img-1').classList.add('active');
+			}	
 
-		if (scrollY > section1 && scrollY < section2) {
-			images.forEach(img => {
-				img.classList.remove('active');
-			})
-			document.getElementById('img-2').classList.add('active');
-		}	
-		
-		if (scrollY > section2 && scrollY < section3) {
-			images.forEach(img => {
-				img.classList.remove('active');
-			})
-			document.getElementById('img-3').classList.add('active');
-		}	
-		
-		if (scrollY > section3 && scrollY < section4 ) {
-			images.forEach(img => {
-				img.classList.remove('active');
-			})
-			document.getElementById('img-4').classList.add('active');
-		}
-		
-		if (scrollY > section4 && scrollY < section5 ) {
-			images.forEach(img => {
-				img.classList.remove('active');
-			})
-			document.getElementById('img-5').classList.add('active');
-		}	
-		
-		if (scrollY > section5 && scrollY < section6) {
-			images.forEach(img => {
-				img.classList.remove('active');
-			})
-			document.getElementById('img-6').classList.add('active');
-		}								
-	}			
+			if (scrollY > section1 && scrollY < section2) {
+				images.forEach(img => {
+					img.classList.remove('active');
+				})
+				document.getElementById('img-2').classList.add('active');
+			}	
+			
+			if (scrollY > section2 && scrollY < section3) {
+				images.forEach(img => {
+					img.classList.remove('active');
+				})
+				document.getElementById('img-3').classList.add('active');
+			}	
+			
+			if (scrollY > section3 && scrollY < section4 ) {
+				images.forEach(img => {
+					img.classList.remove('active');
+				})
+				document.getElementById('img-4').classList.add('active');
+			}
+			
+			if (scrollY > section4 && scrollY < section5 ) {
+				images.forEach(img => {
+					img.classList.remove('active');
+				})
+				document.getElementById('img-5').classList.add('active');
+			}	
+			
+			if (scrollY > section5 && scrollY < section6) {
+				images.forEach(img => {
+					img.classList.remove('active');
+				})
+				document.getElementById('img-6').classList.add('active');
+			}								
+		}			
 
-	if (scrollY > 3000) {
-		document.querySelector('.back-to-top-btn').classList.add('shown');
-	} else document.querySelector('.back-to-top-btn').classList.remove('shown');
+		if (scrollY > 3000) {
+			document.querySelector('.back-to-top-btn').classList.add('shown');
+		} else document.querySelector('.back-to-top-btn').classList.remove('shown');
+	}	
 })
 
-document.querySelector('.back-to-top-btn').addEventListener('click', () => {
+toTopButton && toTopButton.addEventListener('click', () => {
 	scrollTo({
 		top: 0,
 		behavior: 'smooth'
 	})
 })
 
+sendMessage();
 flsFunctions.isWebp();
-// flsFunctions.popupToggler();
+flsFunctions.popupToggler();
 flsFunctions.floatMenuToggler();
 flsFunctions.clientWidthPropertyHandler();
 flsFunctions.mobileMenuHandler();

@@ -15,24 +15,27 @@ export function isWebp() {
 }
 
 export function popupToggler() {
-	function closeOnEsc(e) {
+	const container = document.querySelector('.container');
+  
+  function closeOnEsc(e) {
 		if (e.key === 'Escape' || e.key === 'Esc') {
-			document.querySelector('.gcc-popup').classList.remove('active');
-      document.body.classList.remove('fixed');
+			document.querySelectorAll('.popup').forEach(el => {
+        el.classList.remove('active');
+      });      
 		}
 	}
 	
-	document.querySelector('.hero__main-btn').addEventListener('click', (e) => {
-		e.preventDefault();
-		document.querySelector('.gcc-popup').classList.add('active');
-    document.body.classList.add('fixed');
-		document.addEventListener('keydown', closeOnEsc);
+	document.querySelectorAll('.popup-open').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.querySelector('.popup').classList.add('active');            
+      document.addEventListener('keydown', closeOnEsc);
+    })
 	})
 	
-	document.querySelectorAll('.popup-toggler').forEach(el => {
-		el.addEventListener('click', () => {
-			document.querySelector('.gcc-popup').classList.remove('active');
-      document.body.classList.remove('fixed');
+	document.querySelectorAll('.popup-close').forEach(el => {		    
+    el.addEventListener('click', (e) => {
+			e.target.closest('.popup').classList.remove('active');      
 			document.removeEventListener('keydown', closeOnEsc);
 		})
 	})
@@ -41,12 +44,14 @@ export function popupToggler() {
 export function floatMenuToggler() {
   window.addEventListener('scroll', () => {
     const header = document.querySelector('.header_main');    
-    
-    if (scrollY > 900) {
-      header.classList.add('float');      
-    } else {
-      header.classList.remove('float'); 	      
-    }   
+
+    if (header) {
+      if (scrollY > 900) {
+        header.classList.add('float');      
+      } else {
+        header.classList.remove('float'); 	      
+      }
+    }       
   })
 }
 
